@@ -1,18 +1,27 @@
-import { neon } from "@neondatabase/serverless"
+import postgres from "postgres"
 
-// Singleton pattern for database connection
-let sql: ReturnType<typeof neon> | null = null
+// Singleton pattern for database connection.
+// Cached on globalThis so Next.js hot-reload in dev doesn't open a new pool
+// on every module re-evaluation.
+const globalForDb = globalThis as unknown as { __sql?: postgres.Sql }
 
 export function getDb() {
-  if (!sql) {
+  if (!globalForDb.__sql) {
     const databaseUrl = process.env.DATABASE_URL
     if (!databaseUrl) {
       console.warn("DATABASE_URL not configured, using mock data mode")
       return null as any
     }
-    sql = neon(databaseUrl)
+    // Use SSL only for managed providers (e.g. Neon); a local Postgres in the
+    // same Docker network does not use TLS.
+    const needsSsl = /sslmode=require|neon\.tech/.test(databaseUrl)
+    globalForDb.__sql = postgres(databaseUrl, {
+      ssl: needsSsl ? "require" : false,
+      max: Number(process.env.DATABASE_POOL_MAX ?? 10),
+      idle_timeout: 30,
+    })
   }
-  return sql
+  return globalForDb.__sql
 }
 
 export function isDbAvailable(): boolean {

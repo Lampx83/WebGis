@@ -1,0 +1,41 @@
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-webgis}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-webgis}
+      POSTGRES_DB: ${POSTGRES_DB:-webgis}
+    volumes:
+      - db_data:/var/lib/postgresql/data
+      # Schema files run automatically (in filename order) on FIRST init only.
+      - ./scripts:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-webgis} -d ${POSTGRES_DB:-webgis}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - webgis
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      DATABASE_URL: postgres://${POSTGRES_USER:-webgis}:${POSTGRES_PASSWORD:-webgis}@db:5432/${POSTGRES_DB:-webgis}
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "${WEB_PORT:-3000}:3000"
+    networks:
+      - webgis
+
+volumes:
+  db_data:
+
+networks:
+  webgis:
