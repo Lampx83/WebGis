@@ -26,11 +26,11 @@ thường trong cùng Docker network (`db:5432`).
    | `POSTGRES_USER` | `webgis` | user DB |
    | `POSTGRES_PASSWORD` | `webgis` | **đổi trước khi chạy thật** |
    | `POSTGRES_DB` | `webgis` | tên DB |
-   | `WEB_PORT` | `3000` | cổng publish ra host |
+   | `WEB_PORT` | `8043` | cổng publish ra host |
 
 4. **Deploy the stack**. Portainer sẽ build image `web` và kéo image `db`.
 
-5. Truy cập: `http://<host>:<WEB_PORT>` (mặc định `:3000`).
+5. Truy cập: `http://<host>:<WEB_PORT>` (mặc định `:8043`).
 
 > **Lưu ý:** mỗi lần sửa code, push lên Git rồi bấm **Pull and redeploy** (bật
 > *Re-pull image and redeploy* / rebuild) để Portainer build lại.
@@ -65,6 +65,6 @@ Rồi sửa `docker-compose.yml`: thay block `build:` của service `web` bằng
 ## Smoke test sau khi deploy
 
 ```bash
-curl http://<host>:3000/                 # trang chủ → 200
-curl http://<host>:3000/api/devices      # trả JSON danh sách thiết bị (từ DB)
+curl http://<host>:8043/                 # trang chủ → 200
+curl http://<host>:8043/api/devices      # trả JSON danh sách thiết bị (từ DB)
 ```
