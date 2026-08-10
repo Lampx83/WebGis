@@ -40,11 +40,11 @@
     "color": "#6b7280"
   },
   {
-    "name": "Khu bến Lạch Huyện / Đình Vũ (ước tính)",
+    "name": "Khu bến ước tính (Lạch Huyện, Đình Vũ, Sông Cấm, Phà Rừng, Nam Đồ Sơn, Văn Úc, Bạch Long Vĩ)",
     "slug": "hp_khu_ben_uoc_tinh",
     "file": "/gis/hp_khu_ben_uoc_tinh.geojson",
     "geometry": "Polygon",
-    "count": 2,
+    "count": 7,
     "color": "#16a34a"
   }
 ]
