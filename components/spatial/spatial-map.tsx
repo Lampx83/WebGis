@@ -26,6 +26,13 @@ function isBoundary(name: string) {
   return /boundary|ranh giới/i.test(name)
 }
 
+// Layers digitized by approximate georeferencing (no coordinate table in the
+// source drawing) get a visibly different style so they are never confused
+// with the coordinate-sourced layers.
+function isEstimated(name: string) {
+  return /ước tính/i.test(name)
+}
+
 // Fit the map to the detailed park layers on first load.
 function FitOnLoad({ layers }: { layers: LayerData[] }) {
   const map = useMap()
@@ -181,6 +188,7 @@ export function SpatialMap({ layers, visible, selectedUid, onSelect, areaRange, 
         .filter((ld) => visible[ld.layer.slug] !== false)
         .map((ld) => {
           const boundary = isBoundary(ld.layer.name)
+          const estimated = isEstimated(ld.layer.name)
           // Remount on state changes so the style function re-evaluates.
           const key = `${ld.layer.slug}-${selectedUid}-${search}-${areaRange?.join("_") ?? "all"}`
           return (
@@ -209,25 +217,38 @@ export function SpatialMap({ layers, visible, selectedUid, onSelect, areaRange, 
                   dimmed = info.area < areaRange[0] || info.area > areaRange[1]
                 }
                 if (selected) {
-                  return { color: "#f59e0b", weight: 4, fillColor: "#f59e0b", fillOpacity: boundary ? 0.15 : 0.55 }
+                  return {
+                    color: "#f59e0b",
+                    weight: 4,
+                    fillColor: "#f59e0b",
+                    fillOpacity: boundary ? 0.15 : 0.55,
+                    dashArray: estimated ? "3 4" : undefined,
+                  }
                 }
                 if (matches) {
-                  return { color: "#dc2626", weight: 3, fillColor: "#dc2626", fillOpacity: boundary ? 0 : 0.5 }
+                  return {
+                    color: "#dc2626",
+                    weight: 3,
+                    fillColor: "#dc2626",
+                    fillOpacity: boundary ? 0 : 0.5,
+                    dashArray: estimated ? "3 4" : undefined,
+                  }
                 }
                 return {
                   color: ld.layer.color,
-                  weight: boundary ? 3 : 1.5,
+                  weight: boundary ? 3 : estimated ? 2 : 1.5,
                   fillColor: ld.layer.color,
-                  fillOpacity: boundary ? 0 : dimmed ? 0.05 : 0.35,
-                  opacity: dimmed ? 0.3 : 1,
-                  dashArray: boundary ? "6 4" : undefined,
+                  fillOpacity: boundary ? 0 : dimmed ? 0.05 : estimated ? 0.12 : 0.35,
+                  opacity: dimmed ? 0.3 : estimated ? 0.7 : 1,
+                  dashArray: boundary ? "6 4" : estimated ? "3 4" : undefined,
                 }
               }}
               onEachFeature={(feature: any, lyr) => {
                 const uid = feature?.properties?.__uid as string
                 const idx = Number(uid?.split(":")[1])
                 const info = ld.features[idx]
-                lyr.bindTooltip(info?.name ?? ld.layer.name, { sticky: true })
+                const caveat = estimated ? " ⚠️ Vị trí ước tính, chưa kiểm chứng — xem chi tiết khi chọn đối tượng" : ""
+                lyr.bindTooltip((info?.name ?? ld.layer.name) + caveat, { sticky: true })
                 lyr.on("click", () => onSelect(uid))
               }}
             />

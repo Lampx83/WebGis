@@ -1,0 +1,111 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Khu bến Lạch Huyện (ước tính)",
+        "nguon": "QD 756/QD-BXD (05/6/2025) - Ban ve quy hoach tong the, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD (khong co luoi toa do goc): neo 1 diem moc thuc dia xac thuc qua OpenStreetMap, gia dinh huong Bac len tren, hieu chinh ty le theo dien tich vung dat cong bo trong bang chi tieu quy hoach cua ban ve.",
+        "do_chinh_xac": "THAP - chi mang tinh minh hoa vi tri va hinh dang tuong doi. Sai so uoc tinh co the toi hang tram met, KHONG dung de do dac hay lam can cu phap ly.",
+        "diem_neo": "Cầu Tân Vũ - Lạch Huyện (OpenStreetMap way 1084154665), khu vực bến cảng gần điểm cầu đổ bộ đảo Cát Hải",
+        "dien_tich_cong_bo_ha": 512,
+        "trang_thai": "chua_kiem_chung"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              106.858,
+              20.82
+            ],
+            [
+              106.86356963206482,
+              20.817603346787518
+            ],
+            [
+              106.8723219110238,
+              20.795134722920498
+            ],
+            [
+              106.86913926412963,
+              20.79453555961738
+            ],
+            [
+              106.84208676552912,
+              20.808016733937592
+            ],
+            [
+              106.84208676552912,
+              20.81805271926486
+            ],
+            [
+              106.858,
+              20.82
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Khu bến Đình Vũ (ước tính)",
+        "nguon": "QD 756/QD-BXD (05/6/2025) - Ban ve quy hoach tong the, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD (khong co luoi toa do goc): neo 1 diem moc thuc dia xac thuc qua OpenStreetMap, gia dinh huong Bac len tren, hieu chinh ty le theo dien tich vung dat cong bo trong bang chi tieu quy hoach cua ban ve.",
+        "do_chinh_xac": "THAP - chi mang tinh minh hoa vi tri va hinh dang tuong doi. Sai so uoc tinh co the toi hang tram met, KHONG dung de do dac hay lam can cu phap ly.",
+        "diem_neo": "Cầu Bạch Đằng, đoạn vượt Sông Cấm (OpenStreetMap way 1008852110)",
+        "dien_tich_cong_bo_ha": 528,
+        "trang_thai": "chua_kiem_chung"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              106.74624196600092,
+              20.83508426692005
+            ],
+            [
+              106.75901790341922,
+              20.830011744919013
+            ],
+            [
+              106.77499267190584,
+              20.822877370449927
+            ],
+            [
+              106.80973391599322,
+              20.81497664373608
+            ],
+            [
+              106.80494536281823,
+              20.810469762677606
+            ],
+            [
+              106.7869737482708,
+              20.80859037502974
+            ],
+            [
+              106.77698951796665,
+              20.810469762677606
+            ],
+            [
+              106.76900213372335,
+              20.81760413714669
+            ],
+            [
+              106.75502421129757,
+              20.828132357271144
+            ],
+            [
+              106.74624196600092,
+              20.83508426692005
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
