@@ -19,6 +19,19 @@ export function getDb() {
       ssl: needsSsl ? "require" : false,
       max: Number(process.env.DATABASE_POOL_MAX ?? 10),
       idle_timeout: 30,
+      types: {
+        // postgres.js returns NUMERIC/DECIMAL as strings by default (to avoid
+        // float precision loss). Every DECIMAL column in this app (scores,
+        // coordinates, thresholds, readings) is declared `number` in the
+        // TypeScript interfaces below, so parse it back to a JS number here
+        // instead of at every call site.
+        numeric: {
+          to: 1700,
+          from: [1700],
+          serialize: (v: unknown) => String(v),
+          parse: (v: string) => Number.parseFloat(v),
+        },
+      },
     })
   }
   return globalForDb.__sql
