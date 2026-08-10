@@ -1,0 +1,362 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HP1",
+        "loai": "moc_ranh_gioi",
+        "nhom": "phía biển (HP1–HP14)",
+        "ghi_chu": "",
+        "nguon": "Thông tư 23/2019/TT-BGTVT ngày 21/6/2019 (trích dẫn trong Thuyết minh QHVDVN Hải Phòng, mục III.1.2)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.81305555555555,
+          20.81972222222222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HP2",
+        "loai": "moc_ranh_gioi",
+        "nhom": "phía biển (HP1–HP14)",
+        "ghi_chu": "",
+        "nguon": "Thông tư 23/2019/TT-BGTVT ngày 21/6/2019 (trích dẫn trong Thuyết minh QHVDVN Hải Phòng, mục III.1.2)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.81305555555555,
+          20.55
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HP3",
+        "loai": "moc_ranh_gioi",
+        "nhom": "phía biển (HP1–HP14)",
+        "ghi_chu": "",
+        "nguon": "Thông tư 23/2019/TT-BGTVT ngày 21/6/2019 (trích dẫn trong Thuyết minh QHVDVN Hải Phòng, mục III.1.2)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.12027777777777,
+          20.66638888888889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HP4",
+        "loai": "moc_ranh_gioi",
+        "nhom": "phía biển (HP1–HP14)",
+        "ghi_chu": "",
+        "nguon": "Thông tư 23/2019/TT-BGTVT ngày 21/6/2019 (trích dẫn trong Thuyết minh QHVDVN Hải Phòng, mục III.1.2)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.12027777777777,
+          20.772499999999997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HP5",
+        "loai": "moc_ranh_gioi",
+        "nhom": "phía biển (HP1–HP14)",
+        "ghi_chu": "mép phía Tây đảo Hang Trai",
+        "nguon": "Thông tư 23/2019/TT-BGTVT ngày 21/6/2019 (trích dẫn trong Thuyết minh QHVDVN Hải Phòng, mục III.1.2)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.11611111111111,
+          20.7825
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HP6",
+        "loai": "moc_ranh_gioi",
+        "nhom": "phía biển (HP1–HP14)",
+        "ghi_chu": "mép phía Tây Nam đảo Hòn Rõ",
+        "nguon": "Thông tư 23/2019/TT-BGTVT ngày 21/6/2019 (trích dẫn trong Thuyết minh QHVDVN Hải Phòng, mục III.1.2)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.10499999999999,
+          20.7825
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HP7",
+        "loai": "moc_ranh_gioi",
+        "nhom": "phía biển (HP1–HP14)",
+        "ghi_chu": "mép phía Nam hòn Trà Ngu",
+        "nguon": "Thông tư 23/2019/TT-BGTVT ngày 21/6/2019 (trích dẫn trong Thuyết minh QHVDVN Hải Phòng, mục III.1.2)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.10499999999999,
+          20.76638888888889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HP8",
+        "loai": "moc_ranh_gioi",
+        "nhom": "phía biển (HP1–HP14)",
+        "ghi_chu": "Cồn Bè",
+        "nguon": "Thông tư 23/2019/TT-BGTVT ngày 21/6/2019 (trích dẫn trong Thuyết minh QHVDVN Hải Phòng, mục III.1.2)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.09055555555555,
+          20.711111111111112
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HP9",
+        "loai": "moc_ranh_gioi",
+        "nhom": "phía biển (HP1–HP14)",
+        "ghi_chu": "",
+        "nguon": "Thông tư 23/2019/TT-BGTVT ngày 21/6/2019 (trích dẫn trong Thuyết minh QHVDVN Hải Phòng, mục III.1.2)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.07027777777778,
+          20.695555555555554
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HP10",
+        "loai": "moc_ranh_gioi",
+        "nhom": "phía biển (HP1–HP14)",
+        "ghi_chu": "",
+        "nguon": "Thông tư 23/2019/TT-BGTVT ngày 21/6/2019 (trích dẫn trong Thuyết minh QHVDVN Hải Phòng, mục III.1.2)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.06333333333333,
+          20.70777777777778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HP11",
+        "loai": "moc_ranh_gioi",
+        "nhom": "phía biển (HP1–HP14)",
+        "ghi_chu": "phía Đông Hòn Cát Đuôi Rồng",
+        "nguon": "Thông tư 23/2019/TT-BGTVT ngày 21/6/2019 (trích dẫn trong Thuyết minh QHVDVN Hải Phòng, mục III.1.2)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.04472222222222,
+          20.70638888888889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HP12",
+        "loai": "moc_ranh_gioi",
+        "nhom": "phía biển (HP1–HP14)",
+        "ghi_chu": "mép Đông Hòn Gà",
+        "nguon": "Thông tư 23/2019/TT-BGTVT ngày 21/6/2019 (trích dẫn trong Thuyết minh QHVDVN Hải Phòng, mục III.1.2)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.04722222222222,
+          20.691388888888888
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HP13",
+        "loai": "moc_ranh_gioi",
+        "nhom": "phía biển (HP1–HP14)",
+        "ghi_chu": "mép Tây Nam Hòn Các Ông",
+        "nguon": "Thông tư 23/2019/TT-BGTVT ngày 21/6/2019 (trích dẫn trong Thuyết minh QHVDVN Hải Phòng, mục III.1.2)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.02166666666666,
+          20.70638888888889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HP14",
+        "loai": "moc_ranh_gioi",
+        "nhom": "phía biển (HP1–HP14)",
+        "ghi_chu": "mép Tây bãi Phù Long — điểm nối giữa ranh giới phía biển và phía đất liền",
+        "nguon": "Thông tư 23/2019/TT-BGTVT ngày 21/6/2019 (trích dẫn trong Thuyết minh QHVDVN Hải Phòng, mục III.1.2)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.92166666666667,
+          20.79388888888889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HP15",
+        "loai": "moc_ranh_gioi",
+        "nhom": "phía đất liền (HP14–HP21) — nối theo bờ sông thật, không phải đường thẳng",
+        "ghi_chu": "",
+        "nguon": "Thông tư 23/2019/TT-BGTVT ngày 21/6/2019 (trích dẫn trong Thuyết minh QHVDVN Hải Phòng, mục III.1.2)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.90666666666667,
+          20.8325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HP16",
+        "loai": "moc_ranh_gioi",
+        "nhom": "phía đất liền (HP14–HP21) — nối theo bờ sông thật, không phải đường thẳng",
+        "ghi_chu": "mép bờ phải kênh Cái Tráp phía Lạch Huyện",
+        "nguon": "Thông tư 23/2019/TT-BGTVT ngày 21/6/2019 (trích dẫn trong Thuyết minh QHVDVN Hải Phòng, mục III.1.2)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.87416666666665,
+          20.835555555555555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HP17",
+        "loai": "moc_ranh_gioi",
+        "nhom": "phía đất liền (HP14–HP21) — nối theo bờ sông thật, không phải đường thẳng",
+        "ghi_chu": "điểm cuối bờ phải kênh Cái Tráp, tiếp giáp sông Bạch Đằng",
+        "nguon": "Thông tư 23/2019/TT-BGTVT ngày 21/6/2019 (trích dẫn trong Thuyết minh QHVDVN Hải Phòng, mục III.1.2)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.83972222222222,
+          20.81861111111111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HP18",
+        "loai": "moc_ranh_gioi",
+        "nhom": "phía đất liền (HP14–HP21) — nối theo bờ sông thật, không phải đường thẳng",
+        "ghi_chu": "",
+        "nguon": "Thông tư 23/2019/TT-BGTVT ngày 21/6/2019 (trích dẫn trong Thuyết minh QHVDVN Hải Phòng, mục III.1.2)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.77333333333333,
+          20.945
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HP19",
+        "loai": "moc_ranh_gioi",
+        "nhom": "phía đất liền (HP14–HP21) — nối theo bờ sông thật, không phải đường thẳng",
+        "ghi_chu": "",
+        "nguon": "Thông tư 23/2019/TT-BGTVT ngày 21/6/2019 (trích dẫn trong Thuyết minh QHVDVN Hải Phòng, mục III.1.2)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.76583333333333,
+          20.945
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HP20",
+        "loai": "moc_ranh_gioi",
+        "nhom": "phía đất liền (HP14–HP21) — nối theo bờ sông thật, không phải đường thẳng",
+        "ghi_chu": "",
+        "nguon": "Thông tư 23/2019/TT-BGTVT ngày 21/6/2019 (trích dẫn trong Thuyết minh QHVDVN Hải Phòng, mục III.1.2)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.74444444444444,
+          20.95111111111111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HP21",
+        "loai": "moc_ranh_gioi",
+        "nhom": "phía đất liền (HP14–HP21) — nối theo bờ sông thật, không phải đường thẳng",
+        "ghi_chu": "",
+        "nguon": "Thông tư 23/2019/TT-BGTVT ngày 21/6/2019 (trích dẫn trong Thuyết minh QHVDVN Hải Phòng, mục III.1.2)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.74444444444444,
+          20.947222222222223
+        ]
+      }
+    }
+  ]
+}

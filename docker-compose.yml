@@ -26,6 +26,8 @@ services:
     environment:
       NODE_ENV: production
       DATABASE_URL: postgres://${POSTGRES_USER:-webgis}:${POSTGRES_PASSWORD:-webgis}@db:5432/${POSTGRES_DB:-webgis}
+      AUTH_SECRET: ${AUTH_SECRET:-change-me-please-set-a-long-random-secret}
+      ZALO_ACCESS_TOKEN: ${ZALO_ACCESS_TOKEN:-}
     depends_on:
       db:
         condition: service_healthy

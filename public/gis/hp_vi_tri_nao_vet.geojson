@@ -1,0 +1,113 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vị trí đổ chất nạo vét ngoài biển D1",
+        "loai": "vi_tri_do_nao_vet",
+        "nguon": "QĐ 756/QĐ-BXD ngày 05/6/2025 — Phụ lục quy hoạch vị trí đổ chất nạo vét",
+        "ghi_chu": "Thuộc nhóm 'khu vực ngoài biển', tổng quy mô 2.172ha cho cả 3 vị trí D1/D3/D4 (không có số liệu riêng từng vị trí)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              106.98999989140086,
+              20.623611353042083
+            ],
+            [
+              107.00333341853268,
+              20.608889126230675
+            ],
+            [
+              106.98583286289212,
+              20.59749959228938
+            ],
+            [
+              106.97444456085388,
+              20.612777557233425
+            ],
+            [
+              106.98999989140086,
+              20.623611353042083
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vị trí đổ chất nạo vét ngoài biển D3",
+        "loai": "vi_tri_do_nao_vet",
+        "nguon": "QĐ 756/QĐ-BXD ngày 05/6/2025 — Phụ lục quy hoạch vị trí đổ chất nạo vét",
+        "ghi_chu": "Thuộc nhóm 'khu vực ngoài biển', tổng quy mô 2.172ha cho cả 3 vị trí D1/D3/D4 (không có số liệu riêng từng vị trí)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              106.86138854806445,
+              20.56305564088012
+            ],
+            [
+              106.87749981120291,
+              20.536110737682034
+            ],
+            [
+              106.84999953677767,
+              20.521666986380687
+            ],
+            [
+              106.8349999081806,
+              20.548333387305917
+            ],
+            [
+              106.86138854806445,
+              20.56305564088012
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vị trí đổ chất nạo vét ngoài biển D4",
+        "loai": "vi_tri_do_nao_vet",
+        "nguon": "QĐ 756/QĐ-BXD ngày 05/6/2025 — Phụ lục quy hoạch vị trí đổ chất nạo vét",
+        "ghi_chu": "Thuộc nhóm 'khu vực ngoài biển', tổng quy mô 2.172ha cho cả 3 vị trí D1/D3/D4 (không có số liệu riêng từng vị trí)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              106.9986109649837,
+              20.57472266863095
+            ],
+            [
+              107.00500016501286,
+              20.552777982423407
+            ],
+            [
+              106.98166655842184,
+              20.546389220641892
+            ],
+            [
+              106.97555584180948,
+              20.56805575293601
+            ],
+            [
+              106.9986109649837,
+              20.57472266863095
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

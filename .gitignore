@@ -31,3 +31,14 @@ next-env.d.ts
 
 # Office temp/lock files
 ~$*
+
+# Python venv for GIS data conversion
+.venv-gis/
+
+# Local Claude Code tooling config (not app code)
+.claude/
+
+# Source planning dossiers / internal working files (not app data —
+# digitized layers live in public/gis/*.geojson, which IS tracked)
+/data/
+KeHoach_PhanCong_ND8-9-10.xlsx

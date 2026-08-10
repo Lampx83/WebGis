@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import dynamic from "next/dynamic"
 import "leaflet/dist/leaflet.css"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { AlertCircle, CheckCircle, AlertTriangle, Wifi, Menu, X } from "lucide-react"
+import { AlertCircle, CheckCircle, AlertTriangle, Wifi, Menu, X, Maximize2, Minimize2, Expand, Shrink, Map as MapIcon } from "lucide-react"
 import { WarningPanel } from "./warning-panel"
 import { DeviceStatus } from "./device-status"
 import { MonitoringModules } from "./monitoring-modules"
@@ -61,6 +61,18 @@ export function Dashboard() {
   const [detections, setDetections] = useState<any[]>([])
   const { t } = useTranslation()
   const [sidebarOpen, setSidebarOpen] = useState(false)
+  const [mapLarge, setMapLarge] = useState(false)
+  const [mapFullscreen, setMapFullscreen] = useState(false)
+
+  // Allow ESC to leave fullscreen map.
+  useEffect(() => {
+    if (!mapFullscreen) return
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setMapFullscreen(false)
+    }
+    window.addEventListener("keydown", onKey)
+    return () => window.removeEventListener("keydown", onKey)
+  }, [mapFullscreen])
 
   useEffect(() => {
     const fetchData = async () => {
@@ -120,6 +132,28 @@ export function Dashboard() {
 
   return (
     <div className="flex h-screen bg-background">
+      {mapFullscreen && (
+        <div className="fixed inset-0 z-[1200] bg-background flex flex-col">
+          <div className="flex items-center justify-between px-4 py-3 border-b border-border bg-card">
+            <h2 className="text-base md:text-lg font-bold text-card-foreground">
+              {t("dashboard", "deviceLocationMap")}
+            </h2>
+            <button
+              onClick={() => setMapFullscreen(false)}
+              title="Thoát toàn màn hình (ESC)"
+              aria-label="Thoát toàn màn hình"
+              className="flex items-center gap-2 px-3 py-1.5 rounded-md hover:bg-muted transition-colors text-sm text-muted-foreground hover:text-foreground"
+            >
+              <Minimize2 className="h-4 w-4" />
+              <span className="hidden sm:inline">Thoát (ESC)</span>
+            </button>
+          </div>
+          <div className="flex-1">
+            <MapComponent devices={devices} />
+          </div>
+        </div>
+      )}
+
       {sidebarOpen && (
         <div className="fixed inset-0 bg-black/50 z-30 md:hidden" onClick={() => setSidebarOpen(false)} />
       )}
@@ -193,6 +227,11 @@ export function Dashboard() {
             </Card>
           )}
 
+          <Link href="/spatial">
+            <button className="w-full px-4 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-700 transition-colors font-semibold mb-3">
+              🗺️ Không gian GIS
+            </button>
+          </Link>
           <Link href="/reports">
             <button className="w-full px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors my-0 mb-[17px]">
               📊 {t("dashboard", "statisticalReports")}
@@ -239,13 +278,40 @@ export function Dashboard() {
           {selectedModule === "overview" ? (
             <div className="p-4 md:p-8 space-y-4 md:space-y-8">
               {/* Map Section */}
-              <Card className="h-60 md:h-96">
-                <CardHeader className="pb-2 md:pb-3">
+              <Card className={mapLarge ? "h-[82vh]" : "h-72 md:h-[28rem]"}>
+                <CardHeader className="pb-2 md:pb-3 flex flex-row items-center justify-between space-y-0">
                   <CardTitle className="text-base md:text-lg">{t("dashboard", "deviceLocationMap")}</CardTitle>
+                  <div className="flex items-center gap-1">
+                    <Link
+                      href="/spatial"
+                      title="Mở trang Không gian GIS"
+                      aria-label="Mở trang Không gian GIS"
+                      className="flex items-center gap-1.5 px-2 py-2 rounded-md hover:bg-muted transition-colors text-muted-foreground hover:text-foreground"
+                    >
+                      <MapIcon className="h-4 w-4" />
+                      <span className="hidden md:inline text-sm">Trang GIS</span>
+                    </Link>
+                    <button
+                      onClick={() => setMapLarge((v) => !v)}
+                      title={mapLarge ? "Thu nhỏ" : "Phóng to"}
+                      aria-label={mapLarge ? "Thu nhỏ bản đồ" : "Phóng to bản đồ"}
+                      className="p-2 rounded-md hover:bg-muted transition-colors text-muted-foreground hover:text-foreground"
+                    >
+                      {mapLarge ? <Shrink className="h-4 w-4" /> : <Expand className="h-4 w-4" />}
+                    </button>
+                    <button
+                      onClick={() => setMapFullscreen(true)}
+                      title="Toàn màn hình"
+                      aria-label="Bản đồ toàn màn hình"
+                      className="p-2 rounded-md hover:bg-muted transition-colors text-muted-foreground hover:text-foreground"
+                    >
+                      <Maximize2 className="h-4 w-4" />
+                    </button>
+                  </div>
                 </CardHeader>
-                <CardContent className="h-full p-0">
-                  <div className="h-48 md:h-80 rounded-lg overflow-hidden">
-                    <MapComponent devices={devices} />
+                <CardContent className="h-[calc(100%-3.5rem)] p-0">
+                  <div className="h-full rounded-lg overflow-hidden">
+                    {!mapFullscreen && <MapComponent devices={devices} />}
                   </div>
                 </CardContent>
               </Card>

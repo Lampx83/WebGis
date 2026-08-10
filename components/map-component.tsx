@@ -1,8 +1,8 @@
 "use client"
 
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import L from "leaflet"
-import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet"
+import { MapContainer, TileLayer, Marker, Popup, GeoJSON, LayersControl, useMap } from "react-leaflet"
 
 interface Device {
   id: number
@@ -17,6 +17,28 @@ interface Device {
   has_alert?: boolean
   alert_type?: string
   alert_severity?: "warning" | "alarm" | null
+}
+
+interface GisLayerMeta {
+  name: string
+  slug: string
+  file: string
+  geometry: string
+  count: number
+  color: string
+}
+
+// Recalculate the Leaflet viewport whenever its container changes size
+// (resize / enlarge / fullscreen toggles), otherwise tiles render greyed out.
+function InvalidateOnResize() {
+  const map = useMap()
+  useEffect(() => {
+    const container = map.getContainer()
+    const ro = new ResizeObserver(() => map.invalidateSize())
+    ro.observe(container)
+    return () => ro.disconnect()
+  }, [map])
+  return null
 }
 
 function MapContent({ devices }: { devices: Device[] }) {
@@ -74,6 +96,110 @@ function MapContent({ devices }: { devices: Device[] }) {
   )
 }
 
+// Loads GIS overlay layers described by /gis/manifest.json (produced by
+// scripts/gdb_to_geojson.sh) and renders each as a toggleable GeoJSON overlay.
+// On first load it fits the map to the combined extent of the GIS data so the
+// (temporary) sample dataset is always visible regardless of the default center.
+function GisOverlays() {
+  const map = useMap()
+  const [layers, setLayers] = useState<Array<GisLayerMeta & { data: any }>>([])
+  const [fitted, setFitted] = useState(false)
+
+  useEffect(() => {
+    let cancelled = false
+    ;(async () => {
+      try {
+        const res = await fetch("/gis/manifest.json", { cache: "no-store" })
+        if (!res.ok) return
+        const meta: GisLayerMeta[] = await res.json()
+        const loaded = await Promise.all(
+          meta.map(async (m) => {
+            try {
+              const r = await fetch(m.file, { cache: "no-store" })
+              return r.ok ? { ...m, data: await r.json() } : null
+            } catch {
+              return null
+            }
+          }),
+        )
+        if (!cancelled) setLayers(loaded.filter(Boolean) as Array<GisLayerMeta & { data: any }>)
+      } catch {
+        /* no GIS data — map still works with device markers only */
+      }
+    })()
+    return () => {
+      cancelled = true
+    }
+  }, [])
+
+  useEffect(() => {
+    if (fitted || layers.length === 0) return
+    try {
+      // Prefer fitting to the detailed park layers; a city/ward boundary would
+      // otherwise zoom the map out and hide the interesting detail.
+      const focus = layers.filter((l) => !/city|ward/i.test(l.name))
+      const source = focus.length > 0 ? focus : layers
+      const group = L.featureGroup(source.map((l) => L.geoJSON(l.data)))
+      const bounds = group.getBounds()
+      if (bounds.isValid()) {
+        map.fitBounds(bounds, { padding: [24, 24] })
+        setFitted(true)
+      }
+    } catch {
+      /* ignore invalid geometries */
+    }
+  }, [layers, fitted, map])
+
+  if (layers.length === 0) return null
+
+  return (
+    <LayersControl position="topright" collapsed={false}>
+      {layers.map((l) => {
+        const isPoint = /point/i.test(l.geometry)
+        // Administrative boundaries render as outlines only; area layers get fill.
+        const isBoundary = /boundary/i.test(l.name)
+        return (
+          <LayersControl.Overlay key={l.slug} name={`${l.name} (${l.count})`} checked>
+            <GeoJSON
+              data={l.data}
+              style={() => ({
+                color: l.color,
+                weight: isBoundary ? 3 : 1.5,
+                fillColor: l.color,
+                fillOpacity: isBoundary ? 0 : 0.35,
+                dashArray: isBoundary ? "6 4" : undefined,
+              })}
+              pointToLayer={
+                isPoint
+                  ? (_f, latlng) =>
+                      L.circleMarker(latlng, {
+                        radius: 5,
+                        color: l.color,
+                        fillColor: l.color,
+                        fillOpacity: 0.8,
+                        weight: 1,
+                      })
+                  : undefined
+              }
+              onEachFeature={(feature, layer) => {
+                const props = (feature?.properties as Record<string, unknown>) || {}
+                const rows = Object.entries(props)
+                  .filter(([, v]) => v !== null && v !== "")
+                  .slice(0, 12)
+                  .map(([k, v]) => `<div><b>${k}:</b> ${String(v)}</div>`)
+                  .join("")
+                layer.bindPopup(
+                  `<div class="text-xs"><div class="font-semibold mb-1">${l.name}</div>${rows || "<i>no attributes</i>"}</div>`,
+                )
+              }}
+            />
+          </LayersControl.Overlay>
+        )
+      })}
+    </LayersControl>
+  )
+}
+
 function getIconUrl(type: string, status: string, hasAlert?: boolean, alertSeverity?: string | null): string {
   const baseUrl = "https://cdn-icons-png.flaticon.com"
 
@@ -110,6 +236,8 @@ export function MapComponent({ devices }: { devices: Device[] }) {
       className="z-10"
     >
       <MapContent devices={devices} />
+      <GisOverlays />
+      <InvalidateOnResize />
     </MapContainer>
   )
 }

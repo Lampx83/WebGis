@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Khu neo đậu tàu (cảng biển Hải Phòng)",
+    "slug": "hp_khu_neo_dau_tau",
+    "file": "/gis/hp_khu_neo_dau_tau.geojson",
+    "geometry": "Polygon",
+    "count": 6,
+    "color": "#0284c7"
+  },
+  {
+    "name": "Vùng đón trả hoa tiêu Lạch Huyện",
+    "slug": "hp_vung_hoa_tieu",
+    "file": "/gis/hp_vung_hoa_tieu.geojson",
+    "geometry": "Polygon",
+    "count": 2,
+    "color": "#f59e0b"
+  },
+  {
+    "name": "Vị trí đổ chất nạo vét ngoài biển",
+    "slug": "hp_vi_tri_nao_vet",
+    "file": "/gis/hp_vi_tri_nao_vet.geojson",
+    "geometry": "Polygon",
+    "count": 3,
+    "color": "#dc2626"
+  },
+  {
+    "name": "Ranh giới vùng nước cảng biển — phía biển",
+    "slug": "hp_ranh_gioi_vung_nuoc",
+    "file": "/gis/hp_ranh_gioi_vung_nuoc.geojson",
+    "geometry": "LineString",
+    "count": 1,
+    "color": "#7c3aed"
+  },
+  {
+    "name": "Mốc ranh giới vùng nước cảng biển (HP1-HP21)",
+    "slug": "hp_moc_ranh_gioi",
+    "file": "/gis/hp_moc_ranh_gioi.geojson",
+    "geometry": "Point",
+    "count": 21,
+    "color": "#6b7280"
+  }
+]
