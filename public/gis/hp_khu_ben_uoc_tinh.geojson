@@ -460,7 +460,7 @@
       "properties": {
         "name": "Bến cảng huyện đảo Bạch Long Vĩ (ước tính)",
         "nguon": "24 QH Bach Long Vy.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Uoc luong tu georeference ban ve CAD: neo tai ben pha Bach Long Vy (toa do chinh xac cao qua OpenStreetMap), ty le doc truc tiep tu thanh ghi chu '100m' tren ban ve (khong co bang dien tich cong bo rieng cho ban ve nay).",
+        "phuong_phap": "Uoc luong THAN TRONG: hinh chu nhat nho (220m x 130m) dat tai diem neo chinh xac (ben pha Bach Long Vy, xac thuc qua OpenStreetMap), huong theo de chan song thay tren ban ve CAD. Lan thu edigitize dau tien (theo tung diem tren ban ve) bi loi ty le khien da giac lan vao khu dan cu/cong vien tren dao - da phat hien va sua bang cach dung hinh don gian, bao thu ve kich thuoc thay vi co gang trace chinh xac hinh dang that.",
         "do_chinh_xac": "THAP - chi mang tinh minh hoa vi tri va hinh dang tuong doi. Sai so uoc tinh co the toi hang tram met, KHONG dung de do dac hay lam can cu phap ly.",
         "diem_neo": "Bến phà Bạch Long Vĩ (OpenStreetMap node 7533901788)",
         "dien_tich_cong_bo_ha": null,
@@ -471,32 +471,24 @@
         "coordinates": [
           [
             [
-              107.72573323366518,
-              20.126990526506244
+              107.72651027070513,
+              20.124770451319005
             ],
             [
-              107.73232312514021,
-              20.126842163922564
+              107.72812262979913,
+              20.12604974636271
             ],
             [
-              107.73326453820808,
-              20.12387491224896
+              107.72892208838887,
+              20.125148843724702
             ],
             [
-              107.73263692949617,
-              20.12328146191424
+              107.72730972929487,
+              20.123869548680997
             ],
             [
-              107.72792986415685,
-              20.12313309933056
-            ],
-            [
-              107.72573323366518,
-              20.123578187081602
-            ],
-            [
-              107.72573323366518,
-              20.126990526506244
+              107.72651027070513,
+              20.124770451319005
             ]
           ]
         ]
