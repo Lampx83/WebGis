@@ -46,5 +46,13 @@
     "geometry": "Polygon",
     "count": 7,
     "color": "#16a34a"
+  },
+  {
+    "name": "Bến/cảng theo tên (từng bến trong các khu quy hoạch)",
+    "slug": "hp_ben_theo_ten",
+    "file": "/gis/hp_ben_theo_ten.geojson",
+    "geometry": "Point",
+    "count": 78,
+    "color": "#0891b2"
   }
 ]

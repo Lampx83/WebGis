@@ -1,0 +1,1487 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Cải Trạp 2",
+        "khu_vuc": "Khu bến Lạch Huyện",
+        "phan_loai": "Bến cảng quy hoạch đến năm 2030",
+        "nguon": "05. QH tong the Lach Huyen.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Lach Huyen).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi trong khu ben, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.85147716519039,
+          20.822682603898897
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Cải Trạp 1",
+        "khu_vuc": "Khu bến Lạch Huyện",
+        "phan_loai": "Bến cảng quy hoạch đến năm 2030",
+        "nguon": "05. QH tong the Lach Huyen.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Lach Huyen).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi trong khu ben, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.85361829088845,
+          20.821349315758628
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Sun Group",
+        "khu_vuc": "Khu bến Lạch Huyện",
+        "phan_loai": "Bến cảng quy hoạch đến năm 2030",
+        "nguon": "05. QH tong the Lach Huyen.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Lach Huyen).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi trong khu ben, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.85855935019165,
+          20.81930287349682
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Deep C3",
+        "khu_vuc": "Khu bến Lạch Huyện",
+        "phan_loai": "Bến cảng hiện hữu",
+        "nguon": "05. QH tong the Lach Huyen.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Lach Huyen).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi trong khu ben, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8588887541452,
+          20.81719441783314
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Container Quốc tế Tân Cảng Hải Phòng",
+        "khu_vuc": "Khu bến Lạch Huyện",
+        "phan_loai": "Bến cảng hiện hữu",
+        "nguon": "05. QH tong the Lach Huyen.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Lach Huyen).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi trong khu ben, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.86037107193617,
+          20.815023948767585
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Container Cảng Hải Phòng",
+        "khu_vuc": "Khu bến Lạch Huyện",
+        "phan_loai": "Bến cảng hiện hữu",
+        "nguon": "05. QH tong the Lach Huyen.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Lach Huyen).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi trong khu ben, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.86152398577359,
+          20.81409374773949
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Container HATECO",
+        "khu_vuc": "Khu bến Lạch Huyện",
+        "phan_loai": "Bến cảng quy hoạch đến năm 2030",
+        "nguon": "05. QH tong the Lach Huyen.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Lach Huyen).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi trong khu ben, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.86234749565745,
+          20.81161321166457
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Container Tân Cảng Sài Gòn",
+        "khu_vuc": "Khu bến Lạch Huyện",
+        "phan_loai": "Bến cảng quy hoạch đến năm 2030",
+        "nguon": "05. QH tong the Lach Huyen.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Lach Huyen).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi trong khu ben, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8651474292626,
+          20.810683010636478
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ga đường sắt Lạch Huyện",
+        "khu_vuc": "Khu bến Lạch Huyện",
+        "phan_loai": "Hạ tầng liên quan (ga đường sắt)",
+        "nguon": "05. QH tong the Lach Huyen.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Lach Huyen).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi trong khu ben, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.86465332333229,
+          20.80913267558965
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Container số 9-10",
+        "khu_vuc": "Khu bến Lạch Huyện",
+        "phan_loai": "Bến cảng quy hoạch đến năm 2030",
+        "nguon": "05. QH tong the Lach Huyen.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Lach Huyen).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi trong khu ben, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8702531905426,
+          20.807892407552192
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Container số 11-12",
+        "khu_vuc": "Khu bến Lạch Huyện",
+        "phan_loai": "Bến cảng quy hoạch tầm nhìn đến năm 2050",
+        "nguon": "05. QH tong the Lach Huyen.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Lach Huyen).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi trong khu ben, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.87222961426387,
+          20.806032005496004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Container số 13-14",
+        "khu_vuc": "Khu bến Lạch Huyện",
+        "phan_loai": "Bến cảng quy hoạch tầm nhìn đến năm 2050",
+        "nguon": "05. QH tong the Lach Huyen.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Lach Huyen).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi trong khu ben, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.87321782612452,
+          20.802931335402356
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Container số 15-16",
+        "khu_vuc": "Khu bến Lạch Huyện",
+        "phan_loai": "Bến cảng quy hoạch tầm nhìn đến năm 2050",
+        "nguon": "05. QH tong the Lach Huyen.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Lach Huyen).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi trong khu ben, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.87420603798516,
+          20.80014073231807
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Container số 17-18",
+        "khu_vuc": "Khu bến Lạch Huyện",
+        "phan_loai": "Bến cảng quy hoạch tầm nhìn đến năm 2050",
+        "nguon": "05. QH tong the Lach Huyen.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Lach Huyen).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi trong khu ben, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8751942498458,
+          20.797350129233788
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Container số 19-20",
+        "khu_vuc": "Khu bến Lạch Huyện",
+        "phan_loai": "Bến cảng quy hoạch tầm nhìn đến năm 2050",
+        "nguon": "05. QH tong the Lach Huyen.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Lach Huyen).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi trong khu ben, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.87618246170645,
+          20.794559526149502
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Lỏng khí số 21-22",
+        "khu_vuc": "Khu bến Lạch Huyện",
+        "phan_loai": "Bến cảng quy hoạch đến năm 2030",
+        "nguon": "05. QH tong the Lach Huyen.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Lach Huyen).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi trong khu ben, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.87667656763676,
+          20.793164224607363
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Khu logistics sau cầu cảng",
+        "khu_vuc": "Khu bến Lạch Huyện",
+        "phan_loai": "Bến cảng phát triển có điều kiện",
+        "nguon": "05. QH tong the Lach Huyen.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Lach Huyen).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi trong khu ben, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.8751942498458,
+          20.791148789046492
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cảng Xăng Dầu 19-9",
+        "khu_vuc": "Khu bến Đình Vũ",
+        "phan_loai": "Bến cảng hiện hữu",
+        "nguon": "09 QH tong the Dinh Vu-Model.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Dinh Vu).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi trong khu ben, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.769768883837,
+          20.833902807209377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cảng PTSC Đình Vũ",
+        "khu_vuc": "Khu bến Đình Vũ",
+        "phan_loai": "Bến cảng hiện hữu",
+        "nguon": "09 QH tong the Dinh Vu-Model.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Dinh Vu).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi trong khu ben, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.77217673122297,
+          20.830692338698288
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cảng Đình Vũ",
+        "khu_vuc": "Khu bến Đình Vũ",
+        "phan_loai": "Bến cảng hiện hữu",
+        "nguon": "09 QH tong the Dinh Vu-Model.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Dinh Vu).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi trong khu ben, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.77418327071128,
+          20.82918152998719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cảng Tân Vũ",
+        "khu_vuc": "Khu bến Đình Vũ",
+        "phan_loai": "Bến cảng hiện hữu",
+        "nguon": "09 QH tong the Dinh Vu-Model.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Dinh Vu).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi trong khu ben, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.77518654045542,
+          20.8274818701872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cảng VIMC Đình Vũ",
+        "khu_vuc": "Khu bến Đình Vũ",
+        "phan_loai": "Bến cảng hiện hữu",
+        "nguon": "09 QH tong the Dinh Vu-Model.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Dinh Vu).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi trong khu ben, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.77277869306945,
+          20.8229494440539
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ga đường sắt (QH)",
+        "khu_vuc": "Khu bến Đình Vũ",
+        "phan_loai": "Hạ tầng liên quan (ga đường sắt)",
+        "nguon": "09 QH tong the Dinh Vu-Model.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Dinh Vu).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi trong khu ben, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.76836430619518,
+          20.823515997320563
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cảng Nam Hải Đình Vũ",
+        "khu_vuc": "Khu bến Đình Vũ",
+        "phan_loai": "Bến cảng hiện hữu",
+        "nguon": "09 QH tong the Dinh Vu-Model.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Dinh Vu).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi trong khu ben, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.77077215358115,
+          20.818605869009485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cảng Container VIP Greenport",
+        "khu_vuc": "Khu bến Đình Vũ",
+        "phan_loai": "Bến cảng hiện hữu",
+        "nguon": "09 QH tong the Dinh Vu-Model.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Dinh Vu).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi trong khu ben, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.76836430619518,
+          20.816339655942837
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cảng chuyên dùng FGG",
+        "khu_vuc": "Khu bến Đình Vũ",
+        "phan_loai": "Bến cảng hiện hữu",
+        "nguon": "09 QH tong the Dinh Vu-Model.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Dinh Vu).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi trong khu ben, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.76996953778583,
+          20.81596195376506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cảng Euro Đình Vũ",
+        "khu_vuc": "Khu bến Đình Vũ",
+        "phan_loai": "Bến cảng hiện hữu",
+        "nguon": "09 QH tong the Dinh Vu-Model.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Dinh Vu).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi trong khu ben, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.78241008261332,
+          20.821627486431687
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cảng MPC Port",
+        "khu_vuc": "Khu bến Đình Vũ",
+        "phan_loai": "Bến cảng quy hoạch đến năm 2030",
+        "nguon": "09 QH tong the Dinh Vu-Model.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Dinh Vu).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi trong khu ben, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.78903166292474,
+          20.818605869009485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cảng Tổng hợp Đình Vũ",
+        "khu_vuc": "Khu bến Đình Vũ",
+        "phan_loai": "Bến cảng hiện hữu",
+        "nguon": "09 QH tong the Dinh Vu-Model.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Dinh Vu).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi trong khu ben, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.77940027338087,
+          20.81218493198731
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cảng Nhà máy DAP Hải Phòng",
+        "khu_vuc": "Khu bến Đình Vũ",
+        "phan_loai": "Bến cảng hiện hữu",
+        "nguon": "09 QH tong the Dinh Vu-Model.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Dinh Vu).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi trong khu ben, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.77518654045542,
+          20.808596761298446
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cảng Nam Đình Vũ",
+        "khu_vuc": "Khu bến Đình Vũ",
+        "phan_loai": "Bến cảng hiện hữu",
+        "nguon": "09 QH tong the Dinh Vu-Model.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Dinh Vu).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi trong khu ben, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.79846239851977,
+          20.81747276247616
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cảng Xăng dầu/LNG Nam Đình Vũ",
+        "khu_vuc": "Khu bến Đình Vũ",
+        "phan_loai": "Bến cảng quy hoạch đến năm 2030",
+        "nguon": "09 QH tong the Dinh Vu-Model.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Dinh Vu).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi trong khu ben, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.806488556473,
+          20.81067412327621
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ga đường sắt Nam Đình Vũ",
+        "khu_vuc": "Khu bến Đình Vũ",
+        "phan_loai": "Hạ tầng liên quan (ga đường sắt)",
+        "nguon": "09 QH tong the Dinh Vu-Model.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Dinh Vu).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi trong khu ben, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.74629237182381,
+          20.80236467536516
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Việt Nhật",
+        "khu_vuc": "Khu bến Sông Cấm",
+        "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "trong_bang_chi_tieu": "Khong (ben hien huu, chi mang tinh boi canh)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.70140831695534,
+          20.862448805874106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Vật Cách",
+        "khu_vuc": "Khu bến Sông Cấm",
+        "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "trong_bang_chi_tieu": "Khong (ben hien huu, chi mang tinh boi canh)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.69709500634659,
+          20.85715509768457
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Tiến Mạnh",
+        "khu_vuc": "Khu bến Sông Cấm",
+        "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "trong_bang_chi_tieu": "Khong (ben hien huu, chi mang tinh boi canh)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.69450701998133,
+          20.8558560281902
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Hóa dầu Mipec",
+        "khu_vuc": "Khu bến Sông Cấm",
+        "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "trong_bang_chi_tieu": "Khong (ben hien huu, chi mang tinh boi canh)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.70244351150143,
+          20.856505562937386
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Gas Thăng Long",
+        "khu_vuc": "Khu bến Sông Cấm",
+        "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "trong_bang_chi_tieu": "Khong (ben hien huu, chi mang tinh boi canh)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.70140831695534,
+          20.8558560281902
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Lilama Hải Phòng",
+        "khu_vuc": "Khu bến Sông Cấm",
+        "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "trong_bang_chi_tieu": "Khong (ben hien huu, chi mang tinh boi canh)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.70140831695534,
+          20.855206493443017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Tự Long",
+        "khu_vuc": "Khu bến Sông Cấm",
+        "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "trong_bang_chi_tieu": "Khong (ben hien huu, chi mang tinh boi canh)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.71020747059718,
+          20.856505562937386
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Dầu Thượng Lý",
+        "khu_vuc": "Khu bến Sông Cấm",
+        "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "trong_bang_chi_tieu": "Khong (ben hien huu, chi mang tinh boi canh)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.71176026241633,
+          20.8558560281902
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Nam Ninh",
+        "khu_vuc": "Khu bến Sông Cấm",
+        "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "trong_bang_chi_tieu": "Khong (ben hien huu, chi mang tinh boi canh)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.69295422816218,
+          20.852608354454286
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Quỳnh Cư",
+        "khu_vuc": "Khu bến Sông Cấm",
+        "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "trong_bang_chi_tieu": "Khong (ben hien huu, chi mang tinh boi canh)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.69398942270828,
+          20.85130928495992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Hùng Vương",
+        "khu_vuc": "Khu bến Sông Cấm",
+        "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "trong_bang_chi_tieu": "Khong (ben hien huu, chi mang tinh boi canh)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.69605981180048,
+          20.85065975021274
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Đóng tàu Bạch Đằng",
+        "khu_vuc": "Khu bến Sông Cấm",
+        "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "trong_bang_chi_tieu": "Khong (ben hien huu, chi mang tinh boi canh)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.70951734089978,
+          20.846957402153798
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Hoàng Diệu",
+        "khu_vuc": "Khu bến Sông Cấm",
+        "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "trong_bang_chi_tieu": "Khong (ben hien huu, chi mang tinh boi canh)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.72124954575558,
+          20.84604805350774
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Gas Đài Hải",
+        "khu_vuc": "Khu bến Sông Cấm",
+        "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "trong_bang_chi_tieu": "Khong (ben hien huu, chi mang tinh boi canh)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.72728818060783,
+          20.85221863360598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Cá Hạ Long",
+        "khu_vuc": "Khu bến Sông Cấm",
+        "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "trong_bang_chi_tieu": "Khong (ben hien huu, chi mang tinh boi canh)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.72487272666693,
+          20.851569098858796
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Cửa Cấm",
+        "khu_vuc": "Khu bến Sông Cấm",
+        "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "trong_bang_chi_tieu": "Co",
+        "so_cau_chieu_dai": "3/272÷3/272",
+        "co_tau_tan": 5000,
+        "dien_tich_vung_dat_ha": 4,
+        "dien_tich_vung_nuoc_ha": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.73591480182533,
+          20.851634052333512
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Thủy sản II",
+        "khu_vuc": "Khu bến Sông Cấm",
+        "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "trong_bang_chi_tieu": "Co",
+        "so_cau_chieu_dai": "1/73÷1/73",
+        "co_tau_tan": 3000,
+        "ghi_chu": "Tạm dừng hoạt động"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.73660493152273,
+          20.85098451758633
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Nam Hải",
+        "khu_vuc": "Khu bến Sông Cấm",
+        "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "trong_bang_chi_tieu": "Co",
+        "so_cau_chieu_dai": "1/144÷1/144",
+        "co_tau_tan": 10000,
+        "dien_tich_vung_dat_ha": 7,
+        "dien_tich_vung_nuoc_ha": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.73660493152273,
+          20.850334982839147
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Đoạn Xá",
+        "khu_vuc": "Khu bến Sông Cấm",
+        "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "trong_bang_chi_tieu": "Co",
+        "so_cau_chieu_dai": "1/210÷1/210",
+        "co_tau_tan": "10000 (giảm tải)",
+        "dien_tich_vung_dat_ha": 10,
+        "dien_tich_vung_nuoc_ha": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.73522467212794,
+          20.846632634780207
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Trasvina",
+        "khu_vuc": "Khu bến Sông Cấm",
+        "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "trong_bang_chi_tieu": "Co",
+        "so_cau_chieu_dai": "1/120÷1/120",
+        "co_tau_tan": "≥10000",
+        "dien_tich_vung_dat_ha": 4,
+        "dien_tich_vung_nuoc_ha": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.73591480182533,
+          20.84611300698246
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Hải Đăng",
+        "khu_vuc": "Khu bến Sông Cấm",
+        "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "trong_bang_chi_tieu": "Co",
+        "so_cau_chieu_dai": "1/87÷1/87",
+        "co_tau_tan": 3000,
+        "ghi_chu": "Tạm dừng hoạt động"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.73591480182533,
+          20.845560902447353
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Greenport",
+        "khu_vuc": "Khu bến Sông Cấm",
+        "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "trong_bang_chi_tieu": "Co",
+        "so_cau_chieu_dai": "2/304÷2/304",
+        "co_tau_tan": "≥10000",
+        "dien_tich_vung_dat_ha": 8,
+        "dien_tich_vung_nuoc_ha": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.73539720455229,
+          20.84500879791225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Chùa Vẽ",
+        "khu_vuc": "Khu bến Sông Cấm",
+        "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "trong_bang_chi_tieu": "Co",
+        "so_cau_chieu_dai": "5/848÷5/848",
+        "co_tau_tan": "≥10000",
+        "dien_tich_vung_dat_ha": 21,
+        "dien_tich_vung_nuoc_ha": 7
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.73522467212794,
+          20.844489170114503
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Total Gas",
+        "khu_vuc": "Khu bến Sông Cấm",
+        "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "trong_bang_chi_tieu": "Co",
+        "so_cau_chieu_dai": "1/90÷1/90",
+        "co_tau_tan": 3000,
+        "dien_tich_vung_dat_ha": 5,
+        "dien_tich_vung_nuoc_ha": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.73349934788443,
+          20.8437746818926
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Đồng Hải",
+        "khu_vuc": "Khu bến Sông Cấm",
+        "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "trong_bang_chi_tieu": "Co",
+        "so_cau_chieu_dai": "1/120÷1/120",
+        "co_tau_tan": 600,
+        "dien_tich_vung_dat_ha": 7,
+        "dien_tich_vung_nuoc_ha": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.73487960727924,
+          20.843190100620138
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng 128",
+        "khu_vuc": "Khu bến Sông Cấm",
+        "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "trong_bang_chi_tieu": "Co",
+        "so_cau_chieu_dai": "3/422÷3/422",
+        "co_tau_tan": "≥10000",
+        "dien_tich_vung_dat_ha": 16,
+        "dien_tich_vung_nuoc_ha": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.73591480182533,
+          20.84263799608503
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Dầu khí Hải Linh",
+        "khu_vuc": "Khu bến Sông Cấm",
+        "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "trong_bang_chi_tieu": "Co",
+        "so_cau_chieu_dai": "1/145÷1/145",
+        "co_tau_tan": 8000,
+        "dien_tich_vung_dat_ha": 6,
+        "dien_tich_vung_nuoc_ha": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.73660493152273,
+          20.84205341481257
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Xăng dầu K99",
+        "khu_vuc": "Khu bến Sông Cấm",
+        "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "trong_bang_chi_tieu": "Co",
+        "so_cau_chieu_dai": "1/185÷1/185",
+        "co_tau_tan": "≥10000",
+        "dien_tich_vung_dat_ha": 4,
+        "dien_tich_vung_nuoc_ha": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.73729506122014,
+          20.84156626375218
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Xăng dầu Petec",
+        "khu_vuc": "Khu bến Sông Cấm",
+        "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "trong_bang_chi_tieu": "Co",
+        "so_cau_chieu_dai": "1/104÷1/104",
+        "co_tau_tan": 5000,
+        "dien_tich_vung_dat_ha": 3,
+        "dien_tich_vung_nuoc_ha": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.73591480182533,
+          20.841079112691794
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Hải An",
+        "khu_vuc": "Khu bến Sông Cấm",
+        "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "trong_bang_chi_tieu": "Co",
+        "so_cau_chieu_dai": "1/150÷1/150",
+        "co_tau_tan": "≥10000",
+        "dien_tich_vung_dat_ha": 15,
+        "dien_tich_vung_nuoc_ha": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.73591480182533,
+          20.840591961631407
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Trang trí của Cty 189",
+        "khu_vuc": "Khu bến Sông Cấm",
+        "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "trong_bang_chi_tieu": "Co",
+        "so_cau_chieu_dai": "1/90÷1/90",
+        "co_tau_tan": 10000
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.74350622849674,
+          20.83971508972271
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Công ty TNHH MTV 189",
+        "khu_vuc": "Khu bến Sông Cấm",
+        "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "trong_bang_chi_tieu": "Co",
+        "so_cau_chieu_dai": "1/180÷1/180",
+        "co_tau_tan": "≥10000",
+        "dien_tich_vung_dat_ha": 15,
+        "dien_tich_vung_nuoc_ha": 2
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.74902726607594,
+          20.839292892137042
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Nhà máy đóng tàu Phà Rừng",
+        "khu_vuc": "Khu bến Phà Rừng",
+        "phan_loai": "Bến cảng hiện hữu",
+        "nguon": "17 QH Pha Rung.pdf - QD 756/QD-BXD, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo Khu bến Phà Rừng).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "so_cau_chieu_dai": "1/90÷1/90",
+        "co_tau_tan": "≥10000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7633944999687,
+          20.975887481499182
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Caltex",
+        "khu_vuc": "Khu bến Phà Rừng",
+        "phan_loai": "Bến cảng hiện hữu",
+        "nguon": "17 QH Pha Rung.pdf - QD 756/QD-BXD, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo Khu bến Phà Rừng).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "so_cau_chieu_dai": "1/60÷1/60",
+        "co_tau_tan": 4000,
+        "ghi_chu": "Tạm dừng hoạt động"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7633944999687,
+          20.97374339712475
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Nhà máy Nhiệt điện Hải Phòng",
+        "khu_vuc": "Khu bến Phà Rừng",
+        "phan_loai": "Bến cảng hiện hữu",
+        "nguon": "17 QH Pha Rung.pdf - QD 756/QD-BXD, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo Khu bến Phà Rừng).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "so_cau_chieu_dai": "2/527÷2/527",
+        "dien_tich_vung_dat_ha": 55,
+        "dien_tich_vung_nuoc_ha": 3
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.76560947167685,
+          20.971452289821784
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Nhà máy đóng tàu Nam Triệu",
+        "khu_vuc": "Khu bến Phà Rừng",
+        "phan_loai": "Bến cảng hiện hữu",
+        "nguon": "17 QH Pha Rung.pdf - QD 756/QD-BXD, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo Khu bến Phà Rừng).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "so_cau_chieu_dai": "1/90÷1/90",
+        "co_tau_tan": "≥10000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.76560947167685,
+          20.966857823305144
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Nhà máy sửa chữa tàu biển - Cty CP Quốc tế Thiên Phú Thành",
+        "khu_vuc": "Khu bến Phà Rừng",
+        "phan_loai": "Bến cảng quy hoạch tầm nhìn đến năm 2050",
+        "nguon": "17 QH Pha Rung.pdf - QD 756/QD-BXD, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo Khu bến Phà Rừng).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "so_cau_chieu_dai": "1/120÷1/120",
+        "co_tau_tan": 5000,
+        "dien_tich_vung_dat_ha": 25,
+        "dien_tich_vung_nuoc_ha": 1
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.7622218678879,
+          20.963304769198942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến du thuyền phục vụ du lịch",
+        "khu_vuc": "Khu bến Nam Đồ Sơn",
+        "phan_loai": "Hạ tầng liên quan",
+        "nguon": "18 QH Nam Do Son - PA1.pdf - QD 756/QD-BXD, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo Khu bến Nam Đồ Sơn).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.78772680206608,
+          20.675400313507645
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Khu logistics sau cảng",
+        "khu_vuc": "Khu bến Nam Đồ Sơn",
+        "phan_loai": "Hạ tầng liên quan",
+        "nguon": "18 QH Nam Do Son - PA1.pdf - QD 756/QD-BXD, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo Khu bến Nam Đồ Sơn).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.78537852616782,
+          20.670089904126318
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ga đường sắt (Nam Đồ Sơn)",
+        "khu_vuc": "Khu bến Nam Đồ Sơn",
+        "phan_loai": "Hạ tầng liên quan",
+        "nguon": "18 QH Nam Do Son - PA1.pdf - QD 756/QD-BXD, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo Khu bến Nam Đồ Sơn).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.78412611235541,
+          20.670237415498022
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Văn Úc 1",
+        "khu_vuc": "Khu bến Văn Úc",
+        "phan_loai": "Bến cảng quy hoạch đến năm 2030",
+        "nguon": "20 QH tong the Van Uc.pdf - QD 756/QD-BXD, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo Khu bến Văn Úc).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.60427730617442,
+          20.729534212728296
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Văn Úc 2",
+        "khu_vuc": "Khu bến Văn Úc",
+        "phan_loai": "Bến cảng quy hoạch đến năm 2030",
+        "nguon": "20 QH tong the Van Uc.pdf - QD 756/QD-BXD, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo Khu bến Văn Úc).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.61619274206689,
+          20.7255014240272
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Văn Úc 3",
+        "khu_vuc": "Khu bến Văn Úc",
+        "phan_loai": "Bến cảng quy hoạch tầm nhìn đến năm 2050",
+        "nguon": "20 QH tong the Van Uc.pdf - QD 756/QD-BXD, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo Khu bến Văn Úc).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6381618269936,
+          20.723923376274595
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Văn Úc 4",
+        "khu_vuc": "Khu bến Văn Úc",
+        "phan_loai": "Bến cảng phát triển có điều kiện",
+        "nguon": "20 QH tong the Van Uc.pdf - QD 756/QD-BXD, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo Khu bến Văn Úc).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.61637892075271,
+          20.71673449206829
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bến cảng Văn Úc 5",
+        "khu_vuc": "Khu bến Văn Úc",
+        "phan_loai": "Bến cảng phát triển có điều kiện",
+        "nguon": "20 QH tong the Van Uc.pdf - QD 756/QD-BXD, 02/2025",
+        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo Khu bến Văn Úc).",
+        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          106.6381618269936,
+          20.713403057923905
+        ]
+      }
+    }
+  ]
+}
