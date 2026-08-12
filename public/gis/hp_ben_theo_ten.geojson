@@ -1242,16 +1242,16 @@
         "khu_vuc": "Khu bến Phà Rừng",
         "phan_loai": "Bến cảng hiện hữu",
         "nguon": "17 QH Pha Rung.pdf - QD 756/QD-BXD, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo Khu bến Phà Rừng).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Ben Rung + Nha may dong tau Nam Trieu, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong.",
         "so_cau_chieu_dai": "1/90÷1/90",
         "co_tau_tan": "≥10000"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.7633944999687,
-          20.975887481499182
+          106.7236137417619,
+          20.96258784756268
         ]
       }
     },
@@ -1262,8 +1262,8 @@
         "khu_vuc": "Khu bến Phà Rừng",
         "phan_loai": "Bến cảng hiện hữu",
         "nguon": "17 QH Pha Rung.pdf - QD 756/QD-BXD, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo Khu bến Phà Rừng).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Ben Rung + Nha may dong tau Nam Trieu, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong.",
         "so_cau_chieu_dai": "1/60÷1/60",
         "co_tau_tan": 4000,
         "ghi_chu": "Tạm dừng hoạt động"
@@ -1271,8 +1271,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.7633944999687,
-          20.97374339712475
+          106.73053421058037,
+          20.953441706498243
         ]
       }
     },
@@ -1283,8 +1283,8 @@
         "khu_vuc": "Khu bến Phà Rừng",
         "phan_loai": "Bến cảng hiện hữu",
         "nguon": "17 QH Pha Rung.pdf - QD 756/QD-BXD, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo Khu bến Phà Rừng).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Ben Rung + Nha may dong tau Nam Trieu, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong.",
         "so_cau_chieu_dai": "2/527÷2/527",
         "dien_tich_vung_dat_ha": 55,
         "dien_tich_vung_nuoc_ha": 3
@@ -1292,8 +1292,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.76560947167685,
-          20.971452289821784
+          106.74737641570829,
+          20.94999095497265
         ]
       }
     },
@@ -1304,16 +1304,16 @@
         "khu_vuc": "Khu bến Phà Rừng",
         "phan_loai": "Bến cảng hiện hữu",
         "nguon": "17 QH Pha Rung.pdf - QD 756/QD-BXD, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo Khu bến Phà Rừng).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Ben Rung + Nha may dong tau Nam Trieu, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong.",
         "so_cau_chieu_dai": "1/90÷1/90",
         "co_tau_tan": "≥10000"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.76560947167685,
-          20.966857823305144
+          106.7622059917479,
+          20.930392081263147
         ]
       }
     },
@@ -1324,8 +1324,8 @@
         "khu_vuc": "Khu bến Phà Rừng",
         "phan_loai": "Bến cảng quy hoạch tầm nhìn đến năm 2050",
         "nguon": "17 QH Pha Rung.pdf - QD 756/QD-BXD, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo Khu bến Phà Rừng).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Ben Rung + Nha may dong tau Nam Trieu, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong.",
         "so_cau_chieu_dai": "1/120÷1/120",
         "co_tau_tan": 5000,
         "dien_tich_vung_dat_ha": 25,
@@ -1334,8 +1334,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.7622218678879,
-          20.963304769198942
+          106.75922555387854,
+          20.90556583122566
         ]
       }
     },

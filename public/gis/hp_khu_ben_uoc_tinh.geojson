@@ -239,8 +239,8 @@
       "properties": {
         "name": "Khu bến Phà Rừng (ước tính)",
         "nguon": "17 QH Pha Rung.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Uoc luong tu georeference ban ve CAD (khong co luoi toa do goc): neo 1 diem moc thuc dia xac thuc qua OpenStreetMap, gia dinh huong Bac len tren, hieu chinh ty le theo dien tich vung dat cong bo trong bang chi tieu quy hoach cua ban ve.",
-        "do_chinh_xac": "THAP - chi mang tinh minh hoa vi tri va hinh dang tuong doi. Sai so uoc tinh co the toi hang tram met, KHONG dung de do dac hay lam can cu phap ly.",
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cau Ben Rung (xac thuc qua OpenStreetMap) va Nha may dong tau Nam Trieu (xac thuc qua OpenStreetMap landuse polygon) - phat hien ban ve KHONG hoan toan huong Bac len tren nhu gia dinh ban dau (lech ~35 do), da sua lai. Kich thuoc da hieu chinh ve dung 83ha (80ha dat + 3ha nuoc) theo bang chi tieu, dat tam tai trong tam 5 diem ben da xac dinh.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien tu THAP sau khi phat hien va sua loi ty le/huong ban dau) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly.",
         "diem_neo": "Cầu Bến Rừng (OpenStreetMap way 1299178214)",
         "dien_tich_cong_bo_ha": 80,
         "trang_thai": "uoc_tinh"
@@ -250,40 +250,40 @@
         "coordinates": [
           [
             [
-              106.76157435387697,
-              20.976349341405985
+              106.73695555147873,
+              20.944061004665446
             ],
             [
-              106.76508830186317,
-              20.975926093581425
+              106.74013701724226,
+              20.94566110297486
             ],
             [
-              106.76834956145485,
-              20.973653921049557
+              106.7442697974061,
+              20.94558651742003
             ],
             [
-              106.76808897654801,
-              20.9669190828587
+              106.7482825378389,
+              20.939852786651816
             ],
             [
-              106.76873649055895,
-              20.962627201409617
+              106.75151478434839,
+              20.936650665184615
             ],
             [
-              106.76613064149053,
-              20.961647048552734
+              106.7499680415143,
+              20.934390208317392
             ],
             [
-              106.76326420751528,
-              20.965693891787595
+              106.74504851113082,
+              20.936156787261822
             ],
             [
-              106.76248245279476,
-              20.971819847143117
+              106.74055322092364,
+              20.940806401959833
             ],
             [
-              106.76157435387697,
-              20.976349341405985
+              106.73695555147873,
+              20.944061004665446
             ]
           ]
         ]
