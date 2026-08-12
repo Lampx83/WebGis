@@ -601,15 +601,15 @@
         "name": "Bến cảng Việt Nhật",
         "khu_vuc": "Khu bến Sông Cấm",
         "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Bach Dang + Cang Chua Ve, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong (cac ben nam sat nhau trong ban ve co the con sai lech vai tram met do mat do nhan day dac).",
         "trong_bang_chi_tieu": "Khong (ben hien huu, chi mang tinh boi canh)"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.70140831695534,
-          20.862448805874106
+          106.68464091755244,
+          20.91086722465399
         ]
       }
     },
@@ -619,15 +619,15 @@
         "name": "Bến cảng Vật Cách",
         "khu_vuc": "Khu bến Sông Cấm",
         "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Bach Dang + Cang Chua Ve, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong (cac ben nam sat nhau trong ban ve co the con sai lech vai tram met do mat do nhan day dac).",
         "trong_bang_chi_tieu": "Khong (ben hien huu, chi mang tinh boi canh)"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.69709500634659,
-          20.85715509768457
+          106.67375645814637,
+          20.904938244058265
         ]
       }
     },
@@ -637,15 +637,15 @@
         "name": "Bến cảng Tiến Mạnh",
         "khu_vuc": "Khu bến Sông Cấm",
         "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Bach Dang + Cang Chua Ve, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong (cac ben nam sat nhau trong ban ve co the con sai lech vai tram met do mat do nhan day dac).",
         "trong_bang_chi_tieu": "Khong (ben hien huu, chi mang tinh boi canh)"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.69450701998133,
-          20.8558560281902
+          106.668577460936,
+          20.904458869777102
         ]
       }
     },
@@ -655,15 +655,15 @@
         "name": "Bến cảng Hóa dầu Mipec",
         "khu_vuc": "Khu bến Sông Cấm",
         "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Bach Dang + Cang Chua Ve, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong (cac ben nam sat nhau trong ban ve co the con sai lech vai tram met do mat do nhan day dac).",
         "trong_bang_chi_tieu": "Khong (ben hien huu, chi mang tinh boi canh)"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.70244351150143,
-          20.856505562937386
+          106.68205881387223,
+          20.900461659467172
         ]
       }
     },
@@ -673,15 +673,15 @@
         "name": "Bến cảng Gas Thăng Long",
         "khu_vuc": "Khu bến Sông Cấm",
         "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Bach Dang + Cang Chua Ve, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong (cac ben nam sat nhau trong ban ve co the con sai lech vai tram met do mat do nhan day dac).",
         "trong_bang_chi_tieu": "Khong (ben hien huu, chi mang tinh boi canh)"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.70140831695534,
-          20.8558560281902
+          106.679893673228,
+          20.90005689839995
         ]
       }
     },
@@ -691,15 +691,15 @@
         "name": "Bến cảng Lilama Hải Phòng",
         "khu_vuc": "Khu bến Sông Cấm",
         "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Bach Dang + Cang Chua Ve, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong (cac ben nam sat nhau trong ban ve co the con sai lech vai tram met do mat do nhan day dac).",
         "trong_bang_chi_tieu": "Khong (ben hien huu, chi mang tinh boi canh)"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.70140831695534,
-          20.855206493443017
+          106.67942596442755,
+          20.898991841626152
         ]
       }
     },
@@ -709,15 +709,15 @@
         "name": "Bến cảng Tự Long",
         "khu_vuc": "Khu bến Sông Cấm",
         "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Bach Dang + Cang Chua Ve, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong (cac ben nam sat nhau trong ban ve co the con sai lech vai tram met do mat do nhan day dac).",
         "trong_bang_chi_tieu": "Khong (ben hien huu, chi mang tinh boi canh)"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.71020747059718,
-          20.856505562937386
+          106.69478955270071,
+          20.89550944166788
         ]
       }
     },
@@ -727,15 +727,15 @@
         "name": "Bến cảng Dầu Thượng Lý",
         "khu_vuc": "Khu bến Sông Cấm",
         "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Bach Dang + Cang Chua Ve, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong (cac ben nam sat nhau trong ban ve co the con sai lech vai tram met do mat do nhan day dac).",
         "trong_bang_chi_tieu": "Khong (ben hien huu, chi mang tinh boi canh)"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.71176026241633,
-          20.8558560281902
+          106.69686799166598,
+          20.893453941334222
         ]
       }
     },
@@ -745,15 +745,15 @@
         "name": "Bến cảng Nam Ninh",
         "khu_vuc": "Khu bến Sông Cấm",
         "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Bach Dang + Cang Chua Ve, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong (cac ben nam sat nhau trong ban ve co the con sai lech vai tram met do mat do nhan day dac).",
         "trong_bang_chi_tieu": "Khong (ben hien huu, chi mang tinh boi canh)"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.69295422816218,
-          20.852608354454286
+          106.66369276916812,
+          20.900124029467975
         ]
       }
     },
@@ -763,15 +763,15 @@
         "name": "Bến cảng Quỳnh Cư",
         "khu_vuc": "Khu bến Sông Cấm",
         "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Bach Dang + Cang Chua Ve, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong (cac ben nam sat nhau trong ban ve co the con sai lech vai tram met do mat do nhan day dac).",
         "trong_bang_chi_tieu": "Khong (ben hien huu, chi mang tinh boi canh)"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.69398942270828,
-          20.85130928495992
+          106.66445478341105,
+          20.897333620213807
         ]
       }
     },
@@ -781,15 +781,15 @@
         "name": "Bến cảng Hùng Vương",
         "khu_vuc": "Khu bến Sông Cấm",
         "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Bach Dang + Cang Chua Ve, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong (cac ben nam sat nhau trong ban ve co the con sai lech vai tram met do mat do nhan day dac).",
         "trong_bang_chi_tieu": "Khong (ben hien huu, chi mang tinh boi canh)"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.69605981180048,
-          20.85065975021274
+          106.66738193829819,
+          20.894947972026866
         ]
       }
     },
@@ -799,15 +799,15 @@
         "name": "Bến cảng Đóng tàu Bạch Đằng",
         "khu_vuc": "Khu bến Sông Cấm",
         "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Bach Dang + Cang Chua Ve, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong (cac ben nam sat nhau trong ban ve co the con sai lech vai tram met do mat do nhan day dac).",
         "trong_bang_chi_tieu": "Khong (ben hien huu, chi mang tinh boi canh)"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.70951734089978,
-          20.846957402153798
+          106.68678261210508,
+          20.88029330423078
         ]
       }
     },
@@ -817,15 +817,15 @@
         "name": "Bến cảng Hoàng Diệu",
         "khu_vuc": "Khu bến Sông Cấm",
         "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Bach Dang + Cang Chua Ve, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong (cac ben nam sat nhau trong ban ve co the con sai lech vai tram met do mat do nhan day dac).",
         "trong_bang_chi_tieu": "Khong (ben hien huu, chi mang tinh boi canh)"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.72124954575558,
-          20.84604805350774
+          106.70536538068085,
+          20.871318873406306
         ]
       }
     },
@@ -835,15 +835,15 @@
         "name": "Bến cảng Gas Đài Hải",
         "khu_vuc": "Khu bến Sông Cấm",
         "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Bach Dang + Cang Chua Ve, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong (cac ben nam sat nhau trong ban ve co the con sai lech vai tram met do mat do nhan day dac).",
         "trong_bang_chi_tieu": "Khong (ben hien huu, chi mang tinh boi canh)"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.72728818060783,
-          20.85221863360598
+          106.7197103000405,
+          20.877585187802367
         ]
       }
     },
@@ -853,15 +853,15 @@
         "name": "Bến cảng Cá Hạ Long",
         "khu_vuc": "Khu bến Sông Cấm",
         "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Bach Dang + Cang Chua Ve, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong (cac ben nam sat nhau trong ban ve co the con sai lech vai tram met do mat do nhan day dac).",
         "trong_bang_chi_tieu": "Khong (ben hien huu, chi mang tinh boi canh)"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.72487272666693,
-          20.851569098858796
+          106.71528191693787,
+          20.878060821010575
         ]
       }
     },
@@ -871,8 +871,8 @@
         "name": "Bến cảng Cửa Cấm",
         "khu_vuc": "Khu bến Sông Cấm",
         "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Bach Dang + Cang Chua Ve, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong (cac ben nam sat nhau trong ban ve co the con sai lech vai tram met do mat do nhan day dac).",
         "trong_bang_chi_tieu": "Co",
         "so_cau_chieu_dai": "3/272÷3/272",
         "co_tau_tan": 5000,
@@ -882,8 +882,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.73591480182533,
-          20.851634052333512
+          106.7334346274851,
+          20.871124172484514
         ]
       }
     },
@@ -893,8 +893,8 @@
         "name": "Bến cảng Thủy sản II",
         "khu_vuc": "Khu bến Sông Cấm",
         "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Bach Dang + Cang Chua Ve, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong (cac ben nam sat nhau trong ban ve co the con sai lech vai tram met do mat do nhan day dac).",
         "trong_bang_chi_tieu": "Co",
         "so_cau_chieu_dai": "1/73÷1/73",
         "co_tau_tan": 3000,
@@ -903,8 +903,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.73660493152273,
-          20.85098451758633
+          106.73409853991384,
+          20.869618918573
         ]
       }
     },
@@ -914,8 +914,8 @@
         "name": "Bến cảng Nam Hải",
         "khu_vuc": "Khu bến Sông Cấm",
         "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Bach Dang + Cang Chua Ve, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong (cac ben nam sat nhau trong ban ve co the con sai lech vai tram met do mat do nhan day dac).",
         "trong_bang_chi_tieu": "Co",
         "so_cau_chieu_dai": "1/144÷1/144",
         "co_tau_tan": 10000,
@@ -925,8 +925,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.73660493152273,
-          20.850334982839147
+          106.73363083111342,
+          20.868553861799203
         ]
       }
     },
@@ -936,8 +936,8 @@
         "name": "Bến cảng Đoạn Xá",
         "khu_vuc": "Khu bến Sông Cấm",
         "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Bach Dang + Cang Chua Ve, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong (cac ben nam sat nhau trong ban ve co the con sai lech vai tram met do mat do nhan day dac).",
         "trong_bang_chi_tieu": "Co",
         "so_cau_chieu_dai": "1/210÷1/210",
         "co_tau_tan": "10000 (giảm tải)",
@@ -947,8 +947,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.73522467212794,
-          20.846632634780207
+          106.72870164849252,
+          20.86336343246399
         ]
       }
     },
@@ -958,8 +958,8 @@
         "name": "Bến cảng Trasvina",
         "khu_vuc": "Khu bến Sông Cấm",
         "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Bach Dang + Cang Chua Ve, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong (cac ben nam sat nhau trong ban ve co the con sai lech vai tram met do mat do nhan day dac).",
         "trong_bang_chi_tieu": "Co",
         "so_cau_chieu_dai": "1/120÷1/120",
         "co_tau_tan": "≥10000",
@@ -969,8 +969,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.73591480182533,
-          20.84611300698246
+          106.72945910268136,
+          20.862071189907237
         ]
       }
     },
@@ -980,8 +980,8 @@
         "name": "Bến cảng Hải Đăng",
         "khu_vuc": "Khu bến Sông Cấm",
         "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Bach Dang + Cang Chua Ve, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong (cac ben nam sat nhau trong ban ve co the con sai lech vai tram met do mat do nhan day dac).",
         "trong_bang_chi_tieu": "Co",
         "so_cau_chieu_dai": "1/87÷1/87",
         "co_tau_tan": 3000,
@@ -990,8 +990,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.73591480182533,
-          20.845560902447353
+          106.729061550201,
+          20.86116589164951
         ]
       }
     },
@@ -1001,8 +1001,8 @@
         "name": "Bến cảng Greenport",
         "khu_vuc": "Khu bến Sông Cấm",
         "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Bach Dang + Cang Chua Ve, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong (cac ben nam sat nhau trong ban ve co the con sai lech vai tram met do mat do nhan day dac).",
         "trong_bang_chi_tieu": "Co",
         "so_cau_chieu_dai": "2/304÷2/304",
         "co_tau_tan": "≥10000",
@@ -1012,8 +1012,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.73539720455229,
-          20.84500879791225
+          106.72781528179873,
+          20.86059074124507
         ]
       }
     },
@@ -1023,8 +1023,8 @@
         "name": "Bến cảng Chùa Vẽ",
         "khu_vuc": "Khu bến Sông Cấm",
         "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Bach Dang + Cang Chua Ve, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong (cac ben nam sat nhau trong ban ve co the con sai lech vai tram met do mat do nhan day dac).",
         "trong_bang_chi_tieu": "Co",
         "so_cau_chieu_dai": "5/848÷5/848",
         "co_tau_tan": "≥10000",
@@ -1034,8 +1034,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.73522467212794,
-          20.844489170114503
+          106.72715820945108,
+          20.85984874511046
         ]
       }
     },
@@ -1045,8 +1045,8 @@
         "name": "Bến cảng Total Gas",
         "khu_vuc": "Khu bến Sông Cấm",
         "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Bach Dang + Cang Chua Ve, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong (cac ben nam sat nhau trong ban ve co the con sai lech vai tram met do mat do nhan day dac).",
         "trong_bang_chi_tieu": "Co",
         "so_cau_chieu_dai": "1/90÷1/90",
         "co_tau_tan": 3000,
@@ -1056,8 +1056,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.73349934788443,
-          20.8437746818926
+          106.7238146766976,
+          20.859777675503572
         ]
       }
     },
@@ -1067,8 +1067,8 @@
         "name": "Bến cảng Đồng Hải",
         "khu_vuc": "Khu bến Sông Cấm",
         "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Bach Dang + Cang Chua Ve, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong (cac ben nam sat nhau trong ban ve co the con sai lech vai tram met do mat do nhan day dac).",
         "trong_bang_chi_tieu": "Co",
         "so_cau_chieu_dai": "1/120÷1/120",
         "co_tau_tan": 600,
@@ -1078,8 +1078,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.73487960727924,
-          20.843190100620138
+          106.7256569812356,
+          20.857938730131725
         ]
       }
     },
@@ -1089,8 +1089,8 @@
         "name": "Bến cảng 128",
         "khu_vuc": "Khu bến Sông Cấm",
         "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Bach Dang + Cang Chua Ve, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong (cac ben nam sat nhau trong ban ve co the con sai lech vai tram met do mat do nhan day dac).",
         "trong_bang_chi_tieu": "Co",
         "so_cau_chieu_dai": "3/422÷3/422",
         "co_tau_tan": "≥10000",
@@ -1100,8 +1100,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.73591480182533,
-          20.84263799608503
+          106.72695686059902,
+          20.856373136167424
         ]
       }
     },
@@ -1111,8 +1111,8 @@
         "name": "Bến cảng Dầu khí Hải Linh",
         "khu_vuc": "Khu bến Sông Cấm",
         "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Bach Dang + Cang Chua Ve, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong (cac ben nam sat nhau trong ban ve co the con sai lech vai tram met do mat do nhan day dac).",
         "trong_bang_chi_tieu": "Co",
         "so_cau_chieu_dai": "1/145÷1/145",
         "co_tau_tan": 8000,
@@ -1122,8 +1122,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.73660493152273,
-          20.84205341481257
+          106.72766754390783,
+          20.85497438793329
         ]
       }
     },
@@ -1133,8 +1133,8 @@
         "name": "Bến cảng Xăng dầu K99",
         "khu_vuc": "Khu bến Sông Cấm",
         "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Bach Dang + Cang Chua Ve, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong (cac ben nam sat nhau trong ban ve co the con sai lech vai tram met do mat do nhan day dac).",
         "trong_bang_chi_tieu": "Co",
         "so_cau_chieu_dai": "1/185÷1/185",
         "co_tau_tan": "≥10000",
@@ -1144,8 +1144,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.73729506122014,
-          20.84156626375218
+          106.7284483835367,
+          20.85373539821523
         ]
       }
     },
@@ -1155,8 +1155,8 @@
         "name": "Bến cảng Xăng dầu Petec",
         "khu_vuc": "Khu bến Sông Cấm",
         "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Bach Dang + Cang Chua Ve, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong (cac ben nam sat nhau trong ban ve co the con sai lech vai tram met do mat do nhan day dac).",
         "trong_bang_chi_tieu": "Co",
         "so_cau_chieu_dai": "1/104÷1/104",
         "co_tau_tan": 5000,
@@ -1166,8 +1166,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.73591480182533,
-          20.841079112691794
+          106.72583435947797,
+          20.85381699991031
         ]
       }
     },
@@ -1177,8 +1177,8 @@
         "name": "Bến cảng Hải An",
         "khu_vuc": "Khu bến Sông Cấm",
         "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Bach Dang + Cang Chua Ve, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong (cac ben nam sat nhau trong ban ve co the con sai lech vai tram met do mat do nhan day dac).",
         "trong_bang_chi_tieu": "Co",
         "so_cau_chieu_dai": "1/150÷1/150",
         "co_tau_tan": "≥10000",
@@ -1188,8 +1188,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.73591480182533,
-          20.840591961631407
+          106.72548357787764,
+          20.853018207329963
         ]
       }
     },
@@ -1199,8 +1199,8 @@
         "name": "Bến cảng Trang trí của Cty 189",
         "khu_vuc": "Khu bến Sông Cấm",
         "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Bach Dang + Cang Chua Ve, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong (cac ben nam sat nhau trong ban ve co the con sai lech vai tram met do mat do nhan day dac).",
         "trong_bang_chi_tieu": "Co",
         "so_cau_chieu_dai": "1/90÷1/90",
         "co_tau_tan": 10000
@@ -1208,8 +1208,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.74350622849674,
-          20.83971508972271
+          106.73730000451825,
+          20.84673821217047
         ]
       }
     },
@@ -1219,8 +1219,8 @@
         "name": "Bến cảng Công ty TNHH MTV 189",
         "khu_vuc": "Khu bến Sông Cấm",
         "nguon": "13. Di doi Song Cam.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Vi tri uoc tinh tu nhan ban ve (georeference cung phep bien doi da dung cho toan bo khu ben Song Cam).",
-        "do_chinh_xac": "THAP - chi la diem minh hoa vi tri tuong doi, KHONG phai toa do do dac.",
+        "phuong_phap": "Vi tri xac dinh bang phep fit 2 diem doc lap (Cau Bach Dang + Cang Chua Ve, ca hai xac thuc qua OpenStreetMap) sau khi phat hien ban ve khong hoan toan huong Bac len tren nhu gia dinh ban dau.",
+        "do_chinh_xac": "TRUNG BINH - da xac thuc cheo qua 2 diem moc doc lap, nhung van chi la uoc luong (cac ben nam sat nhau trong ban ve co the con sai lech vai tram met do mat do nhan day dac).",
         "trong_bang_chi_tieu": "Co",
         "so_cau_chieu_dai": "1/180÷1/180",
         "co_tau_tan": "≥10000",
@@ -1230,8 +1230,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.74902726607594,
-          20.839292892137042
+          106.74604896363155,
+          20.84252434816578
         ]
       }
     },
