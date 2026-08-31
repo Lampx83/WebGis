@@ -6,8 +6,8 @@
       "properties": {
         "name": "Khu bến Lạch Huyện (ước tính)",
         "nguon": "QD 756/QD-BXD (05/6/2025) - Ban ve quy hoach tong the, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Uoc luong tu georeference ban ve CAD (khong co luoi toa do goc): neo 1 diem moc thuc dia xac thuc qua OpenStreetMap, gia dinh huong Bac len tren, hieu chinh ty le theo dien tich vung dat cong bo trong bang chi tieu quy hoach cua ban ve.",
-        "do_chinh_xac": "THAP - chi mang tinh minh hoa vi tri va hinh dang tuong doi. Sai so uoc tinh co the toi hang tram met, KHONG dung de do dac hay lam can cu phap ly.",
+        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Container Quoc te Tan Cang Hai Phong (HICT), toa do cong bo N20 48', E106 54' (lam tron den phut, nguon baohaiquanvietnam.vn). CANH BAO: chi sua duoc vi tri offset, CHUA xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2 de kiem chung, khac voi Song Cam/Pha Rung da co 2 diem). Do chinh xac goc xoay/ty le van la THAP.",
+        "do_chinh_xac": "TRUNG BINH (vi tri) / THAP (goc xoay va hinh dang chi tiet) - da dich chuyen theo 1 diem neo xac thuc (HICT), nhung chua xac dinh duoc goc xoay that cua ban ve nhu da lam duoc voi Song Cam/Pha Rung.",
         "diem_neo": "Cầu Tân Vũ - Lạch Huyện (OpenStreetMap way 1084154665), khu vực bến cảng gần điểm cầu đổ bộ đảo Cát Hải",
         "dien_tich_cong_bo_ha": 512,
         "trang_thai": "chua_kiem_chung"
@@ -17,32 +17,32 @@
         "coordinates": [
           [
             [
-              106.858,
-              20.82
+              106.89762892806384,
+              20.804976051232416
             ],
             [
-              106.86356963206482,
-              20.817603346787518
+              106.90319856012866,
+              20.802579398019933
             ],
             [
-              106.8723219110238,
-              20.795134722920498
+              106.91195083908764,
+              20.780110774152913
             ],
             [
-              106.86913926412963,
-              20.79453555961738
+              106.90876819219346,
+              20.779511610849795
             ],
             [
-              106.84208676552912,
-              20.808016733937592
+              106.88171569359295,
+              20.792992785170007
             ],
             [
-              106.84208676552912,
-              20.81805271926486
+              106.88171569359295,
+              20.803028770497274
             ],
             [
-              106.858,
-              20.82
+              106.89762892806384,
+              20.804976051232416
             ]
           ]
         ]
@@ -53,8 +53,8 @@
       "properties": {
         "name": "Khu bến Đình Vũ (ước tính)",
         "nguon": "QD 756/QD-BXD (05/6/2025) - Ban ve quy hoach tong the, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Uoc luong tu georeference ban ve CAD (khong co luoi toa do goc): neo 1 diem moc thuc dia xac thuc qua OpenStreetMap, gia dinh huong Bac len tren, hieu chinh ty le theo dien tich vung dat cong bo trong bang chi tieu quy hoach cua ban ve.",
-        "do_chinh_xac": "THAP - chi mang tinh minh hoa vi tri va hinh dang tuong doi. Sai so uoc tinh co the toi hang tram met, KHONG dung de do dac hay lam can cu phap ly.",
+        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Nam Hai Dinh Vu, toa do cong bo N20 49', E106 47' (lam tron den phut, nguon vpa.org.vn). Sai lech ban dau ~1.3km, gan voi sai so lam tron cua nguon (+-930m) nen muc do cai thien it hon so voi Lach Huyen. CANH BAO: chua xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2).",
+        "do_chinh_xac": "TRUNG BINH (vi tri) / THAP (goc xoay, hinh dang chi tiet).",
         "diem_neo": "Cầu Bạch Đằng, đoạn vượt Sông Cấm (OpenStreetMap way 1008852110)",
         "dien_tich_cong_bo_ha": 528,
         "trang_thai": "chua_kiem_chung"
@@ -64,44 +64,44 @@
         "coordinates": [
           [
             [
-              106.74624196600092,
-              20.83508426692005
+              106.7588031457531,
+              20.83314506457723
             ],
             [
-              106.75901790341922,
-              20.830011744919013
+              106.7715790831714,
+              20.828072542576194
             ],
             [
-              106.77499267190584,
-              20.822877370449927
+              106.78755385165802,
+              20.82093816810711
             ],
             [
-              106.80973391599322,
-              20.81497664373608
+              106.8222950957454,
+              20.813037441393263
             ],
             [
-              106.80494536281823,
-              20.810469762677606
+              106.81750654257041,
+              20.808530560334788
             ],
             [
-              106.7869737482708,
-              20.80859037502974
+              106.79953492802298,
+              20.806651172686923
             ],
             [
-              106.77698951796665,
-              20.810469762677606
+              106.78955069771884,
+              20.808530560334788
             ],
             [
-              106.76900213372335,
-              20.81760413714669
+              106.78156331347553,
+              20.815664934803873
             ],
             [
-              106.75502421129757,
-              20.828132357271144
+              106.76758539104975,
+              20.826193154928326
             ],
             [
-              106.74624196600092,
-              20.83508426692005
+              106.7588031457531,
+              20.83314506457723
             ]
           ]
         ]
