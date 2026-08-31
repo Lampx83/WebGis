@@ -6,8 +6,8 @@
       "properties": {
         "name": "Khu bến Lạch Huyện (ước tính)",
         "nguon": "QD 756/QD-BXD (05/6/2025) - Ban ve quy hoach tong the, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Container Quoc te Tan Cang Hai Phong (HICT), toa do cong bo N20 48', E106 54' (lam tron den phut, nguon baohaiquanvietnam.vn). CANH BAO: chi sua duoc vi tri offset, CHUA xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2 de kiem chung, khac voi Song Cam/Pha Rung da co 2 diem). Do chinh xac goc xoay/ty le van la THAP.",
-        "do_chinh_xac": "TRUNG BINH (vi tri) / THAP (goc xoay va hinh dang chi tiet) - da dich chuyen theo 1 diem neo xac thuc (HICT), nhung chua xac dinh duoc goc xoay that cua ban ve nhu da lam duoc voi Song Cam/Pha Rung.",
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cang Container Quoc te Tan Cang Hai Phong/HICT (toa do cong bo N20 48' E106 54', nguon baohaiquanvietnam.vn) va cong cang Lach Huyen = diem cuoi cau Tan Vu - Lach Huyen (xac dinh qua OpenStreetMap + bao chi xac nhan '''diem cuoi la cong cang Lach Huyen'''). Ban ve nay gan nhu huong Bac that (lech ~2 do), nhung ty le ban dau sai gan 3 lan - da sua lai dung theo phep fit nay. Kich thuoc da hieu chinh ve dung 613ha (512 dat + 101 nuoc) theo bang chi tieu.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien dang ke sau khi tim duoc diem moc thu 2 va phat hien loi ty le ~3 lan so voi uoc tinh ban dau) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly.",
         "diem_neo": "Cầu Tân Vũ - Lạch Huyện (OpenStreetMap way 1084154665), khu vực bến cảng gần điểm cầu đổ bộ đảo Cát Hải",
         "dien_tich_cong_bo_ha": 512,
         "trang_thai": "chua_kiem_chung"
@@ -17,32 +17,32 @@
         "coordinates": [
           [
             [
-              106.89762892806384,
-              20.804976051232416
+              106.89315526985973,
+              20.794263304511915
             ],
             [
-              106.90319856012866,
-              20.802579398019933
+              106.89934412840607,
+              20.791847962148264
             ],
             [
-              106.91195083908764,
-              20.780110774152913
+              106.90984716842857,
+              20.76760258141718
             ],
             [
-              106.90876819219346,
-              20.779511610849795
+              106.90639254002838,
+              20.766830162029226
             ],
             [
-              106.88171569359295,
-              20.792992785170007
+              106.87625584658745,
+              20.780574052026346
             ],
             [
-              106.88171569359295,
-              20.803028770497274
+              106.87583852734043,
+              20.791547709052512
             ],
             [
-              106.89762892806384,
-              20.804976051232416
+              106.89315526985973,
+              20.794263304511915
             ]
           ]
         ]
@@ -53,8 +53,8 @@
       "properties": {
         "name": "Khu bến Đình Vũ (ước tính)",
         "nguon": "QD 756/QD-BXD (05/6/2025) - Ban ve quy hoach tong the, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Nam Hai Dinh Vu, toa do cong bo N20 49', E106 47' (lam tron den phut, nguon vpa.org.vn). Sai lech ban dau ~1.3km, gan voi sai so lam tron cua nguon (+-930m) nen muc do cai thien it hon so voi Lach Huyen. CANH BAO: chua xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2).",
-        "do_chinh_xac": "TRUNG BINH (vi tri) / THAP (goc xoay, hinh dang chi tiet).",
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cau Bach Dang (xac thuc qua OpenStreetMap) va Cang Nam Hai Dinh Vu (toa do cong bo N20 49' E106 47', nguon vpa.org.vn). Ban ve lech ~8.6 do so voi huong Bac that; ty le ban dau sai ~1.4 lan - da sua lai. Kich thuoc da hieu chinh ve dung 594ha (528 dat + 66 nuoc) theo bang chi tieu.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien sau khi tim duoc diem moc thu 2 va sua goc xoay/ty le) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly.",
         "diem_neo": "Cầu Bạch Đằng, đoạn vượt Sông Cấm (OpenStreetMap way 1008852110)",
         "dien_tich_cong_bo_ha": 528,
         "trang_thai": "chua_kiem_chung"
@@ -64,44 +64,44 @@
         "coordinates": [
           [
             [
-              106.7588031457531,
-              20.83314506457723
+              106.75651058666702,
+              20.83094840224148
             ],
             [
-              106.7715790831714,
-              20.828072542576194
+              106.77076251788345,
+              20.82753412608482
             ],
             [
-              106.78755385165802,
-              20.82093816810711
+              106.78871613631536,
+              20.822434636626443
             ],
             [
-              106.8222950957454,
-              20.813037441393263
+              106.82647895932003,
+              20.819330043738546
             ],
             [
-              106.81750654257041,
-              20.808530560334788
+              106.8222159834328,
+              20.81388963408848
             ],
             [
-              106.79953492802298,
-              20.806651172686923
+              106.80368574637286,
+              20.80923871485065
             ],
             [
-              106.78955069771884,
-              20.808530560334788
+              106.79289900543489,
+              20.809720702909825
             ],
             [
-              106.78156331347553,
-              20.815664934803873
+              106.78332166643096,
+              20.8160113155621
             ],
             [
-              106.76758539104975,
-              20.826193154928326
+              106.76689076982247,
+              20.82496767243632
             ],
             [
-              106.7588031457531,
-              20.83314506457723
+              106.75651058666702,
+              20.83094840224148
             ]
           ]
         ]

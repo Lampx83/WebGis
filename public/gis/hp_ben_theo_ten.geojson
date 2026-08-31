@@ -8,14 +8,14 @@
         "khu_vuc": "Khu bến Lạch Huyện",
         "phan_loai": "Bến cảng quy hoạch đến năm 2030",
         "nguon": "05. QH tong the Lach Huyen.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Container Quoc te Tan Cang Hai Phong (HICT), toa do cong bo N20 48', E106 54' (lam tron den phut, nguon baohaiquanvietnam.vn). CANH BAO: chi sua duoc vi tri offset, CHUA xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2 de kiem chung, khac voi Song Cam/Pha Rung da co 2 diem). Do chinh xac goc xoay/ty le van la THAP.",
-        "do_chinh_xac": "TRUNG BINH (vi tri) / THAP (goc xoay) - da dich chuyen theo 1 diem neo xac thuc (HICT), nhung chua xac dinh duoc goc xoay that cua ban ve."
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cang Container Quoc te Tan Cang Hai Phong/HICT (toa do cong bo N20 48' E106 54', nguon baohaiquanvietnam.vn) va cong cang Lach Huyen = diem cuoi cau Tan Vu - Lach Huyen (xac dinh qua OpenStreetMap + bao chi xac nhan '''diem cuoi la cong cang Lach Huyen'''). Ban ve nay gan nhu huong Bac that (lech ~2 do), nhung ty le ban dau sai gan 3 lan - da sua lai dung theo phep fit nay. Kich thuoc da hieu chinh ve dung 613ha (512 dat + 101 nuoc) theo bang chi tieu.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien dang ke sau khi tim duoc diem moc thu 2 va phat hien loi ty le ~3 lan so voi uoc tinh ban dau) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.89110609325422,
-          20.807658655131313
+          106.87359014963621,
+          20.82115331151116
         ]
       }
     },
@@ -26,14 +26,14 @@
         "khu_vuc": "Khu bến Lạch Huyện",
         "phan_loai": "Bến cảng quy hoạch đến năm 2030",
         "nguon": "05. QH tong the Lach Huyen.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Container Quoc te Tan Cang Hai Phong (HICT), toa do cong bo N20 48', E106 54' (lam tron den phut, nguon baohaiquanvietnam.vn). CANH BAO: chi sua duoc vi tri offset, CHUA xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2 de kiem chung, khac voi Song Cam/Pha Rung da co 2 diem). Do chinh xac goc xoay/ty le van la THAP.",
-        "do_chinh_xac": "TRUNG BINH (vi tri) / THAP (goc xoay) - da dich chuyen theo 1 diem neo xac thuc (HICT), nhung chua xac dinh duoc goc xoay that cua ban ve."
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cang Container Quoc te Tan Cang Hai Phong/HICT (toa do cong bo N20 48' E106 54', nguon baohaiquanvietnam.vn) va cong cang Lach Huyen = diem cuoi cau Tan Vu - Lach Huyen (xac dinh qua OpenStreetMap + bao chi xac nhan '''diem cuoi la cong cang Lach Huyen'''). Ban ve nay gan nhu huong Bac that (lech ~2 do), nhung ty le ban dau sai gan 3 lan - da sua lai dung theo phep fit nay. Kich thuoc da hieu chinh ve dung 613ha (512 dat + 101 nuoc) theo bang chi tieu.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien dang ke sau khi tim duoc diem moc thu 2 va phat hien loi ty le ~3 lan so voi uoc tinh ban dau) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.89324721895228,
-          20.806325366991043
+          106.87989233143813,
+          20.817526699070868
         ]
       }
     },
@@ -44,14 +44,14 @@
         "khu_vuc": "Khu bến Lạch Huyện",
         "phan_loai": "Bến cảng quy hoạch đến năm 2030",
         "nguon": "05. QH tong the Lach Huyen.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Container Quoc te Tan Cang Hai Phong (HICT), toa do cong bo N20 48', E106 54' (lam tron den phut, nguon baohaiquanvietnam.vn). CANH BAO: chi sua duoc vi tri offset, CHUA xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2 de kiem chung, khac voi Song Cam/Pha Rung da co 2 diem). Do chinh xac goc xoay/ty le van la THAP.",
-        "do_chinh_xac": "TRUNG BINH (vi tri) / THAP (goc xoay) - da dich chuyen theo 1 diem neo xac thuc (HICT), nhung chua xac dinh duoc goc xoay that cua ban ve."
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cang Container Quoc te Tan Cang Hai Phong/HICT (toa do cong bo N20 48' E106 54', nguon baohaiquanvietnam.vn) va cong cang Lach Huyen = diem cuoi cau Tan Vu - Lach Huyen (xac dinh qua OpenStreetMap + bao chi xac nhan '''diem cuoi la cong cang Lach Huyen'''). Ban ve nay gan nhu huong Bac that (lech ~2 do), nhung ty le ban dau sai gan 3 lan - da sua lai dung theo phep fit nay. Kich thuoc da hieu chinh ve dung 613ha (512 dat + 101 nuoc) theo bang chi tieu.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien dang ke sau khi tim duoc diem moc thu 2 va phat hien loi ty le ~3 lan so voi uoc tinh ban dau) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.89818827825549,
-          20.804278924729235
+          106.89432314619674,
+          20.81212062574189
         ]
       }
     },
@@ -62,14 +62,14 @@
         "khu_vuc": "Khu bến Lạch Huyện",
         "phan_loai": "Bến cảng hiện hữu",
         "nguon": "05. QH tong the Lach Huyen.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Container Quoc te Tan Cang Hai Phong (HICT), toa do cong bo N20 48', E106 54' (lam tron den phut, nguon baohaiquanvietnam.vn). CANH BAO: chi sua duoc vi tri offset, CHUA xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2 de kiem chung, khac voi Song Cam/Pha Rung da co 2 diem). Do chinh xac goc xoay/ty le van la THAP.",
-        "do_chinh_xac": "TRUNG BINH (vi tri) / THAP (goc xoay) - da dich chuyen theo 1 diem neo xac thuc (HICT), nhung chua xac dinh duoc goc xoay that cua ban ve."
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cang Container Quoc te Tan Cang Hai Phong/HICT (toa do cong bo N20 48' E106 54', nguon baohaiquanvietnam.vn) va cong cang Lach Huyen = diem cuoi cau Tan Vu - Lach Huyen (xac dinh qua OpenStreetMap + bao chi xac nhan '''diem cuoi la cong cang Lach Huyen'''). Ban ve nay gan nhu huong Bac that (lech ~2 do), nhung ty le ban dau sai gan 3 lan - da sua lai dung theo phep fit nay. Kich thuoc da hieu chinh ve dung 613ha (512 dat + 101 nuoc) theo bang chi tieu.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien dang ke sau khi tim duoc diem moc thu 2 va phat hien loi ty le ~3 lan so voi uoc tinh ban dau) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.89851768220903,
-          20.802170469065555
+          106.89550086078162,
+          20.80608930625218
         ]
       }
     },
@@ -80,14 +80,14 @@
         "khu_vuc": "Khu bến Lạch Huyện",
         "phan_loai": "Bến cảng hiện hữu",
         "nguon": "05. QH tong the Lach Huyen.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Container Quoc te Tan Cang Hai Phong (HICT), toa do cong bo N20 48', E106 54' (lam tron den phut, nguon baohaiquanvietnam.vn). CANH BAO: chi sua duoc vi tri offset, CHUA xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2 de kiem chung, khac voi Song Cam/Pha Rung da co 2 diem). Do chinh xac goc xoay/ty le van la THAP.",
-        "do_chinh_xac": "TRUNG BINH (vi tri) / THAP (goc xoay) - da dich chuyen theo 1 diem neo xac thuc (HICT), nhung chua xac dinh duoc goc xoay that cua ban ve."
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cang Container Quoc te Tan Cang Hai Phong/HICT (toa do cong bo N20 48' E106 54', nguon baohaiquanvietnam.vn) va cong cang Lach Huyen = diem cuoi cau Tan Vu - Lach Huyen (xac dinh qua OpenStreetMap + bao chi xac nhan '''diem cuoi la cong cang Lach Huyen'''). Ban ve nay gan nhu huong Bac that (lech ~2 do), nhung ty le ban dau sai gan 3 lan - da sua lai dung theo phep fit nay. Kich thuoc da hieu chinh ve dung 613ha (512 dat + 101 nuoc) theo bang chi tieu.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien dang ke sau khi tim duoc diem moc thu 2 va phat hien loi ty le ~3 lan so voi uoc tinh ban dau) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.9,
-          20.8
+          106.90000032762171,
+          20.799991384992857
         ]
       }
     },
@@ -98,14 +98,14 @@
         "khu_vuc": "Khu bến Lạch Huyện",
         "phan_loai": "Bến cảng hiện hữu",
         "nguon": "05. QH tong the Lach Huyen.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Container Quoc te Tan Cang Hai Phong (HICT), toa do cong bo N20 48', E106 54' (lam tron den phut, nguon baohaiquanvietnam.vn). CANH BAO: chi sua duoc vi tri offset, CHUA xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2 de kiem chung, khac voi Song Cam/Pha Rung da co 2 diem). Do chinh xac goc xoay/ty le van la THAP.",
-        "do_chinh_xac": "TRUNG BINH (vi tri) / THAP (goc xoay) - da dich chuyen theo 1 diem neo xac thuc (HICT), nhung chua xac dinh duoc goc xoay that cua ban ve."
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cang Container Quoc te Tan Cang Hai Phong/HICT (toa do cong bo N20 48' E106 54', nguon baohaiquanvietnam.vn) va cong cang Lach Huyen = diem cuoi cau Tan Vu - Lach Huyen (xac dinh qua OpenStreetMap + bao chi xac nhan '''diem cuoi la cong cang Lach Huyen'''). Ban ve nay gan nhu huong Bac that (lech ~2 do), nhung ty le ban dau sai gan 3 lan - da sua lai dung theo phep fit nay. Kich thuoc da hieu chinh ve dung 613ha (512 dat + 101 nuoc) theo bang chi tieu.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien dang ke sau khi tim duoc diem moc thu 2 va phat hien loi ty le ~3 lan so voi uoc tinh ban dau) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.90115291383742,
-          20.799069798971907
+          106.90341702464885,
+          20.79742815415358
         ]
       }
     },
@@ -116,14 +116,14 @@
         "khu_vuc": "Khu bến Lạch Huyện",
         "phan_loai": "Bến cảng quy hoạch đến năm 2030",
         "nguon": "05. QH tong the Lach Huyen.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Container Quoc te Tan Cang Hai Phong (HICT), toa do cong bo N20 48', E106 54' (lam tron den phut, nguon baohaiquanvietnam.vn). CANH BAO: chi sua duoc vi tri offset, CHUA xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2 de kiem chung, khac voi Song Cam/Pha Rung da co 2 diem). Do chinh xac goc xoay/ty le van la THAP.",
-        "do_chinh_xac": "TRUNG BINH (vi tri) / THAP (goc xoay) - da dich chuyen theo 1 diem neo xac thuc (HICT), nhung chua xac dinh duoc goc xoay that cua ban ve."
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cang Container Quoc te Tan Cang Hai Phong/HICT (toa do cong bo N20 48' E106 54', nguon baohaiquanvietnam.vn) va cong cang Lach Huyen = diem cuoi cau Tan Vu - Lach Huyen (xac dinh qua OpenStreetMap + bao chi xac nhan '''diem cuoi la cong cang Lach Huyen'''). Ban ve nay gan nhu huong Bac that (lech ~2 do), nhung ty le ban dau sai gan 3 lan - da sua lai dung theo phep fit nay. Kich thuoc da hieu chinh ve dung 613ha (512 dat + 101 nuoc) theo bang chi tieu.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien dang ke sau khi tim duoc diem moc thu 2 va phat hien loi ty le ~3 lan so voi uoc tinh ban dau) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.90197642372128,
-          20.796589262896987
+          106.90605613148703,
+          20.790374734581818
         ]
       }
     },
@@ -134,14 +134,14 @@
         "khu_vuc": "Khu bến Lạch Huyện",
         "phan_loai": "Bến cảng quy hoạch đến năm 2030",
         "nguon": "05. QH tong the Lach Huyen.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Container Quoc te Tan Cang Hai Phong (HICT), toa do cong bo N20 48', E106 54' (lam tron den phut, nguon baohaiquanvietnam.vn). CANH BAO: chi sua duoc vi tri offset, CHUA xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2 de kiem chung, khac voi Song Cam/Pha Rung da co 2 diem). Do chinh xac goc xoay/ty le van la THAP.",
-        "do_chinh_xac": "TRUNG BINH (vi tri) / THAP (goc xoay) - da dich chuyen theo 1 diem neo xac thuc (HICT), nhung chua xac dinh duoc goc xoay that cua ban ve."
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cang Container Quoc te Tan Cang Hai Phong/HICT (toa do cong bo N20 48' E106 54', nguon baohaiquanvietnam.vn) va cong cang Lach Huyen = diem cuoi cau Tan Vu - Lach Huyen (xac dinh qua OpenStreetMap + bao chi xac nhan '''diem cuoi la cong cang Lach Huyen'''). Ban ve nay gan nhu huong Bac that (lech ~2 do), nhung ty le ban dau sai gan 3 lan - da sua lai dung theo phep fit nay. Kich thuoc da hieu chinh ve dung 613ha (512 dat + 101 nuoc) theo bang chi tieu.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien dang ke sau khi tim duoc diem moc thu 2 va phat hien loi ty le ~3 lan so voi uoc tinh ban dau) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.90477635732644,
-          20.795659061868893
+          106.91420850063672,
+          20.787971116425716
         ]
       }
     },
@@ -152,14 +152,14 @@
         "khu_vuc": "Khu bến Lạch Huyện",
         "phan_loai": "Hạ tầng liên quan (ga đường sắt)",
         "nguon": "05. QH tong the Lach Huyen.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Container Quoc te Tan Cang Hai Phong (HICT), toa do cong bo N20 48', E106 54' (lam tron den phut, nguon baohaiquanvietnam.vn). CANH BAO: chi sua duoc vi tri offset, CHUA xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2 de kiem chung, khac voi Song Cam/Pha Rung da co 2 diem). Do chinh xac goc xoay/ty le van la THAP.",
-        "do_chinh_xac": "TRUNG BINH (vi tri) / THAP (goc xoay) - da dich chuyen theo 1 diem neo xac thuc (HICT), nhung chua xac dinh duoc goc xoay that cua ban ve."
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cang Container Quoc te Tan Cang Hai Phong/HICT (toa do cong bo N20 48' E106 54', nguon baohaiquanvietnam.vn) va cong cang Lach Huyen = diem cuoi cau Tan Vu - Lach Huyen (xac dinh qua OpenStreetMap + bao chi xac nhan '''diem cuoi la cong cang Lach Huyen'''). Ban ve nay gan nhu huong Bac that (lech ~2 do), nhung ty le ban dau sai gan 3 lan - da sua lai dung theo phep fit nay. Kich thuoc da hieu chinh ve dung 613ha (512 dat + 101 nuoc) theo bang chi tieu.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien dang ke sau khi tim duoc diem moc thu 2 va phat hien loi ty le ~3 lan so voi uoc tinh ban dau) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.90428225139613,
-          20.794108726822067
+          106.91295734323552,
+          20.783464966424916
         ]
       }
     },
@@ -170,14 +170,14 @@
         "khu_vuc": "Khu bến Lạch Huyện",
         "phan_loai": "Bến cảng quy hoạch đến năm 2030",
         "nguon": "05. QH tong the Lach Huyen.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Container Quoc te Tan Cang Hai Phong (HICT), toa do cong bo N20 48', E106 54' (lam tron den phut, nguon baohaiquanvietnam.vn). CANH BAO: chi sua duoc vi tri offset, CHUA xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2 de kiem chung, khac voi Song Cam/Pha Rung da co 2 diem). Do chinh xac goc xoay/ty le van la THAP.",
-        "do_chinh_xac": "TRUNG BINH (vi tri) / THAP (goc xoay) - da dich chuyen theo 1 diem neo xac thuc (HICT), nhung chua xac dinh duoc goc xoay that cua ban ve."
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cang Container Quoc te Tan Cang Hai Phong/HICT (toa do cong bo N20 48' E106 54', nguon baohaiquanvietnam.vn) va cong cang Lach Huyen = diem cuoi cau Tan Vu - Lach Huyen (xac dinh qua OpenStreetMap + bao chi xac nhan '''diem cuoi la cong cang Lach Huyen'''). Ban ve nay gan nhu huong Bac that (lech ~2 do), nhung ty le ban dau sai gan 3 lan - da sua lai dung theo phep fit nay. Kich thuoc da hieu chinh ve dung 613ha (512 dat + 101 nuoc) theo bang chi tieu.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien dang ke sau khi tim duoc diem moc thu 2 va phat hien loi ty le ~3 lan so voi uoc tinh ban dau) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.90988211860643,
-          20.792868458784607
+          106.92919426384066,
+          20.78044103659105
         ]
       }
     },
@@ -188,14 +188,14 @@
         "khu_vuc": "Khu bến Lạch Huyện",
         "phan_loai": "Bến cảng quy hoạch tầm nhìn đến năm 2050",
         "nguon": "05. QH tong the Lach Huyen.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Container Quoc te Tan Cang Hai Phong (HICT), toa do cong bo N20 48', E106 54' (lam tron den phut, nguon baohaiquanvietnam.vn). CANH BAO: chi sua duoc vi tri offset, CHUA xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2 de kiem chung, khac voi Song Cam/Pha Rung da co 2 diem). Do chinh xac goc xoay/ty le van la THAP.",
-        "do_chinh_xac": "TRUNG BINH (vi tri) / THAP (goc xoay) - da dich chuyen theo 1 diem neo xac thuc (HICT), nhung chua xac dinh duoc goc xoay that cua ban ve."
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cang Container Quoc te Tan Cang Hai Phong/HICT (toa do cong bo N20 48' E106 54', nguon baohaiquanvietnam.vn) va cong cang Lach Huyen = diem cuoi cau Tan Vu - Lach Huyen (xac dinh qua OpenStreetMap + bao chi xac nhan '''diem cuoi la cong cang Lach Huyen'''). Ban ve nay gan nhu huong Bac that (lech ~2 do), nhung ty le ban dau sai gan 3 lan - da sua lai dung theo phep fit nay. Kich thuoc da hieu chinh ve dung 613ha (512 dat + 101 nuoc) theo bang chi tieu.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien dang ke sau khi tim duoc diem moc thu 2 va phat hien loi ty le ~3 lan so voi uoc tinh ban dau) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.9118585423277,
-          20.79100805672842
+          106.93508052347039,
+          20.775282652375854
         ]
       }
     },
@@ -206,14 +206,14 @@
         "khu_vuc": "Khu bến Lạch Huyện",
         "phan_loai": "Bến cảng quy hoạch tầm nhìn đến năm 2050",
         "nguon": "05. QH tong the Lach Huyen.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Container Quoc te Tan Cang Hai Phong (HICT), toa do cong bo N20 48', E106 54' (lam tron den phut, nguon baohaiquanvietnam.vn). CANH BAO: chi sua duoc vi tri offset, CHUA xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2 de kiem chung, khac voi Song Cam/Pha Rung da co 2 diem). Do chinh xac goc xoay/ty le van la THAP.",
-        "do_chinh_xac": "TRUNG BINH (vi tri) / THAP (goc xoay) - da dich chuyen theo 1 diem neo xac thuc (HICT), nhung chua xac dinh duoc goc xoay that cua ban ve."
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cang Container Quoc te Tan Cang Hai Phong/HICT (toa do cong bo N20 48' E106 54', nguon baohaiquanvietnam.vn) va cong cang Lach Huyen = diem cuoi cau Tan Vu - Lach Huyen (xac dinh qua OpenStreetMap + bao chi xac nhan '''diem cuoi la cong cang Lach Huyen'''). Ban ve nay gan nhu huong Bac that (lech ~2 do), nhung ty le ban dau sai gan 3 lan - da sua lai dung theo phep fit nay. Kich thuoc da hieu chinh ve dung 613ha (512 dat + 101 nuoc) theo bang chi tieu.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien dang ke sau khi tim duoc diem moc thu 2 va phat hien loi ty le ~3 lan so voi uoc tinh ban dau) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.91284675418835,
-          20.78790738663477
+          106.93826101521506,
+          20.766461887594073
         ]
       }
     },
@@ -224,14 +224,14 @@
         "khu_vuc": "Khu bến Lạch Huyện",
         "phan_loai": "Bến cảng quy hoạch tầm nhìn đến năm 2050",
         "nguon": "05. QH tong the Lach Huyen.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Container Quoc te Tan Cang Hai Phong (HICT), toa do cong bo N20 48', E106 54' (lam tron den phut, nguon baohaiquanvietnam.vn). CANH BAO: chi sua duoc vi tri offset, CHUA xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2 de kiem chung, khac voi Song Cam/Pha Rung da co 2 diem). Do chinh xac goc xoay/ty le van la THAP.",
-        "do_chinh_xac": "TRUNG BINH (vi tri) / THAP (goc xoay) - da dich chuyen theo 1 diem neo xac thuc (HICT), nhung chua xac dinh duoc goc xoay that cua ban ve."
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cang Container Quoc te Tan Cang Hai Phong/HICT (toa do cong bo N20 48' E106 54', nguon baohaiquanvietnam.vn) va cong cang Lach Huyen = diem cuoi cau Tan Vu - Lach Huyen (xac dinh qua OpenStreetMap + bao chi xac nhan '''diem cuoi la cong cang Lach Huyen'''). Ban ve nay gan nhu huong Bac that (lech ~2 do), nhung ty le ban dau sai gan 3 lan - da sua lai dung theo phep fit nay. Kich thuoc da hieu chinh ve dung 613ha (512 dat + 101 nuoc) theo bang chi tieu.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien dang ke sau khi tim duoc diem moc thu 2 va phat hien loi ty le ~3 lan so voi uoc tinh ban dau) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.913834966049,
-          20.785116783550485
+          106.94140759811262,
+          20.75853277605146
         ]
       }
     },
@@ -242,14 +242,14 @@
         "khu_vuc": "Khu bến Lạch Huyện",
         "phan_loai": "Bến cảng quy hoạch tầm nhìn đến năm 2050",
         "nguon": "05. QH tong the Lach Huyen.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Container Quoc te Tan Cang Hai Phong (HICT), toa do cong bo N20 48', E106 54' (lam tron den phut, nguon baohaiquanvietnam.vn). CANH BAO: chi sua duoc vi tri offset, CHUA xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2 de kiem chung, khac voi Song Cam/Pha Rung da co 2 diem). Do chinh xac goc xoay/ty le van la THAP.",
-        "do_chinh_xac": "TRUNG BINH (vi tri) / THAP (goc xoay) - da dich chuyen theo 1 diem neo xac thuc (HICT), nhung chua xac dinh duoc goc xoay that cua ban ve."
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cang Container Quoc te Tan Cang Hai Phong/HICT (toa do cong bo N20 48' E106 54', nguon baohaiquanvietnam.vn) va cong cang Lach Huyen = diem cuoi cau Tan Vu - Lach Huyen (xac dinh qua OpenStreetMap + bao chi xac nhan '''diem cuoi la cong cang Lach Huyen'''). Ban ve nay gan nhu huong Bac that (lech ~2 do), nhung ty le ban dau sai gan 3 lan - da sua lai dung theo phep fit nay. Kich thuoc da hieu chinh ve dung 613ha (512 dat + 101 nuoc) theo bang chi tieu.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien dang ke sau khi tim duoc diem moc thu 2 va phat hien loi ty le ~3 lan so voi uoc tinh ban dau) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.91482317790964,
-          20.782326180466203
+          106.94455418101018,
+          20.750603664508848
         ]
       }
     },
@@ -260,14 +260,14 @@
         "khu_vuc": "Khu bến Lạch Huyện",
         "phan_loai": "Bến cảng quy hoạch tầm nhìn đến năm 2050",
         "nguon": "05. QH tong the Lach Huyen.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Container Quoc te Tan Cang Hai Phong (HICT), toa do cong bo N20 48', E106 54' (lam tron den phut, nguon baohaiquanvietnam.vn). CANH BAO: chi sua duoc vi tri offset, CHUA xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2 de kiem chung, khac voi Song Cam/Pha Rung da co 2 diem). Do chinh xac goc xoay/ty le van la THAP.",
-        "do_chinh_xac": "TRUNG BINH (vi tri) / THAP (goc xoay) - da dich chuyen theo 1 diem neo xac thuc (HICT), nhung chua xac dinh duoc goc xoay that cua ban ve."
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cang Container Quoc te Tan Cang Hai Phong/HICT (toa do cong bo N20 48' E106 54', nguon baohaiquanvietnam.vn) va cong cang Lach Huyen = diem cuoi cau Tan Vu - Lach Huyen (xac dinh qua OpenStreetMap + bao chi xac nhan '''diem cuoi la cong cang Lach Huyen'''). Ban ve nay gan nhu huong Bac that (lech ~2 do), nhung ty le ban dau sai gan 3 lan - da sua lai dung theo phep fit nay. Kich thuoc da hieu chinh ve dung 613ha (512 dat + 101 nuoc) theo bang chi tieu.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien dang ke sau khi tim duoc diem moc thu 2 va phat hien loi ty le ~3 lan so voi uoc tinh ban dau) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.91581138977028,
-          20.779535577381917
+          106.94770076390773,
+          20.742674552966236
         ]
       }
     },
@@ -278,14 +278,14 @@
         "khu_vuc": "Khu bến Lạch Huyện",
         "phan_loai": "Bến cảng quy hoạch đến năm 2030",
         "nguon": "05. QH tong the Lach Huyen.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Container Quoc te Tan Cang Hai Phong (HICT), toa do cong bo N20 48', E106 54' (lam tron den phut, nguon baohaiquanvietnam.vn). CANH BAO: chi sua duoc vi tri offset, CHUA xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2 de kiem chung, khac voi Song Cam/Pha Rung da co 2 diem). Do chinh xac goc xoay/ty le van la THAP.",
-        "do_chinh_xac": "TRUNG BINH (vi tri) / THAP (goc xoay) - da dich chuyen theo 1 diem neo xac thuc (HICT), nhung chua xac dinh duoc goc xoay that cua ban ve."
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cang Container Quoc te Tan Cang Hai Phong/HICT (toa do cong bo N20 48' E106 54', nguon baohaiquanvietnam.vn) va cong cang Lach Huyen = diem cuoi cau Tan Vu - Lach Huyen (xac dinh qua OpenStreetMap + bao chi xac nhan '''diem cuoi la cong cang Lach Huyen'''). Ban ve nay gan nhu huong Bac that (lech ~2 do), nhung ty le ban dau sai gan 3 lan - da sua lai dung theo phep fit nay. Kich thuoc da hieu chinh ve dung 613ha (512 dat + 101 nuoc) theo bang chi tieu.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien dang ke sau khi tim duoc diem moc thu 2 va phat hien loi ty le ~3 lan so voi uoc tinh ban dau) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.9163054957006,
-          20.778140275839778
+          106.94927405535651,
+          20.73870999719493
         ]
       }
     },
@@ -296,14 +296,14 @@
         "khu_vuc": "Khu bến Lạch Huyện",
         "phan_loai": "Bến cảng phát triển có điều kiện",
         "nguon": "05. QH tong the Lach Huyen.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Container Quoc te Tan Cang Hai Phong (HICT), toa do cong bo N20 48', E106 54' (lam tron den phut, nguon baohaiquanvietnam.vn). CANH BAO: chi sua duoc vi tri offset, CHUA xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2 de kiem chung, khac voi Song Cam/Pha Rung da co 2 diem). Do chinh xac goc xoay/ty le van la THAP.",
-        "do_chinh_xac": "TRUNG BINH (vi tri) / THAP (goc xoay) - da dich chuyen theo 1 diem neo xac thuc (HICT), nhung chua xac dinh duoc goc xoay that cua ban ve."
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cang Container Quoc te Tan Cang Hai Phong/HICT (toa do cong bo N20 48' E106 54', nguon baohaiquanvietnam.vn) va cong cang Lach Huyen = diem cuoi cau Tan Vu - Lach Huyen (xac dinh qua OpenStreetMap + bao chi xac nhan '''diem cuoi la cong cang Lach Huyen'''). Ban ve nay gan nhu huong Bac that (lech ~2 do), nhung ty le ban dau sai gan 3 lan - da sua lai dung theo phep fit nay. Kich thuoc da hieu chinh ve dung 613ha (512 dat + 101 nuoc) theo bang chi tieu.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien dang ke sau khi tim duoc diem moc thu 2 va phat hien loi ty le ~3 lan so voi uoc tinh ban dau) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.91482317790964,
-          20.776124840278907
+          106.94523235795245,
+          20.73277059972547
         ]
       }
     },
@@ -314,14 +314,14 @@
         "khu_vuc": "Khu bến Đình Vũ",
         "phan_loai": "Bến cảng hiện hữu",
         "nguon": "09 QH tong the Dinh Vu-Model.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Nam Hai Dinh Vu, toa do cong bo N20 49', E106 47' (lam tron den phut, nguon vpa.org.vn). Sai lech ban dau ~1.3km, gan voi sai so lam tron cua nguon (+-930m) nen muc do cai thien it hon so voi Lach Huyen. CANH BAO: chua xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2).",
-        "do_chinh_xac": "TRUNG BINH (vi tri, da xac thuc gan dung qua Cang Nam Hai Dinh Vu) / THAP (goc xoay chi tiet)."
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cau Bach Dang (xac thuc qua OpenStreetMap) va Cang Nam Hai Dinh Vu (toa do cong bo N20 49' E106 47', nguon vpa.org.vn). Ban ve lech ~8.6 do so voi huong Bac that; ty le ban dau sai ~1.4 lan - da sua lai. Kich thuoc da hieu chinh ve dung 594ha (528 dat + 66 nuoc) theo bang chi tieu.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien sau khi tim duoc diem moc thu 2 va sua goc xoay/ty le) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.78233006358919,
-          20.83196360486656
+          106.77852489634662,
+          20.8377317876188
         ]
       }
     },
@@ -332,14 +332,14 @@
         "khu_vuc": "Khu bến Đình Vũ",
         "phan_loai": "Bến cảng hiện hữu",
         "nguon": "09 QH tong the Dinh Vu-Model.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Nam Hai Dinh Vu, toa do cong bo N20 49', E106 47' (lam tron den phut, nguon vpa.org.vn). Sai lech ban dau ~1.3km, gan voi sai so lam tron cua nguon (+-930m) nen muc do cai thien it hon so voi Lach Huyen. CANH BAO: chua xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2).",
-        "do_chinh_xac": "TRUNG BINH (vi tri, da xac thuc gan dung qua Cang Nam Hai Dinh Vu) / THAP (goc xoay chi tiet)."
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cau Bach Dang (xac thuc qua OpenStreetMap) va Cang Nam Hai Dinh Vu (toa do cong bo N20 49' E106 47', nguon vpa.org.vn). Ban ve lech ~8.6 do so voi huong Bac that; ty le ban dau sai ~1.4 lan - da sua lai. Kich thuoc da hieu chinh ve dung 594ha (528 dat + 66 nuoc) theo bang chi tieu.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien sau khi tim duoc diem moc thu 2 va sua goc xoay/ty le) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.78473791097515,
-          20.82875313635547
+          106.78258767719048,
+          20.833745674729993
         ]
       }
     },
@@ -350,14 +350,14 @@
         "khu_vuc": "Khu bến Đình Vũ",
         "phan_loai": "Bến cảng hiện hữu",
         "nguon": "09 QH tong the Dinh Vu-Model.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Nam Hai Dinh Vu, toa do cong bo N20 49', E106 47' (lam tron den phut, nguon vpa.org.vn). Sai lech ban dau ~1.3km, gan voi sai so lam tron cua nguon (+-930m) nen muc do cai thien it hon so voi Lach Huyen. CANH BAO: chua xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2).",
-        "do_chinh_xac": "TRUNG BINH (vi tri, da xac thuc gan dung qua Cang Nam Hai Dinh Vu) / THAP (goc xoay chi tiet)."
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cau Bach Dang (xac thuc qua OpenStreetMap) va Cang Nam Hai Dinh Vu (toa do cong bo N20 49' E106 47', nguon vpa.org.vn). Ban ve lech ~8.6 do so voi huong Bac that; ty le ban dau sai ~1.4 lan - da sua lai. Kich thuoc da hieu chinh ve dung 594ha (528 dat + 66 nuoc) theo bang chi tieu.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien sau khi tim duoc diem moc thu 2 va sua goc xoay/ty le) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.78674445046346,
-          20.82724232764437
+          106.78571349608362,
+          20.832042478968336
         ]
       }
     },
@@ -368,14 +368,14 @@
         "khu_vuc": "Khu bến Đình Vũ",
         "phan_loai": "Bến cảng hiện hữu",
         "nguon": "09 QH tong the Dinh Vu-Model.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Nam Hai Dinh Vu, toa do cong bo N20 49', E106 47' (lam tron den phut, nguon vpa.org.vn). Sai lech ban dau ~1.3km, gan voi sai so lam tron cua nguon (+-930m) nen muc do cai thien it hon so voi Lach Huyen. CANH BAO: chua xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2).",
-        "do_chinh_xac": "TRUNG BINH (vi tri, da xac thuc gan dung qua Cang Nam Hai Dinh Vu) / THAP (goc xoay chi tiet)."
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cau Bach Dang (xac thuc qua OpenStreetMap) va Cang Nam Hai Dinh Vu (toa do cong bo N20 49' E106 47', nguon vpa.org.vn). Ban ve lech ~8.6 do so voi huong Bac that; ty le ban dau sai ~1.4 lan - da sua lai. Kich thuoc da hieu chinh ve dung 594ha (528 dat + 66 nuoc) theo bang chi tieu.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien sau khi tim duoc diem moc thu 2 va sua goc xoay/ty le) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.7877477202076,
-          20.82554266784438
+          106.78748707997079,
+          20.829878531104523
         ]
       }
     },
@@ -386,14 +386,14 @@
         "khu_vuc": "Khu bến Đình Vũ",
         "phan_loai": "Bến cảng hiện hữu",
         "nguon": "09 QH tong the Dinh Vu-Model.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Nam Hai Dinh Vu, toa do cong bo N20 49', E106 47' (lam tron den phut, nguon vpa.org.vn). Sai lech ban dau ~1.3km, gan voi sai so lam tron cua nguon (+-930m) nen muc do cai thien it hon so voi Lach Huyen. CANH BAO: chua xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2).",
-        "do_chinh_xac": "TRUNG BINH (vi tri, da xac thuc gan dung qua Cang Nam Hai Dinh Vu) / THAP (goc xoay chi tiet)."
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cau Bach Dang (xac thuc qua OpenStreetMap) va Cang Nam Hai Dinh Vu (toa do cong bo N20 49' E106 47', nguon vpa.org.vn). Ban ve lech ~8.6 do so voi huong Bac that; ty le ban dau sai ~1.4 lan - da sua lai. Kich thuoc da hieu chinh ve dung 594ha (528 dat + 66 nuoc) theo bang chi tieu.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien sau khi tim duoc diem moc thu 2 va sua goc xoay/ty le) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.78533987282164,
-          20.821010241711083
+          106.78515182953981,
+          20.82310337413285
         ]
       }
     },
@@ -404,14 +404,14 @@
         "khu_vuc": "Khu bến Đình Vũ",
         "phan_loai": "Hạ tầng liên quan (ga đường sắt)",
         "nguon": "09 QH tong the Dinh Vu-Model.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Nam Hai Dinh Vu, toa do cong bo N20 49', E106 47' (lam tron den phut, nguon vpa.org.vn). Sai lech ban dau ~1.3km, gan voi sai so lam tron cua nguon (+-930m) nen muc do cai thien it hon so voi Lach Huyen. CANH BAO: chua xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2).",
-        "do_chinh_xac": "TRUNG BINH (vi tri, da xac thuc gan dung qua Cang Nam Hai Dinh Vu) / THAP (goc xoay chi tiet)."
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cau Bach Dang (xac thuc qua OpenStreetMap) va Cang Nam Hai Dinh Vu (toa do cong bo N20 49' E106 47', nguon vpa.org.vn). Ban ve lech ~8.6 do so voi huong Bac that; ty le ban dau sai ~1.4 lan - da sua lai. Kich thuoc da hieu chinh ve dung 594ha (528 dat + 66 nuoc) theo bang chi tieu.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien sau khi tim duoc diem moc thu 2 va sua goc xoay/ty le) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.78092548594736,
-          20.821576794977744
+          106.77889019734144,
+          20.823018342858177
         ]
       }
     },
@@ -422,14 +422,14 @@
         "khu_vuc": "Khu bến Đình Vũ",
         "phan_loai": "Bến cảng hiện hữu",
         "nguon": "09 QH tong the Dinh Vu-Model.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Nam Hai Dinh Vu, toa do cong bo N20 49', E106 47' (lam tron den phut, nguon vpa.org.vn). Sai lech ban dau ~1.3km, gan voi sai so lam tron cua nguon (+-930m) nen muc do cai thien it hon so voi Lach Huyen. CANH BAO: chua xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2).",
-        "do_chinh_xac": "TRUNG BINH (vi tri, da xac thuc gan dung qua Cang Nam Hai Dinh Vu) / THAP (goc xoay chi tiet)."
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cau Bach Dang (xac thuc qua OpenStreetMap) va Cang Nam Hai Dinh Vu (toa do cong bo N20 49' E106 47', nguon vpa.org.vn). Ban ve lech ~8.6 do so voi huong Bac that; ty le ban dau sai ~1.4 lan - da sua lai. Kich thuoc da hieu chinh ve dung 594ha (528 dat + 66 nuoc) theo bang chi tieu.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien sau khi tim duoc diem moc thu 2 va sua goc xoay/ty le) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.78333333333333,
-          20.816666666666666
+          106.78333219217836,
+          20.81667
         ]
       }
     },
@@ -440,14 +440,14 @@
         "khu_vuc": "Khu bến Đình Vũ",
         "phan_loai": "Bến cảng hiện hữu",
         "nguon": "09 QH tong the Dinh Vu-Model.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Nam Hai Dinh Vu, toa do cong bo N20 49', E106 47' (lam tron den phut, nguon vpa.org.vn). Sai lech ban dau ~1.3km, gan voi sai so lam tron cua nguon (+-930m) nen muc do cai thien it hon so voi Lach Huyen. CANH BAO: chua xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2).",
-        "do_chinh_xac": "TRUNG BINH (vi tri, da xac thuc gan dung qua Cang Nam Hai Dinh Vu) / THAP (goc xoay chi tiet)."
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cau Bach Dang (xac thuc qua OpenStreetMap) va Cang Nam Hai Dinh Vu (toa do cong bo N20 49' E106 47', nguon vpa.org.vn). Ban ve lech ~8.6 do so voi huong Bac that; ty le ban dau sai ~1.4 lan - da sua lai. Kich thuoc da hieu chinh ve dung 594ha (528 dat + 66 nuoc) theo bang chi tieu.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien sau khi tim duoc diem moc thu 2 va sua goc xoay/ty le) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.78092548594736,
-          20.81440045360002
+          106.78049132308996,
+          20.81304448298749
         ]
       }
     },
@@ -458,14 +458,14 @@
         "khu_vuc": "Khu bến Đình Vũ",
         "phan_loai": "Bến cảng hiện hữu",
         "nguon": "09 QH tong the Dinh Vu-Model.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Nam Hai Dinh Vu, toa do cong bo N20 49', E106 47' (lam tron den phut, nguon vpa.org.vn). Sai lech ban dau ~1.3km, gan voi sai so lam tron cua nguon (+-930m) nen muc do cai thien it hon so voi Lach Huyen. CANH BAO: chua xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2).",
-        "do_chinh_xac": "TRUNG BINH (vi tri, da xac thuc gan dung qua Cang Nam Hai Dinh Vu) / THAP (goc xoay chi tiet)."
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cau Bach Dang (xac thuc qua OpenStreetMap) va Cang Nam Hai Dinh Vu (toa do cong bo N20 49' E106 47', nguon vpa.org.vn). Ban ve lech ~8.6 do so voi huong Bac that; ty le ban dau sai ~1.4 lan - da sua lai. Kich thuoc da hieu chinh ve dung 594ha (528 dat + 66 nuoc) theo bang chi tieu.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien sau khi tim duoc diem moc thu 2 va sua goc xoay/ty le) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.78253071753801,
-          20.814022751422243
+          106.78280658469676,
+          20.812836794363193
         ]
       }
     },
@@ -476,14 +476,14 @@
         "khu_vuc": "Khu bến Đình Vũ",
         "phan_loai": "Bến cảng hiện hữu",
         "nguon": "09 QH tong the Dinh Vu-Model.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Nam Hai Dinh Vu, toa do cong bo N20 49', E106 47' (lam tron den phut, nguon vpa.org.vn). Sai lech ban dau ~1.3km, gan voi sai so lam tron cua nguon (+-930m) nen muc do cai thien it hon so voi Lach Huyen. CANH BAO: chua xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2).",
-        "do_chinh_xac": "TRUNG BINH (vi tri, da xac thuc gan dung qua Cang Nam Hai Dinh Vu) / THAP (goc xoay chi tiet)."
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cau Bach Dang (xac thuc qua OpenStreetMap) va Cang Nam Hai Dinh Vu (toa do cong bo N20 49' E106 47', nguon vpa.org.vn). Ban ve lech ~8.6 do so voi huong Bac that; ty le ban dau sai ~1.4 lan - da sua lai. Kich thuoc da hieu chinh ve dung 594ha (528 dat + 66 nuoc) theo bang chi tieu.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien sau khi tim duoc diem moc thu 2 va sua goc xoay/ty le) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.79497126236551,
-          20.81968828408887
+          106.79883272473997,
+          20.823169592370043
         ]
       }
     },
@@ -494,14 +494,14 @@
         "khu_vuc": "Khu bến Đình Vũ",
         "phan_loai": "Bến cảng quy hoạch đến năm 2030",
         "nguon": "09 QH tong the Dinh Vu-Model.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Nam Hai Dinh Vu, toa do cong bo N20 49', E106 47' (lam tron den phut, nguon vpa.org.vn). Sai lech ban dau ~1.3km, gan voi sai so lam tron cua nguon (+-930m) nen muc do cai thien it hon so voi Lach Huyen. CANH BAO: chua xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2).",
-        "do_chinh_xac": "TRUNG BINH (vi tri, da xac thuc gan dung qua Cang Nam Hai Dinh Vu) / THAP (goc xoay chi tiet)."
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cau Bach Dang (xac thuc qua OpenStreetMap) va Cang Nam Hai Dinh Vu (toa do cong bo N20 49' E106 47', nguon vpa.org.vn). Ban ve lech ~8.6 do so voi huong Bac that; ty le ban dau sai ~1.4 lan - da sua lai. Kich thuoc da hieu chinh ve dung 594ha (528 dat + 66 nuoc) theo bang chi tieu.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien sau khi tim duoc diem moc thu 2 va sua goc xoay/ty le) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.80159284267692,
-          20.816666666666666
+          106.8087097242509,
+          20.820278734321185
         ]
       }
     },
@@ -512,14 +512,14 @@
         "khu_vuc": "Khu bến Đình Vũ",
         "phan_loai": "Bến cảng hiện hữu",
         "nguon": "09 QH tong the Dinh Vu-Model.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Nam Hai Dinh Vu, toa do cong bo N20 49', E106 47' (lam tron den phut, nguon vpa.org.vn). Sai lech ban dau ~1.3km, gan voi sai so lam tron cua nguon (+-930m) nen muc do cai thien it hon so voi Lach Huyen. CANH BAO: chua xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2).",
-        "do_chinh_xac": "TRUNG BINH (vi tri, da xac thuc gan dung qua Cang Nam Hai Dinh Vu) / THAP (goc xoay chi tiet)."
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cau Bach Dang (xac thuc qua OpenStreetMap) va Cang Nam Hai Dinh Vu (toa do cong bo N20 49' E106 47', nguon vpa.org.vn). Ban ve lech ~8.6 do so voi huong Bac that; ty le ban dau sai ~1.4 lan - da sua lai. Kich thuoc da hieu chinh ve dung 594ha (528 dat + 66 nuoc) theo bang chi tieu.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien sau khi tim duoc diem moc thu 2 va sua goc xoay/ty le) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.79196145313306,
-          20.810245729644492
+          106.79675635946363,
+          20.809451246223514
         ]
       }
     },
@@ -530,14 +530,14 @@
         "khu_vuc": "Khu bến Đình Vũ",
         "phan_loai": "Bến cảng hiện hữu",
         "nguon": "09 QH tong the Dinh Vu-Model.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Nam Hai Dinh Vu, toa do cong bo N20 49', E106 47' (lam tron den phut, nguon vpa.org.vn). Sai lech ban dau ~1.3km, gan voi sai so lam tron cua nguon (+-930m) nen muc do cai thien it hon so voi Lach Huyen. CANH BAO: chua xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2).",
-        "do_chinh_xac": "TRUNG BINH (vi tri, da xac thuc gan dung qua Cang Nam Hai Dinh Vu) / THAP (goc xoay chi tiet)."
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cau Bach Dang (xac thuc qua OpenStreetMap) va Cang Nam Hai Dinh Vu (toa do cong bo N20 49' E106 47', nguon vpa.org.vn). Ban ve lech ~8.6 do so voi huong Bac that; ty le ban dau sai ~1.4 lan - da sua lai. Kich thuoc da hieu chinh ve dung 594ha (528 dat + 66 nuoc) theo bang chi tieu.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien sau khi tim duoc diem moc thu 2 va sua goc xoay/ty le) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.7877477202076,
-          20.806657558955628
+          106.79170056878269,
+          20.803631531444818
         ]
       }
     },
@@ -548,14 +548,14 @@
         "khu_vuc": "Khu bến Đình Vũ",
         "phan_loai": "Bến cảng hiện hữu",
         "nguon": "09 QH tong the Dinh Vu-Model.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Nam Hai Dinh Vu, toa do cong bo N20 49', E106 47' (lam tron den phut, nguon vpa.org.vn). Sai lech ban dau ~1.3km, gan voi sai so lam tron cua nguon (+-930m) nen muc do cai thien it hon so voi Lach Huyen. CANH BAO: chua xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2).",
-        "do_chinh_xac": "TRUNG BINH (vi tri, da xac thuc gan dung qua Cang Nam Hai Dinh Vu) / THAP (goc xoay chi tiet)."
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cau Bach Dang (xac thuc qua OpenStreetMap) va Cang Nam Hai Dinh Vu (toa do cong bo N20 49' E106 47', nguon vpa.org.vn). Ban ve lech ~8.6 do so voi huong Bac that; ty le ban dau sai ~1.4 lan - da sua lai. Kich thuoc da hieu chinh ve dung 594ha (528 dat + 66 nuoc) theo bang chi tieu.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien sau khi tim duoc diem moc thu 2 va sua goc xoay/ty le) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.81102357827196,
-          20.815533560133343
+          106.82206961058411,
+          20.820567766133866
         ]
       }
     },
@@ -566,14 +566,14 @@
         "khu_vuc": "Khu bến Đình Vũ",
         "phan_loai": "Bến cảng quy hoạch đến năm 2030",
         "nguon": "09 QH tong the Dinh Vu-Model.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Nam Hai Dinh Vu, toa do cong bo N20 49', E106 47' (lam tron den phut, nguon vpa.org.vn). Sai lech ban dau ~1.3km, gan voi sai so lam tron cua nguon (+-930m) nen muc do cai thien it hon so voi Lach Huyen. CANH BAO: chua xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2).",
-        "do_chinh_xac": "TRUNG BINH (vi tri, da xac thuc gan dung qua Cang Nam Hai Dinh Vu) / THAP (goc xoay chi tiet)."
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cau Bach Dang (xac thuc qua OpenStreetMap) va Cang Nam Hai Dinh Vu (toa do cong bo N20 49' E106 47', nguon vpa.org.vn). Ban ve lech ~8.6 do so voi huong Bac that; ty le ban dau sai ~1.4 lan - da sua lai. Kich thuoc da hieu chinh ve dung 594ha (528 dat + 66 nuoc) theo bang chi tieu.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien sau khi tim duoc diem moc thu 2 va sua goc xoay/ty le) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.81904973622518,
-          20.808734920933393
+          106.83474142570915,
+          20.81270510310085
         ]
       }
     },
@@ -584,14 +584,14 @@
         "khu_vuc": "Khu bến Đình Vũ",
         "phan_loai": "Hạ tầng liên quan (ga đường sắt)",
         "nguon": "09 QH tong the Dinh Vu-Model.pdf - QD 756/QD-BXD, Cuc Hang hai Viet Nam, 02/2025",
-        "phuong_phap": "Da dich chuyen toan bo khu (tinh + huong khong doi) de khop diem neo moi: Cang Nam Hai Dinh Vu, toa do cong bo N20 49', E106 47' (lam tron den phut, nguon vpa.org.vn). Sai lech ban dau ~1.3km, gan voi sai so lam tron cua nguon (+-930m) nen muc do cai thien it hon so voi Lach Huyen. CANH BAO: chua xac dinh duoc goc xoay/ty le that cua ban ve nay (thieu diem moc thu 2).",
-        "do_chinh_xac": "TRUNG BINH (vi tri, da xac thuc gan dung qua Cang Nam Hai Dinh Vu) / THAP (goc xoay chi tiet)."
+        "phuong_phap": "Uoc luong tu georeference ban ve CAD, hieu chinh bang PHEP FIT 2 DIEM doc lap: Cau Bach Dang (xac thuc qua OpenStreetMap) va Cang Nam Hai Dinh Vu (toa do cong bo N20 49' E106 47', nguon vpa.org.vn). Ban ve lech ~8.6 do so voi huong Bac that; ty le ban dau sai ~1.4 lan - da sua lai. Kich thuoc da hieu chinh ve dung 594ha (528 dat + 66 nuoc) theo bang chi tieu.",
+        "do_chinh_xac": "TRUNG BINH (da cai thien sau khi tim duoc diem moc thu 2 va sua goc xoay/ty le) - van chi mang tinh minh hoa, KHONG dung de do dac hay lam can cu phap ly."
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          106.758853551576,
-          20.80042547302234
+          106.75293316714067,
+          20.789259496916994
         ]
       }
     },
