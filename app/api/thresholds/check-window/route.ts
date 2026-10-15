@@ -91,7 +91,7 @@ export async function POST(request: Request) {
           SELECT 
             water_level as value,
             created_at
-          FROM environmental_readings
+          FROM water_level_readings
           WHERE device_id = ${device_id}
             AND water_level IS NOT NULL
             AND created_at >= ${oneHourAgo}

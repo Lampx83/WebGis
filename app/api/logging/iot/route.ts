@@ -29,40 +29,47 @@ const MOCK_LOGS: IoTLogEntry[] = [
 export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url)
-    const deviceId = searchParams.get("device_id")
+    const deviceIdParam = searchParams.get("device_id")
     const logType = searchParams.get("log_type")
-    const limit = Number.parseInt(searchParams.get("limit") || "100")
-    const offset = Number.parseInt(searchParams.get("offset") || "0")
+    const limit = Math.min(Math.max(Number.parseInt(searchParams.get("limit") || "100") || 100, 1), 1000)
+    const offset = Math.max(Number.parseInt(searchParams.get("offset") || "0") || 0, 0)
 
     if (!isDbAvailable()) {
       return Response.json({ logs: MOCK_LOGS, total: MOCK_LOGS.length })
     }
 
     const sql = getDb()
-    let query = sql`SELECT * FROM iot_data_logging WHERE 1=1`
 
-    if (deviceId) {
-      query = sql`SELECT * FROM iot_data_logging WHERE device_id = ${Number.parseInt(deviceId)}`
+    // Build the WHERE clause from every filter that was supplied (they used to
+    // overwrite one another, and `.orderBy()` does not exist in postgres.js).
+    const conditions = []
+    if (deviceIdParam) {
+      const deviceId = Number.parseInt(deviceIdParam)
+      if (Number.isNaN(deviceId)) return Response.json({ error: "Invalid device_id" }, { status: 400 })
+      conditions.push(sql`device_id = ${deviceId}`)
     }
+    if (logType) conditions.push(sql`log_type = ${logType}`)
+    const where = conditions.length
+      ? sql`WHERE ${conditions.reduce((acc, c) => sql`${acc} AND ${c}`)}`
+      : sql``
 
-    if (logType) {
-      query = sql`SELECT * FROM iot_data_logging WHERE log_type = ${logType}`
-    }
-
-    query = query.orderBy("created_at DESC").limit(limit).offset(offset)
-
-    const logs = await query
-    const countResult = await sql`SELECT COUNT(*) as total FROM iot_data_logging`
+    const logs = await sql`
+      SELECT * FROM iot_data_logging
+      ${where}
+      ORDER BY created_at DESC
+      LIMIT ${limit} OFFSET ${offset}
+    `
+    const countResult = await sql`SELECT COUNT(*)::int AS total FROM iot_data_logging ${where}`
 
     return Response.json({
-      logs: logs,
+      logs,
       total: countResult[0].total,
       limit,
       offset,
     })
   } catch (error) {
     console.error("Error fetching IoT logs:", error)
-    return Response.json({ logs: MOCK_LOGS, total: MOCK_LOGS.length })
+    return Response.json({ error: "Failed to fetch IoT logs" }, { status: 500 })
   }
 }
 
@@ -84,7 +91,7 @@ export async function POST(request: Request) {
 
     const result = await sql`
       INSERT INTO iot_data_logging (device_id, log_type, data_type, payload, payload_size, status, error_message)
-       VALUES (${device_id}, ${log_type}, ${data_type}, ${payloadString}, ${payloadSize}, ${status || "received"}, ${error_message || null})
+       VALUES (${device_id}, ${log_type}, ${data_type}, ${sql.json(payload)}, ${payloadSize}, ${status || "received"}, ${error_message || null})
        RETURNING *`
 
     return Response.json(result[0], { status: 201 })

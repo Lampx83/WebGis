@@ -42,7 +42,7 @@ const MOCK_DETECTIONS = [
 export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url)
-    const limit = Number.parseInt(searchParams.get("limit") || "50")
+    const limit = Math.min(Math.max(Number.parseInt(searchParams.get("limit") || "50") || 50, 1), 500)
     const processed = searchParams.get("processed")
     const severity = searchParams.get("severity")
 
@@ -51,27 +51,24 @@ export async function GET(request: Request) {
     }
 
     const sql = getDb()
-    let query = sql`SELECT * FROM object_detection_events WHERE 1=1`
+    // All supplied filters apply together (they used to overwrite one another).
+    const conditions = []
+    if (processed !== null) conditions.push(sql`processed = ${processed === "true"}`)
+    if (severity) conditions.push(sql`severity = ${severity}`)
+    const where = conditions.length
+      ? sql`WHERE ${conditions.reduce((acc, c) => sql`${acc} AND ${c}`)}`
+      : sql``
 
-    if (processed !== null) {
-      query = sql`SELECT * FROM object_detection_events WHERE processed = ${processed === "true"}`
-    }
-
-    if (severity) {
-      query = sql`SELECT * FROM object_detection_events WHERE severity = ${severity}`
-    }
-
-    if (processed !== null && severity) {
-      query = sql`SELECT * FROM object_detection_events WHERE processed = ${processed === "true"} AND severity = ${severity}`
-    }
-
-    query = sql`${query} ORDER BY created_at DESC LIMIT ${limit}`
-
-    const detections = await query
+    const detections = await sql`
+      SELECT * FROM object_detection_events
+      ${where}
+      ORDER BY created_at DESC
+      LIMIT ${limit}
+    `
     return Response.json(detections)
   } catch (error) {
     console.error("Error fetching detections:", error)
-    return Response.json(MOCK_DETECTIONS.slice(0, 50))
+    return Response.json({ error: "Failed to fetch detections" }, { status: 500 })
   }
 }
 
@@ -106,7 +103,7 @@ export async function POST(request: Request) {
         ${payload.detected_objects},
         ${payload.image_url || null},
         ${payload.video_url || null},
-        ${payload.video_duration || null},
+        ${payload.video_duration ?? null},
         ${payload.location_description || null},
         ${payload.severity || "medium"}
       )

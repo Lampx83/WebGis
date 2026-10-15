@@ -74,7 +74,7 @@ export function ThresholdManager() {
       try {
         const res = await fetch(`/api/thresholds?device_id=${selectedDevice}`)
         const data = await res.json()
-        setThresholds(data)
+        setThresholds(res.ok && Array.isArray(data) ? data : [])
       } catch (error) {
         console.error("Failed to fetch thresholds:", error)
       }

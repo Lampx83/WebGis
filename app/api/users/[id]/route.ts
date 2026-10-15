@@ -1,11 +1,16 @@
 import { getDb, isDbAvailable } from "@/lib/db"
-import { hashPassword, type Role } from "@/lib/auth"
+import { hashPassword, validateNewPassword, type Role } from "@/lib/auth"
 
 export async function PUT(request: Request, { params }: { params: Promise<{ id: string }> }) {
   try {
     const { id } = await params
     const body = await request.json()
     const { email, full_name, role, is_active, password } = body
+
+    if (password) {
+      const pwProblem = validateNewPassword(password)
+      if (pwProblem) return Response.json({ error: pwProblem }, { status: 400 })
+    }
 
     if (!isDbAvailable()) {
       return Response.json({ id: Number(id), email, full_name, role, is_active })

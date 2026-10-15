@@ -28,29 +28,26 @@ export async function GET(request: Request) {
     }
 
     const sql = getDb()
-    let query = "SELECT * FROM threshold_configurations"
-    const params: any[] = []
-
-    if (deviceId || enabled !== null) {
-      const conditions = []
-      if (deviceId) {
-        conditions.push(`device_id = $${params.length + 1}`)
-        params.push(Number.parseInt(deviceId))
-      }
-      if (enabled !== null) {
-        conditions.push(`enabled = $${params.length + 1}`)
-        params.push(enabled === "true")
-      }
-      query += " WHERE " + conditions.join(" AND ")
+    const conditions = []
+    if (deviceId) {
+      const id = Number.parseInt(deviceId)
+      if (Number.isNaN(id)) return Response.json({ error: "Invalid device_id" }, { status: 400 })
+      conditions.push(sql`device_id = ${id}`)
     }
+    if (enabled !== null) conditions.push(sql`enabled = ${enabled === "true"}`)
+    const where = conditions.length
+      ? sql`WHERE ${conditions.reduce((acc, c) => sql`${acc} AND ${c}`)}`
+      : sql``
 
-    query += " ORDER BY device_id, parameter_type"
-
-    const result = await sql.query(query, params)
-    return Response.json(result.rows)
+    const result = await sql`
+      SELECT * FROM threshold_configurations
+      ${where}
+      ORDER BY device_id, parameter_type
+    `
+    return Response.json(result)
   } catch (error) {
     console.error("Error fetching thresholds:", error)
-    return Response.json(MOCK_THRESHOLDS)
+    return Response.json({ error: "Failed to fetch thresholds" }, { status: 500 })
   }
 }
 

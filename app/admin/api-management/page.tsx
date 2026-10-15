@@ -33,53 +33,39 @@ interface ApiStats {
   hourly_data?: Array<{ hour: string; calls: number; errors: number }>
 }
 
-const MOCK_DATA: ApiStats = {
-  total_calls: 15420,
-  error_count: 142,
-  success_count: 15278,
-  avg_response_time: 245,
-  endpoints: [
-    { endpoint: "/api/devices", method: "GET", count: 3420, avg_response_time: 120, error_count: 12 },
-    { endpoint: "/api/monitoring-status", method: "GET", count: 2850, avg_response_time: 185, error_count: 8 },
-    { endpoint: "/api/alerts", method: "GET", count: 2100, avg_response_time: 215, error_count: 25 },
-    { endpoint: "/api/thresholds/check-window", method: "POST", count: 1950, avg_response_time: 340, error_count: 35 },
-    { endpoint: "/api/reports/historical", method: "GET", count: 1680, avg_response_time: 420, error_count: 18 },
-    { endpoint: "/api/analytics/api-usage", method: "GET", count: 1420, avg_response_time: 280, error_count: 22 },
-  ],
-  hourly_data: [
-    { hour: "00:00", calls: 580, errors: 5 },
-    { hour: "01:00", calls: 620, errors: 4 },
-    { hour: "02:00", calls: 650, errors: 6 },
-    { hour: "03:00", calls: 590, errors: 3 },
-    { hour: "04:00", calls: 710, errors: 8 },
-    { hour: "05:00", calls: 780, errors: 7 },
-    { hour: "06:00", calls: 890, errors: 12 },
-    { hour: "07:00", calls: 950, errors: 14 },
-    { hour: "08:00", calls: 1020, errors: 18 },
-    { hour: "09:00", calls: 1100, errors: 16 },
-  ],
+const EMPTY_STATS: ApiStats = {
+  total_calls: 0,
+  error_count: 0,
+  success_count: 0,
+  avg_response_time: 0,
+  endpoints: [],
+  hourly_data: [],
 }
 
 export default function ApiManagementPage() {
-  const [stats, setStats] = useState<ApiStats>(MOCK_DATA)
+  const [stats, setStats] = useState<ApiStats>(EMPTY_STATS)
   const [loading, setLoading] = useState(false)
+  const [error, setError] = useState("")
   const [days, setDays] = useState(7)
   const { t } = useTranslation()
 
   useEffect(() => {
     const fetchStats = async () => {
       setLoading(true)
+      setError("")
       try {
         const response = await fetch(`/api/analytics/api-usage?days=${days}`)
         if (response.ok) {
           const data = await response.json()
-          setStats(data || MOCK_DATA)
+          setStats({ ...EMPTY_STATS, ...data, endpoints: data?.endpoints ?? [] })
         } else {
-          setStats(MOCK_DATA)
+          setStats(EMPTY_STATS)
+          setError(response.status === 401 ? "Phiên đăng nhập đã hết hạn" : "Không tải được thống kê API")
         }
       } catch (error) {
         console.error("Failed to fetch API analytics:", error)
-        setStats(MOCK_DATA)
+        setStats(EMPTY_STATS)
+        setError("Không kết nối được máy chủ")
       } finally {
         setLoading(false)
       }
@@ -88,8 +74,9 @@ export default function ApiManagementPage() {
     fetchStats()
   }, [days])
 
-  const successRate = ((stats.success_count / stats.total_calls) * 100).toFixed(1)
-  const errorRate = ((stats.error_count / stats.total_calls) * 100).toFixed(1)
+  const pct = (n: number) => (stats.total_calls > 0 ? ((n / stats.total_calls) * 100).toFixed(1) : "0.0")
+  const successRate = pct(stats.success_count)
+  const errorRate = pct(stats.error_count)
 
   return (
     <div className="space-y-8">
@@ -108,6 +95,12 @@ export default function ApiManagementPage() {
           <option value={30}>{t("admin", "last30Days")}</option>
         </select>
       </div>
+
+      {error && (
+        <div role="alert" className="rounded-lg border border-red-300 bg-red-50 px-4 py-3 text-sm text-red-700">
+          {error}
+        </div>
+      )}
 
       {/* Summary Cards */}
       <div className="grid grid-cols-1 md:grid-cols-5 gap-4">

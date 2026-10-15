@@ -83,13 +83,15 @@ export function Dashboard() {
           fetch("/api/devices/with-alerts"),
         ])
 
-        const devicesData = await devicesRes.json()
-        const statusData = await statusRes.json()
-        const alertsData = await alertsRes.json()
+        // An error response ({ error }) must not replace good state with garbage:
+        // keep the last known data and let the next poll retry.
+        const [devicesData, statusData, alertsData] = await Promise.all(
+          [devicesRes, statusRes, alertsRes].map((r) => (r.ok ? r.json() : null)),
+        )
 
-        setDevices(devicesData)
-        setMonitoringStatus(statusData)
-        setAlertDevices(alertsData.filter((d: Device) => d.has_alert))
+        if (Array.isArray(devicesData)) setDevices(devicesData)
+        if (statusData?.summary) setMonitoringStatus(statusData)
+        if (Array.isArray(alertsData)) setAlertDevices(alertsData.filter((d: Device) => d.has_alert))
       } catch (error) {
         console.error("Failed to fetch data:", error)
       } finally {

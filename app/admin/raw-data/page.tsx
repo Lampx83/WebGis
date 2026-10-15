@@ -14,66 +14,10 @@ interface IoTLog {
   created_at: string
 }
 
-const MOCK_LOGS: IoTLog[] = [
-  {
-    id: 1,
-    device_id: 1,
-    log_type: "input",
-    data_type: "weather_reading",
-    payload: { temp: 28.5, humidity: 72, wind_speed: 12.3, rainfall: 2.1 },
-    status: "processed",
-    created_at: new Date(Date.now() - 5 * 60000).toISOString(),
-  },
-  {
-    id: 2,
-    device_id: 3,
-    log_type: "input",
-    data_type: "water_level",
-    payload: { level_m: 2.85, trend: "rising" },
-    status: "processed",
-    created_at: new Date(Date.now() - 10 * 60000).toISOString(),
-  },
-  {
-    id: 3,
-    device_id: 2,
-    log_type: "input",
-    data_type: "camera_event",
-    payload: { event_type: "motion_detected", confidence: 0.92 },
-    status: "processed",
-    created_at: new Date(Date.now() - 15 * 60000).toISOString(),
-  },
-  {
-    id: 4,
-    device_id: 1,
-    log_type: "output",
-    data_type: "alert_trigger",
-    payload: { alert_type: "HIGH_WIND", threshold: 20, value: 22.5 },
-    status: "processed",
-    created_at: new Date(Date.now() - 20 * 60000).toISOString(),
-  },
-  {
-    id: 5,
-    device_id: 4,
-    log_type: "input",
-    data_type: "aqi_reading",
-    payload: { aqi: 145, pm25: 85, pm10: 120 },
-    status: "processed",
-    created_at: new Date(Date.now() - 25 * 60000).toISOString(),
-  },
-  {
-    id: 6,
-    device_id: 5,
-    log_type: "input",
-    data_type: "power_status",
-    payload: { battery_level: 78, signal_strength: -85 },
-    status: "pending",
-    created_at: new Date(Date.now() - 30 * 60000).toISOString(),
-  },
-]
-
 export default function RawDataPage() {
-  const [logs, setLogs] = useState<IoTLog[]>(MOCK_LOGS)
+  const [logs, setLogs] = useState<IoTLog[]>([])
   const [loading, setLoading] = useState(false)
+  const [error, setError] = useState("")
   const [selectedDevice, setSelectedDevice] = useState<string>("all")
   const [logType, setLogType] = useState<string>("all")
   const [searchPayload, setSearchPayload] = useState<string>("")
@@ -83,6 +27,7 @@ export default function RawDataPage() {
   useEffect(() => {
     const fetchLogs = async () => {
       setLoading(true)
+      setError("")
       try {
         let url = "/api/logging/iot?limit=100"
         if (selectedDevice !== "all") url += `&device_id=${selectedDevice}`
@@ -91,14 +36,15 @@ export default function RawDataPage() {
         const response = await fetch(url)
         if (response.ok) {
           const data = await response.json()
-          const logsArray = Array.isArray(data) ? data : data.logs || []
-          setLogs(logsArray.length > 0 ? logsArray : MOCK_LOGS)
+          setLogs(Array.isArray(data) ? data : data.logs || [])
         } else {
-          setLogs(MOCK_LOGS)
+          setLogs([])
+          setError(response.status === 401 ? "Phiên đăng nhập đã hết hạn" : "Không tải được nhật ký IoT")
         }
       } catch (error) {
         console.error("Failed to fetch IoT logs:", error)
-        setLogs(MOCK_LOGS)
+        setLogs([])
+        setError("Không kết nối được máy chủ")
       } finally {
         setLoading(false)
       }
@@ -120,6 +66,12 @@ export default function RawDataPage() {
         <h2 className="text-3xl font-bold text-foreground">{t("admin", "rawIotDataLogging")}</h2>
         <p className="text-muted-foreground mt-2">{t("admin", "viewDeviceInputOutputLogs")}</p>
       </div>
+
+      {error && (
+        <div role="alert" className="rounded-lg border border-red-300 bg-red-50 px-4 py-3 text-sm text-red-700">
+          {error}
+        </div>
+      )}
 
       {/* Filters */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">

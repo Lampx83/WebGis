@@ -26,7 +26,10 @@ services:
     environment:
       NODE_ENV: production
       DATABASE_URL: postgres://${POSTGRES_USER:-webgis}:${POSTGRES_PASSWORD:-webgis}@db:5432/${POSTGRES_DB:-webgis}
-      AUTH_SECRET: ${AUTH_SECRET:-change-me-please-set-a-long-random-secret}
+      # Required: the app refuses to start without a random secret (>= 32 chars).
+      AUTH_SECRET: ${AUTH_SECRET:?Set AUTH_SECRET to a random string of at least 32 characters (openssl rand -base64 48)}
+      # Shared key IoT gateways send as `x-api-key` when posting readings/detections.
+      INGEST_API_KEY: ${INGEST_API_KEY:-}
       ZALO_ACCESS_TOKEN: ${ZALO_ACCESS_TOKEN:-}
     depends_on:
       db:

@@ -28,8 +28,12 @@ export default function ReportsPage() {
     setRunningCleanup(true)
     try {
       const response = await fetch("/api/data-retention/cleanup", { method: "POST" })
-      const result = await response.json()
-      setCleanupResult(result)
+      const result = await response.json().catch(() => ({}))
+      if (response.status === 401 || response.status === 403) {
+        setCleanupResult({ error: "Cần đăng nhập bằng tài khoản quản trị (admin) để dọn dữ liệu." })
+      } else {
+        setCleanupResult(result)
+      }
     } catch (error) {
       console.error("Error running cleanup:", error)
       setCleanupResult({ error: "Failed to run cleanup" })

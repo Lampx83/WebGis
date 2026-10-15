@@ -98,7 +98,7 @@ export async function POST(request: Request) {
     const sql = getDb()
     const result = await sql`
       INSERT INTO devices (device_id, name, type, latitude, longitude, battery_level)
-      VALUES (${device_id}, ${name}, ${type}, ${latitude}, ${longitude}, ${battery_level || 100})
+      VALUES (${device_id}, ${name}, ${type}, ${latitude}, ${longitude}, ${battery_level ?? 100})
       RETURNING *
     `
 

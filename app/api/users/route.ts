@@ -1,5 +1,5 @@
 import { getDb, isDbAvailable } from "@/lib/db"
-import { hashPassword, type Role } from "@/lib/auth"
+import { hashPassword, validateNewPassword, type Role } from "@/lib/auth"
 
 const MOCK_USERS = [
   { id: 1, username: "admin", email: "admin@webgis.local", full_name: "Quản trị hệ thống", role: "admin", is_active: true, last_login: null, created_at: new Date().toISOString() },
@@ -26,6 +26,8 @@ export async function POST(request: Request) {
     if (!username || !password) {
       return Response.json({ error: "Thiếu tên đăng nhập hoặc mật khẩu" }, { status: 400 })
     }
+    const pwProblem = validateNewPassword(password)
+    if (pwProblem) return Response.json({ error: pwProblem }, { status: 400 })
     const validRole: Role = ["admin", "operator", "viewer"].includes(role) ? role : "viewer"
 
     if (!isDbAvailable()) {

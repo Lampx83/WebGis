@@ -1,6 +1,4 @@
-import { isDbAvailable } from "@/lib/db"
-import { subDays } from "date-fns"
-import sql from "sql-template-tag"
+import { getDb, isDbAvailable } from "@/lib/db"
 
 interface ApiUsageStats {
   total_calls: number
@@ -28,59 +26,69 @@ const MOCK_STATS: ApiUsageStats = {
   ],
 }
 
+// COUNT/SUM come back from Postgres as bigint -> string; AVG as numeric (parsed by lib/db).
+const num = (v: unknown) => Number(v ?? 0) || 0
+
 export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url)
-    const days = Number.parseInt(searchParams.get("days") || "7")
+    const days = Math.min(Math.max(Number.parseInt(searchParams.get("days") || "7") || 7, 1), 365)
     const endpoint = searchParams.get("endpoint")
 
+    // Sample data is only served when the app runs without a database at all.
+    // A DB error below is reported as an error, never masked with fake numbers.
     if (!isDbAvailable()) {
       return Response.json(MOCK_STATS)
     }
 
-    const startDate = subDays(new Date(), days)
+    const sql = getDb()
+    const startDate = new Date(Date.now() - days * 24 * 60 * 60 * 1000)
+    const endpointFilter = endpoint ? sql`AND endpoint = ${endpoint}` : sql``
 
     const endpointStats = await sql`
-      SELECT 
+      SELECT
         endpoint,
         method,
-        COUNT(*) as count,
-        AVG(response_time_ms) as avg_response_time,
-        SUM(CASE WHEN status_code >= 400 THEN 1 ELSE 0 END) as error_count
+        COUNT(*) AS count,
+        AVG(response_time_ms) AS avg_response_time,
+        SUM(CASE WHEN status_code >= 400 THEN 1 ELSE 0 END) AS error_count
       FROM api_analytics
       WHERE created_at > ${startDate.toISOString()}
-      ${endpoint ? sql`AND endpoint = ${endpoint}` : sql``}
-      GROUP BY endpoint, method ORDER BY count DESC
+      ${endpointFilter}
+      GROUP BY endpoint, method
+      ORDER BY count DESC
     `
 
     const summaryResult = await sql`
-      SELECT 
-        COUNT(*) as total_calls,
-        SUM(CASE WHEN status_code >= 400 THEN 1 ELSE 0 END) as error_count,
-        SUM(CASE WHEN status_code < 400 THEN 1 ELSE 0 END) as success_count,
-        AVG(response_time_ms) as avg_response_time
+      SELECT
+        COUNT(*) AS total_calls,
+        SUM(CASE WHEN status_code >= 400 THEN 1 ELSE 0 END) AS error_count,
+        SUM(CASE WHEN status_code < 400 THEN 1 ELSE 0 END) AS success_count,
+        AVG(response_time_ms) AS avg_response_time
       FROM api_analytics
       WHERE created_at > ${startDate.toISOString()}
+      ${endpointFilter}
     `
 
-    const summary = summaryResult[0]
+    const summary = summaryResult[0] ?? {}
 
-    return Response.json({
-      total_calls: summary.total_calls || 0,
-      error_count: summary.error_count || 0,
-      success_count: summary.success_count || 0,
-      avg_response_time: Math.round(summary.avg_response_time || 0),
+    const stats: ApiUsageStats = {
+      total_calls: num(summary.total_calls),
+      error_count: num(summary.error_count),
+      success_count: num(summary.success_count),
+      avg_response_time: Math.round(num(summary.avg_response_time)),
       endpoints: endpointStats.map((stat: any) => ({
         endpoint: stat.endpoint,
         method: stat.method,
-        count: stat.count,
-        avg_response_time: Math.round(stat.avg_response_time || 0),
-        error_count: stat.error_count || 0,
+        count: num(stat.count),
+        avg_response_time: Math.round(num(stat.avg_response_time)),
+        error_count: num(stat.error_count),
       })),
-    })
+    }
+    return Response.json(stats)
   } catch (error) {
     console.error("Error fetching API analytics:", error)
-    return Response.json(MOCK_STATS)
+    return Response.json({ error: "Failed to fetch API analytics" }, { status: 500 })
   }
 }
 
@@ -96,10 +104,17 @@ export async function POST(request: Request) {
       return Response.json({ error: "Database not configured" }, { status: 503 })
     }
 
+    const sql = getDb()
     const result = await sql`
       INSERT INTO api_analytics (endpoint, method, status_code, response_time_ms, client_ip)
-       VALUES (${endpoint}, ${method}, ${status_code || null}, ${response_time_ms || null}, ${client_ip || null})
-       RETURNING *
+      VALUES (
+        ${String(endpoint).slice(0, 255)},
+        ${String(method).slice(0, 10)},
+        ${status_code ?? null},
+        ${response_time_ms ?? null},
+        ${client_ip ? String(client_ip).slice(0, 45) : null}
+      )
+      RETURNING *
     `
 
     return Response.json(result[0], { status: 201 })
