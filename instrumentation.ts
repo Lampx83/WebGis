@@ -5,6 +5,9 @@ export async function register() {
   const { getAuthSecret } = await import("./lib/session")
   getAuthSecret() // throws in production when AUTH_SECRET is missing/placeholder/short
 
+  const { startJobs } = await import("./lib/jobs")
+  startJobs()
+
   if (process.env.NODE_ENV === "production") {
     if (!process.env.DATABASE_URL && process.env.DEMO_MODE !== "true") {
       console.warn("[startup] DATABASE_URL is not set: the API will serve built-in sample data.")

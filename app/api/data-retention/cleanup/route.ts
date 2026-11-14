@@ -1,5 +1,5 @@
 import { getDb, isDbAvailable } from "@/lib/db"
-import { subDays } from "date-fns"
+import { runRetentionCleanup } from "@/lib/retention"
 
 export async function POST(request: Request) {
   try {
@@ -7,54 +7,7 @@ export async function POST(request: Request) {
       return Response.json({ error: "Database not available" }, { status: 503 })
     }
 
-    const sql = getDb()
-    const results: Record<string, any> = {}
-
-    // Delete environmental readings older than 30 days
-    const envOldDate = subDays(new Date(), 30)
-    const envDeleted = await sql`
-      DELETE FROM environmental_readings
-      WHERE created_at < ${envOldDate.toISOString()}
-      RETURNING id
-    `
-    results.environmental_readings_deleted = envDeleted.length
-
-    // Delete water level readings older than 30 days
-    const waterOldDate = subDays(new Date(), 30)
-    const waterDeleted = await sql`
-      DELETE FROM water_level_readings
-      WHERE created_at < ${waterOldDate.toISOString()}
-      RETURNING id
-    `
-    results.water_level_readings_deleted = waterDeleted.length
-
-    // Delete camera events older than 30 days
-    const cameraOldDate = subDays(new Date(), 30)
-    const cameraDeleted = await sql`
-      DELETE FROM camera_events
-      WHERE created_at < ${cameraOldDate.toISOString()}
-      RETURNING id
-    `
-    results.camera_events_deleted = cameraDeleted.length
-
-    // Delete hourly aggregations older than 1 year
-    const hourlyOldDate = subDays(new Date(), 365)
-    const hourlyDeleted = await sql`
-      DELETE FROM readings_hourly
-      WHERE hour_start < ${hourlyOldDate.toISOString()}
-      RETURNING id
-    `
-    results.readings_hourly_deleted = hourlyDeleted.length
-
-    // Log the cleanup operation
-    await sql`
-      INSERT INTO data_archival_log (table_name, records_archived, archived_date, retention_days)
-      VALUES 
-        ('environmental_readings', ${envDeleted.length}, NOW(), 30),
-        ('water_level_readings', ${waterDeleted.length}, NOW(), 30),
-        ('camera_events', ${cameraDeleted.length}, NOW(), 30),
-        ('readings_hourly', ${hourlyDeleted.length}, NOW(), 365)
-    `
+    const results = await runRetentionCleanup(getDb())
 
     return Response.json({
       success: true,

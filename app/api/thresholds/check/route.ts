@@ -1,4 +1,5 @@
 import { getDb, isDbAvailable } from "@/lib/db"
+import { evaluateThreshold } from "@/lib/thresholds"
 
 export async function POST(request: Request) {
   try {
@@ -25,45 +26,13 @@ export async function POST(request: Request) {
     const violations: any[] = []
 
     for (const threshold of thresholds) {
-      let violated = false
-      let violationType = null
-
-      // Check violation based on operator
-      if (threshold.comparison_operator === ">") {
-        if (current_value > threshold.alert_threshold) {
-          violated = true
-          violationType = "alert"
-        } else if (current_value > threshold.warning_threshold) {
-          violated = true
-          violationType = "warning"
-        }
-      } else if (threshold.comparison_operator === "<") {
-        if (current_value < threshold.alert_threshold) {
-          violated = true
-          violationType = "alert"
-        } else if (current_value < threshold.warning_threshold) {
-          violated = true
-          violationType = "warning"
-        }
-      } else if (threshold.comparison_operator === ">=") {
-        if (current_value >= threshold.alert_threshold) {
-          violated = true
-          violationType = "alert"
-        } else if (current_value >= threshold.warning_threshold) {
-          violated = true
-          violationType = "warning"
-        }
-      } else if (threshold.comparison_operator === "<=") {
-        if (current_value <= threshold.alert_threshold) {
-          violated = true
-          violationType = "alert"
-        } else if (current_value <= threshold.warning_threshold) {
-          violated = true
-          violationType = "warning"
-        }
-      }
-
-      if (violated) {
+      const violationType = evaluateThreshold(
+        current_value,
+        threshold.comparison_operator,
+        threshold.warning_threshold,
+        threshold.alert_threshold,
+      )
+      if (violationType) {
         violations.push({
           threshold_id: threshold.id,
           violation_type: violationType,

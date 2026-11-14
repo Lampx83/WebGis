@@ -16,7 +16,7 @@ export async function GET() {
     return Response.json(rows)
   } catch (error) {
     console.error("Error listing users:", error)
-    return Response.json(MOCK_USERS)
+    return Response.json({ error: "Failed to list users" }, { status: 500 })
   }
 }
 

@@ -83,9 +83,21 @@ curl -X POST http://<host>:8043/api/devices/1/readings \
 - Đăng nhập sai quá 5 lần (cùng IP + tài khoản) hoặc 10 lần (mọi IP) trong 15 phút sẽ bị
   khóa tạm thời (HTTP 429). Bộ đếm nằm trong bộ nhớ của từng container.
 
+## Tác vụ nền & cảnh báo tự động
+
+- Mỗi số đo gửi lên (`POST /api/devices/{id}/readings`) được so với ngưỡng đã cấu hình; vượt ngưỡng
+  tạo cảnh báo `threshold:<tham số>` (mức `medium`/`high`), tự đóng khi giá trị về bình thường.
+- Thiết bị không gửi tín hiệu quá `DEVICE_OFFLINE_MINUTES` (mặc định 15) bị chuyển `offline` + cảnh
+  báo mất kết nối; pin dưới `LOW_BATTERY_PERCENT` tạo cảnh báo pin yếu. Thiết bị seed mẫu không có
+  nguồn dữ liệu sẽ chuyển offline sau ~15 phút — đúng hành vi mong đợi.
+- Mỗi giờ hệ thống tổng hợp số đo thành `readings_hourly` (báo cáo thống kê đọc từ bảng này).
+- Dọn dữ liệu quá hạn tự động chỉ chạy khi `AUTO_RETENTION_CLEANUP=true` (tối đa 1 lần/24h).
+- Kiểm tra sống/sẵn sàng: `GET /api/health` (200, hoặc 503 khi mất DB). Compose đã có healthcheck.
+
 ## Smoke test sau khi deploy
 
 ```bash
 curl http://<host>:8043/                 # trang chủ → 200
+curl http://<host>:8043/api/health       # {"status":"ok","database":"up"}
 curl http://<host>:8043/api/devices      # trả JSON danh sách thiết bị (từ DB)
 ```

@@ -16,7 +16,7 @@ interface Device {
   last_signal_time?: string
   has_alert?: boolean
   alert_type?: string
-  alert_severity?: "warning" | "alarm" | null
+  alert_severity?: string | null
 }
 
 interface GisLayerMeta {
@@ -204,9 +204,10 @@ function getIconUrl(type: string, status: string, hasAlert?: boolean, alertSever
   const baseUrl = "https://cdn-icons-png.flaticon.com"
 
   if (hasAlert) {
-    if (alertSeverity === "alarm") {
+    // The API reports alert severity as high/medium/low; "alarm"/"warning" are accepted too.
+    if (alertSeverity === "high" || alertSeverity === "alarm") {
       return `${baseUrl}/128/2913/2913152.png` // Red alert icon
-    } else if (alertSeverity === "warning") {
+    } else if (alertSeverity === "medium" || alertSeverity === "low" || alertSeverity === "warning") {
       return `${baseUrl}/128/1995/1995489.png` // Yellow warning icon
     }
   }

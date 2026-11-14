@@ -31,6 +31,16 @@ services:
       # Shared key IoT gateways send as `x-api-key` when posting readings/detections.
       INGEST_API_KEY: ${INGEST_API_KEY:-}
       ZALO_ACCESS_TOKEN: ${ZALO_ACCESS_TOKEN:-}
+      # Background jobs (device health, hourly aggregation). See .env.example.
+      DEVICE_OFFLINE_MINUTES: ${DEVICE_OFFLINE_MINUTES:-15}
+      LOW_BATTERY_PERCENT: ${LOW_BATTERY_PERCENT:-20}
+      AUTO_RETENTION_CLEANUP: ${AUTO_RETENTION_CLEANUP:-false}
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
     depends_on:
       db:
         condition: service_healthy

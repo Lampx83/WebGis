@@ -33,7 +33,7 @@ export function WarningPanel({ monitoringStatus }: { monitoringStatus: Monitorin
       try {
         const res = await fetch("/api/alerts?status=active&limit=5")
         const data = await res.json()
-        setAlerts(data)
+        if (res.ok && Array.isArray(data)) setAlerts(data)
       } catch (error) {
         console.error("Failed to fetch alerts:", error)
       }

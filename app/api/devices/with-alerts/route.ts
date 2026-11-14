@@ -36,20 +36,29 @@ export async function GET() {
     }
 
     const sql = getDb()
+    // One row per device (the old LEFT JOIN duplicated devices with several open alerts
+    // and counted dismissed alerts): pick the worst *active* alert.
     const devicesWithAlerts = await sql`
-      SELECT 
+      SELECT
         d.*,
-        CASE WHEN a.id IS NOT NULL THEN true ELSE false END as has_alert,
+        (a.id IS NOT NULL) AS has_alert,
         a.alert_type,
-        a.severity as alert_severity
+        a.severity AS alert_severity
       FROM devices d
-      LEFT JOIN alerts a ON d.id = a.device_id AND a.resolved_at IS NULL
+      LEFT JOIN LATERAL (
+        SELECT id, alert_type, severity
+        FROM alerts
+        WHERE device_id = d.id AND status = 'active' AND resolved_at IS NULL
+        ORDER BY CASE severity WHEN 'high' THEN 3 WHEN 'medium' THEN 2 WHEN 'low' THEN 1 ELSE 0 END DESC,
+                 created_at DESC
+        LIMIT 1
+      ) a ON true
       ORDER BY d.updated_at DESC
     `
 
     return Response.json(devicesWithAlerts)
   } catch (error) {
     console.error("Error fetching devices with alerts:", error)
-    return Response.json(MOCK_DEVICES_WITH_ALERTS)
+    return Response.json({ error: "Failed to fetch devices with alerts" }, { status: 500 })
   }
 }

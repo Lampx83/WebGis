@@ -35,7 +35,7 @@ export default function DevicesPage() {
     try {
       const response = await fetch("/api/devices")
       const data = await response.json()
-      setDevices(data)
+      if (response.ok && Array.isArray(data)) setDevices(data)
     } catch (error) {
       console.error("Failed to fetch devices:", error)
     } finally {

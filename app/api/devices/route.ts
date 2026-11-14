@@ -79,7 +79,7 @@ export async function GET() {
     return Response.json(devices)
   } catch (error) {
     console.error("Error fetching devices:", error)
-    return Response.json(MOCK_DEVICES)
+    return Response.json({ error: "Failed to fetch devices" }, { status: 500 })
   }
 }
 

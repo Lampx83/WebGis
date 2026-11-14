@@ -34,7 +34,7 @@ export function WaterLevelModule({ devices }: { devices: Device[] }) {
       try {
         const res = await fetch(`/api/devices/${selectedDevice}/readings`)
         const data = await res.json()
-        setReadings(data.reverse())
+        setReadings(res.ok && Array.isArray(data) ? data.reverse() : [])
       } catch (error) {
         console.error("Failed to fetch readings:", error)
       } finally {

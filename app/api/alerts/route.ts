@@ -37,7 +37,7 @@ export async function GET(request: Request) {
     return Response.json(alerts)
   } catch (error) {
     console.error("Error fetching alerts:", error)
-    return Response.json(MOCK_ALERTS)
+    return Response.json({ error: "Failed to fetch alerts" }, { status: 500 })
   }
 }
 

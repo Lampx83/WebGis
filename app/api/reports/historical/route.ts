@@ -1,5 +1,6 @@
 import { getDb, isDbAvailable } from "@/lib/db"
 import { subDays } from "date-fns"
+import { PARAMETER_TO_COLUMN } from "@/lib/thresholds"
 
 export async function GET(request: Request) {
   try {
@@ -22,20 +23,26 @@ export async function GET(request: Request) {
     const start = startDate ? new Date(startDate) : subDays(new Date(), 30)
     const end = endDate ? new Date(endDate) : new Date()
 
-    if (moduleType === "environmental" && readingType) {
+    // readingType picks a column, so it must be whitelisted and passed as an identifier, never as a value.
+    const envColumn = readingType ? PARAMETER_TO_COLUMN[readingType] : undefined
+    if (moduleType === "environmental" && readingType && (!envColumn || envColumn === "water_level")) {
+      return Response.json({ error: "Invalid readingType", data: [] }, { status: 400 })
+    }
+
+    if (moduleType === "environmental" && readingType && envColumn) {
       // Query environmental readings
       if (aggregation === "daily") {
         results = await sql`
           SELECT 
             device_id,
             DATE(created_at) as date,
-            ROUND(AVG(${readingType}), 2) as avg_value,
-            ROUND(MIN(${readingType}), 2) as min_value,
-            ROUND(MAX(${readingType}), 2) as max_value,
+            ROUND(AVG(${sql(envColumn)})::numeric, 2) as avg_value,
+            ROUND(MIN(${sql(envColumn)})::numeric, 2) as min_value,
+            ROUND(MAX(${sql(envColumn)})::numeric, 2) as max_value,
             COUNT(*) as sample_count
           FROM environmental_readings
           WHERE device_id = ${Number.parseInt(deviceId || "1")}
-            AND ${readingType} IS NOT NULL
+            AND ${sql(envColumn)} IS NOT NULL
             AND created_at >= ${start.toISOString()}
             AND created_at <= ${end.toISOString()}
           GROUP BY device_id, DATE(created_at)

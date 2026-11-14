@@ -51,7 +51,8 @@ export function ThresholdManager() {
     const fetchData = async () => {
       try {
         const devicesRes = await fetch("/api/devices")
-        const devicesData = await devicesRes.json()
+        const raw = await devicesRes.json()
+        const devicesData = devicesRes.ok && Array.isArray(raw) ? raw : []
         setDevices(devicesData)
 
         if (devicesData.length > 0) {

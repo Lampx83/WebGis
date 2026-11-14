@@ -1,4 +1,5 @@
 import type postgres from "postgres"
+import { applyThresholdAlerts } from "@/lib/alerting"
 import { getDb, isDbAvailable, type EnvironmentalReading, type WaterLevelReading } from "@/lib/db"
 
 const MOCK_ENV_READINGS: EnvironmentalReading[] = [
@@ -66,7 +67,7 @@ export async function GET(request: Request, { params }: { params: Promise<{ id: 
     return Response.json(readings)
   } catch (error) {
     console.error("Error fetching readings:", error)
-    return Response.json(MOCK_ENV_READINGS)
+    return Response.json({ error: "Failed to fetch readings" }, { status: 500 })
   }
 }
 
@@ -128,6 +129,7 @@ export async function POST(request: Request, { params }: { params: Promise<{ id:
           RETURNING *
         `
         await touchDevice(tx)
+        await applyThresholdAlerts(tx, id, { water_level })
         return rows
       })
       return Response.json(result[0], { status: 201 })
@@ -154,6 +156,15 @@ export async function POST(request: Request, { params }: { params: Promise<{ id:
         RETURNING *
       `
       await touchDevice(tx)
+      await applyThresholdAlerts(tx, id, {
+        temperature: fields.temperature,
+        humidity: fields.humidity,
+        wind_speed: fields.wind_speed,
+        rainfall: fields.rainfall,
+        air_quality_index: fields.air_quality_index,
+        pm25: fields.pm25,
+        pm10: fields.pm10,
+      })
       return rows
     })
     return Response.json(result[0], { status: 201 })
