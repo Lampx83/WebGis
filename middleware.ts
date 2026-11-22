@@ -1,9 +1,14 @@
 import { NextResponse } from "next/server"
 import type { NextRequest } from "next/server"
 import { COOKIE_NAME, roleAtLeast, verifySessionToken, type Role, type SessionPayload } from "@/lib/session"
-import { hasValidIngestKey, ruleFor } from "@/lib/access-policy"
+import { hasValidIngestKey, isAdminOnlyPage, ruleFor } from "@/lib/access-policy"
 
-/** Enforcement point for lib/access-policy.ts. */
+/**
+ * Enforcement point for lib/access-policy.ts — the coarse, DB-free first gate (JWT signature, expiry, role
+ * claim). It cannot see revocation: a deleted / deactivated / role-changed / password-reset account keeps a
+ * valid JWT until it expires. Privileged API handlers therefore also call authorize() (lib/authz.ts), which
+ * re-checks the user row, so revocation is effective on the next request. Public GETs stay DB-free.
+ */
 function deny(req: NextRequest, status: 401 | 403, error: string, code?: string) {
   const { pathname } = req.nextUrl
   if (pathname.startsWith("/api/")) {
@@ -35,7 +40,7 @@ export async function middleware(req: NextRequest) {
   // ── Admin UI ────────────────────────────────────────────────────────────
   if (!isApi) {
     if (!session) return deny(req, 401, "Unauthorized")
-    if (pathname.startsWith("/admin/users") && session.role !== "admin") return deny(req, 403, "Forbidden")
+    if (isAdminOnlyPage(pathname) && session.role !== "admin") return deny(req, 403, "Forbidden")
     if (session.pwd_change && !pathname.startsWith("/admin/change-password")) {
       return NextResponse.redirect(new URL("/admin/change-password", req.url))
     }

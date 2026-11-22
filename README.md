@@ -32,6 +32,8 @@ CI (`.github/workflows/ci.yml`) chạy cả ba bước trên mỗi push / pull r
 |---|---|
 | `middleware.ts`, `lib/access-policy.ts` | Chính sách truy cập API/Admin (ai được đọc/ghi gì, khóa cho thiết bị IoT) |
 | `lib/session.ts`, `lib/auth.ts` | Phiên JWT, đăng nhập, đổi mật khẩu mặc định |
+| `lib/authz.ts`, `lib/session-check.ts` | Kiểm tra phiên với DB ở mỗi API ghi (thu hồi phiên, `token_version`) |
+| `lib/audit.ts` | Nhật ký thao tác quản trị (`admin_audit_log`, trang `/admin/audit-log`) |
 | `lib/alerting.ts`, `lib/thresholds.ts` | So số đo với ngưỡng, tạo/đóng cảnh báo khi nhận dữ liệu |
 | `lib/jobs.ts`, `instrumentation.ts` | Tác vụ nền: thiết bị offline/pin yếu, tổng hợp theo giờ, dọn dữ liệu (tùy chọn) |
 | `app/api/**` | API JSON; `GET /api/health` để giám sát |

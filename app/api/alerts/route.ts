@@ -1,4 +1,5 @@
 import { getDb, isDbAvailable, type Alert } from "@/lib/db"
+import { authorize } from "@/lib/authz"
 
 const MOCK_ALERTS: Alert[] = [
   {
@@ -42,6 +43,8 @@ export async function GET(request: Request) {
 }
 
 export async function POST(request: Request) {
+  const auth = await authorize(request)
+  if (!auth.ok) return auth.response
   try {
     const { device_id, alert_type, title, description, severity } = await request.json()
 

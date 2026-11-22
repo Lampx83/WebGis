@@ -1,4 +1,5 @@
 import type postgres from "postgres"
+import { authorize } from "@/lib/authz"
 import { getDb, isDbAvailable } from "@/lib/db"
 
 const SEVERITIES = ["low", "medium", "high"]
@@ -30,6 +31,8 @@ export async function GET(request: Request, { params }: { params: Promise<{ id: 
 }
 
 export async function POST(request: Request, { params }: { params: Promise<{ id: string }> }) {
+  const auth = await authorize(request)
+  if (!auth.ok) return auth.response
   try {
     const id = Number.parseInt((await params).id)
     if (Number.isNaN(id)) return Response.json({ error: "Invalid device id" }, { status: 400 })

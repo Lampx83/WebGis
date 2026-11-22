@@ -10,6 +10,12 @@ export interface SessionPayload {
   role: Role
   /** true while the account still uses the shipped default password */
   pwd_change?: boolean
+  /**
+   * Snapshot of users.token_version at login. Routes compare it with the live value
+   * (lib/session-check.ts), so bumping the column revokes every token issued before.
+   * Absent on tokens minted before the column existed: treated as 0.
+   */
+  tv?: number
   [key: string]: unknown
 }
 
@@ -46,9 +52,9 @@ export function getAuthSecret(): Uint8Array {
 
 export async function signSession(
   user: { id: number; username: string; role: Role },
-  opts: { mustChangePassword?: boolean } = {},
+  opts: { mustChangePassword?: boolean; tokenVersion?: number } = {},
 ): Promise<string> {
-  const claims: Record<string, unknown> = { username: user.username, role: user.role }
+  const claims: Record<string, unknown> = { username: user.username, role: user.role, tv: opts.tokenVersion ?? 0 }
   if (opts.mustChangePassword) claims.pwd_change = true
   return new SignJWT(claims)
     .setProtectedHeader({ alg: "HS256" })

@@ -9,6 +9,8 @@ import {
 } from "@/lib/auth"
 import { SESSION_HOURS } from "@/lib/session"
 import { getDb, isDbAvailable } from "@/lib/db"
+import { bumpTokenVersion, resolveSession } from "@/lib/session-check"
+import { recordAudit } from "@/lib/audit"
 import { clearFailures, recordFailure, retryAfterSeconds } from "@/lib/rate-limit"
 
 // Self-service password change. Not covered by the middleware role rules
@@ -21,6 +23,12 @@ export async function POST(request: Request) {
 
     if (!isDbAvailable()) {
       return Response.json({ error: "Không thể đổi mật khẩu khi chưa cấu hình cơ sở dữ liệu" }, { status: 503 })
+    }
+
+    const resolved = await resolveSession(session)
+    if (!resolved.ok) {
+      cookieStore.delete(COOKIE_NAME)
+      return Response.json({ error: "Phiên đăng nhập không còn hiệu lực", code: "SESSION_REVOKED" }, { status: 401 })
     }
 
     const body = await request.json().catch(() => null)
@@ -63,8 +71,16 @@ export async function POST(request: Request) {
       console.error("auth audit log failed:", e)
     }
 
+    // A new password invalidates every other session of this account (e.g. a stolen cookie);
+    // this browser keeps working because its cookie is re-issued with the new version below.
+    const tokenVersion = await bumpTokenVersion(user.id)
+    await recordAudit(
+      { kind: "user", id: user.id, username: user.username, role: user.role },
+      { action: "user.change_password", resource_type: "user", resource_id: user.id, changes: { password: "changed" } },
+    )
+
     // Re-issue the cookie without the forced-change flag.
-    const token = await createSessionToken({ ...user, must_change_password: false })
+    const token = await createSessionToken({ ...user, must_change_password: false }, tokenVersion)
     cookieStore.set(COOKIE_NAME, token, {
       httpOnly: true,
       sameSite: "lax",

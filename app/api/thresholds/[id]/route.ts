@@ -1,4 +1,6 @@
 import { getDb, isDbAvailable } from "@/lib/db"
+import { authorize } from "@/lib/authz"
+import { THRESHOLD_FIELDS, diffRecords, recordAudit, summarize } from "@/lib/audit"
 
 export async function GET(request: Request, { params }: { params: Promise<{ id: string }> }) {
   try {
@@ -25,6 +27,8 @@ export async function GET(request: Request, { params }: { params: Promise<{ id: 
 }
 
 export async function PUT(request: Request, { params }: { params: Promise<{ id: string }> }) {
+  const auth = await authorize(request)
+  if (!auth.ok) return auth.response
   try {
     const { id } = await params
     const body = await request.json()
@@ -35,6 +39,7 @@ export async function PUT(request: Request, { params }: { params: Promise<{ id: 
     }
 
     const sql = getDb()
+    const [before] = await sql`SELECT * FROM threshold_configurations WHERE id = ${Number.parseInt(id)}`
     const result = await sql`
       UPDATE threshold_configurations 
       SET warning_threshold = ${warning_threshold},
@@ -51,6 +56,10 @@ export async function PUT(request: Request, { params }: { params: Promise<{ id: 
       return Response.json({ error: "Threshold not found" }, { status: 404 })
     }
 
+    const changes = diffRecords(before, result[0], THRESHOLD_FIELDS)
+    if (changes) {
+      await recordAudit(auth.actor, { action: "threshold.update", resource_type: "threshold", resource_id: result[0].id, changes })
+    }
     return Response.json(result[0])
   } catch (error) {
     console.error("Error updating threshold:", error)
@@ -59,6 +68,8 @@ export async function PUT(request: Request, { params }: { params: Promise<{ id: 
 }
 
 export async function DELETE(request: Request, { params }: { params: Promise<{ id: string }> }) {
+  const auth = await authorize(request)
+  if (!auth.ok) return auth.response
   try {
     const { id } = await params
 
@@ -67,9 +78,17 @@ export async function DELETE(request: Request, { params }: { params: Promise<{ i
     }
 
     const sql = getDb()
-    await sql`
-      DELETE FROM threshold_configurations WHERE id = ${Number.parseInt(id)}
+    const deleted = await sql`
+      DELETE FROM threshold_configurations WHERE id = ${Number.parseInt(id)} RETURNING *
     `
+    if (deleted[0]) {
+      await recordAudit(auth.actor, {
+        action: "threshold.delete",
+        resource_type: "threshold",
+        resource_id: deleted[0].id,
+        changes: { before: summarize(deleted[0], THRESHOLD_FIELDS) },
+      })
+    }
 
     return Response.json({ success: true })
   } catch (error) {

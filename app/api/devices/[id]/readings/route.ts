@@ -1,4 +1,5 @@
 import type postgres from "postgres"
+import { authorize } from "@/lib/authz"
 import { applyThresholdAlerts } from "@/lib/alerting"
 import { getDb, isDbAvailable, type EnvironmentalReading, type WaterLevelReading } from "@/lib/db"
 
@@ -79,6 +80,8 @@ function numOrNull(v: unknown): number | null {
 }
 
 export async function POST(request: Request, { params }: { params: Promise<{ id: string }> }) {
+  const auth = await authorize(request)
+  if (!auth.ok) return auth.response
   try {
     const { id: idParam } = await params
     const id = Number.parseInt(idParam)

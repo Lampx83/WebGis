@@ -1,4 +1,5 @@
 import { getDb, isDbAvailable } from "@/lib/db"
+import { authorize } from "@/lib/authz"
 
 interface IoTLogEntry {
   device_id: number
@@ -27,6 +28,8 @@ const MOCK_LOGS: IoTLogEntry[] = [
 ]
 
 export async function GET(request: Request) {
+  const auth = await authorize(request)
+  if (!auth.ok) return auth.response
   try {
     const { searchParams } = new URL(request.url)
     const deviceIdParam = searchParams.get("device_id")
@@ -74,6 +77,8 @@ export async function GET(request: Request) {
 }
 
 export async function POST(request: Request) {
+  const auth = await authorize(request)
+  if (!auth.ok) return auth.response
   try {
     const { device_id, log_type, data_type, payload, status, error_message } = await request.json()
 

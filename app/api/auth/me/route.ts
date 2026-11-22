@@ -1,5 +1,6 @@
 import { cookies } from "next/headers"
 import { verifySessionToken, COOKIE_NAME, type AuthUser } from "@/lib/auth"
+import { resolveSession } from "@/lib/session-check"
 import { getDb, isDbAvailable } from "@/lib/db"
 
 export async function GET() {
@@ -16,6 +17,12 @@ export async function GET() {
 
   if (isDbAvailable()) {
     try {
+      // Same check the API routes apply: a deleted / deactivated / revoked account is logged out.
+      const resolved = await resolveSession(session)
+      if (!resolved.ok) {
+        cookieStore.delete(COOKIE_NAME)
+        return Response.json({ user: null, code: "SESSION_REVOKED" }, { status: 401 })
+      }
       const sql = getDb()
       const rows = await sql`
         SELECT id, username, email, full_name, role, is_active

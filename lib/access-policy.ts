@@ -48,6 +48,11 @@ export function ruleFor(pathname: string, method: string): Rule {
   return role("operator")
 }
 
+/** Admin UI pages restricted to the admin role (the data behind them is also protected at API level). */
+export function isAdminOnlyPage(pathname: string): boolean {
+  return /^\/admin\/(users|audit-log)(\/|$)/.test(pathname)
+}
+
 export function timingSafeEqual(a: string, b: string): boolean {
   if (a.length !== b.length) return false
   let diff = 0

@@ -1,4 +1,5 @@
 import { getDb, isDbAvailable } from "@/lib/db"
+import { authorize } from "@/lib/authz"
 
 interface ApiUsageStats {
   total_calls: number
@@ -30,6 +31,8 @@ const MOCK_STATS: ApiUsageStats = {
 const num = (v: unknown) => Number(v ?? 0) || 0
 
 export async function GET(request: Request) {
+  const auth = await authorize(request)
+  if (!auth.ok) return auth.response
   try {
     const { searchParams } = new URL(request.url)
     const days = Math.min(Math.max(Number.parseInt(searchParams.get("days") || "7") || 7, 1), 365)
@@ -93,6 +96,8 @@ export async function GET(request: Request) {
 }
 
 export async function POST(request: Request) {
+  const auth = await authorize(request)
+  if (!auth.ok) return auth.response
   try {
     const { endpoint, method, status_code, response_time_ms, client_ip } = await request.json()
 

@@ -1,11 +1,15 @@
 import { getDb, isDbAvailable } from "@/lib/db"
 import { hashPassword, validateNewPassword, type Role } from "@/lib/auth"
+import { authorize } from "@/lib/authz"
+import { recordAudit, summarize, USER_FIELDS } from "@/lib/audit"
 
 const MOCK_USERS = [
   { id: 1, username: "admin", email: "admin@webgis.local", full_name: "Quản trị hệ thống", role: "admin", is_active: true, last_login: null, created_at: new Date().toISOString() },
 ]
 
-export async function GET() {
+export async function GET(request: Request) {
+  const auth = await authorize(request)
+  if (!auth.ok) return auth.response
   if (!isDbAvailable()) return Response.json(MOCK_USERS)
   try {
     const sql = getDb()
@@ -21,6 +25,8 @@ export async function GET() {
 }
 
 export async function POST(request: Request) {
+  const auth = await authorize(request)
+  if (!auth.ok) return auth.response
   try {
     const { username, password, email, full_name, role } = await request.json()
     if (!username || !password) {
@@ -41,6 +47,12 @@ export async function POST(request: Request) {
       VALUES (${username}, ${email || null}, ${hash}, ${full_name || null}, ${validRole})
       RETURNING id, username, email, full_name, role, is_active, created_at
     `
+    await recordAudit(auth.actor, {
+      action: "user.create",
+      resource_type: "user",
+      resource_id: rows[0].id,
+      changes: { after: summarize(rows[0], USER_FIELDS) },
+    })
     return Response.json(rows[0], { status: 201 })
   } catch (error: any) {
     console.error("Error creating user:", error)

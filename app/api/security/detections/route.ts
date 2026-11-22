@@ -1,4 +1,5 @@
 import { getDb, isDbAvailable } from "@/lib/db"
+import { authorize } from "@/lib/authz"
 
 interface DetectionPayload {
   device_id: number
@@ -73,6 +74,8 @@ export async function GET(request: Request) {
 }
 
 export async function POST(request: Request) {
+  const auth = await authorize(request)
+  if (!auth.ok) return auth.response
   try {
     const payload: DetectionPayload = await request.json()
 

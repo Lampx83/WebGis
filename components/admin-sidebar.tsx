@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { usePathname, useRouter } from "next/navigation"
-import { BarChart3, Database, Settings, Home, Wifi, Users, LogOut } from "lucide-react"
+import { BarChart3, Database, Settings, Home, Wifi, Users, LogOut, ScrollText } from "lucide-react"
 import { useTranslation } from "@/lib/use-translation"
 
 export function AdminSidebar() {
@@ -14,6 +14,7 @@ export function AdminSidebar() {
     { href: "/admin", label: t("admin", "adminDashboard"), icon: Home },
     { href: "/admin/devices", label: t("admin", "deviceManagement"), icon: Wifi },
     { href: "/admin/users", label: "Quản trị người dùng", icon: Users },
+    { href: "/admin/audit-log", label: "Nhật ký thao tác", icon: ScrollText },
     { href: "/admin/api-management", label: t("admin", "apiManagement"), icon: BarChart3 },
     { href: "/admin/raw-data", label: t("admin", "rawDataLogging"), icon: Database },
     { href: "/admin/thresholds", label: t("thresholds", "thresholdSettings"), icon: Settings },

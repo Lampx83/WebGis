@@ -1,4 +1,6 @@
 import { getDb, isDbAvailable, type Device } from "@/lib/db"
+import { authorize } from "@/lib/authz"
+import { DEVICE_FIELDS, recordAudit, summarize } from "@/lib/audit"
 
 const MOCK_DEVICES: Device[] = [
   {
@@ -84,6 +86,8 @@ export async function GET() {
 }
 
 export async function POST(request: Request) {
+  const auth = await authorize(request)
+  if (!auth.ok) return auth.response
   try {
     const { device_id, name, type, latitude, longitude, battery_level } = await request.json()
 
@@ -102,6 +106,12 @@ export async function POST(request: Request) {
       RETURNING *
     `
 
+    await recordAudit(auth.actor, {
+      action: "device.create",
+      resource_type: "device",
+      resource_id: result[0].id,
+      changes: { after: summarize(result[0], DEVICE_FIELDS) },
+    })
     return Response.json(result[0], { status: 201 })
   } catch (error) {
     console.error("Error creating device:", error)

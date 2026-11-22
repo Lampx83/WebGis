@@ -1,4 +1,6 @@
 import { getDb, isDbAvailable, type ThresholdConfiguration } from "@/lib/db"
+import { authorize } from "@/lib/authz"
+import { THRESHOLD_FIELDS, recordAudit, summarize } from "@/lib/audit"
 
 const MOCK_THRESHOLDS: ThresholdConfiguration[] = [
   {
@@ -52,6 +54,8 @@ export async function GET(request: Request) {
 }
 
 export async function POST(request: Request) {
+  const auth = await authorize(request)
+  if (!auth.ok) return auth.response
   try {
     const body = await request.json()
     const { device_id, parameter_type, warning_threshold, alert_threshold, comparison_operator, description } = body
@@ -72,6 +76,12 @@ export async function POST(request: Request) {
       RETURNING *
     `
 
+    await recordAudit(auth.actor, {
+      action: "threshold.create",
+      resource_type: "threshold",
+      resource_id: result[0].id,
+      changes: { after: summarize(result[0], THRESHOLD_FIELDS) },
+    })
     return Response.json(result[0], { status: 201 })
   } catch (error) {
     console.error("Error creating threshold:", error)

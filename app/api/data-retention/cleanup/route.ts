@@ -1,13 +1,19 @@
 import { getDb, isDbAvailable } from "@/lib/db"
 import { runRetentionCleanup } from "@/lib/retention"
+import { authorize } from "@/lib/authz"
+import { recordAudit } from "@/lib/audit"
 
 export async function POST(request: Request) {
+  const auth = await authorize(request)
+  if (!auth.ok) return auth.response
   try {
     if (!isDbAvailable()) {
       return Response.json({ error: "Database not available" }, { status: 503 })
     }
 
     const results = await runRetentionCleanup(getDb())
+
+    await recordAudit(auth.actor, { action: "retention.cleanup", resource_type: "data_retention", changes: { after: results } })
 
     return Response.json({
       success: true,

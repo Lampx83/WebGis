@@ -61,6 +61,22 @@ Rồi sửa `docker-compose.yml`: thay block `build:` của service `web` bằng
 - Thêm bảng/seed mới về sau: chạy SQL thủ công qua **Portainer → Containers →
   db → Console** (`psql -U webgis -d webgis`), vì initdb không chạy lại trên
   volume đã có dữ liệu.
+- **Migration bắt buộc khi nâng cấp DB đã có dữ liệu:**
+  [`scripts/08-session-revocation-and-audit.sql`](scripts/08-session-revocation-and-audit.sql)
+  (thêm `users.token_version`, cột `actor_username` cho `admin_audit_log`, và đổi khóa ngoại của
+  `admin_audit_log` / `auth_audit_log` sang `ON DELETE SET NULL` để xóa được tài khoản đã từng đăng nhập).
+  Script idempotent, chạy lại nhiều lần không lỗi; DB mới thì initdb tự chạy. Chạy thủ công:
+
+  ```bash
+  # từ máy có repo, qua container db (đổi tên container/user cho đúng stack của bạn)
+  docker exec -i <db-container> psql -U webgis -d webgis -v ON_ERROR_STOP=1 \
+    < scripts/08-session-revocation-and-audit.sql
+  ```
+
+  Hoặc Portainer → Containers → db → Console: `psql -U webgis -d webgis -f /docker-entrypoint-initdb.d/08-session-revocation-and-audit.sql`
+  (thư mục `scripts/` được mount vào đó). Chưa migrate thì app **vẫn chạy**: vẫn chặn tài khoản bị xóa/khóa/đổi
+  vai trò, nhưng chưa thu hồi được phiên theo `token_version` và nhật ký thao tác chưa lưu tên người thao tác
+  (log cảnh báo `[auth] users.token_version missing`; app tự nhận schema mới trong ≤ 60 giây sau khi migrate).
 - Nếu chưa đặt `DATABASE_URL`, app chạy **mock data mode** (không cần DB) — hữu ích để
   kiểm tra nhanh giao diện. Ở production chế độ này bị tắt tài khoản admin giả, trừ khi
   đặt `DEMO_MODE=true`.
@@ -80,6 +96,15 @@ curl -X POST http://<host>:8043/api/devices/1/readings \
   -d '{"temperature": 28.5, "rainfall": 0, "wind_speed": 3.2}'
 ```
 
+- **Thu hồi phiên:** middleware chỉ kiểm chữ ký JWT (không truy cập DB), nhưng mọi API ghi / API cần đăng nhập đều
+  kiểm lại bảng `users` ở mỗi request: tài khoản bị xóa/khóa → 401 `SESSION_REVOKED` ngay (cookie bị xóa), vai trò
+  lấy từ DB chứ không từ token. Admin đổi vai trò / khóa-mở khóa / đặt lại mật khẩu, hoặc người dùng tự đổi mật
+  khẩu → tăng `token_version`, mọi phiên cũ của tài khoản đó hết hiệu lực (phiên đang dùng để đổi mật khẩu được cấp lại).
+  `GET` công khai cho dashboard không chạm DB để xác thực.
+- **Nhật ký thao tác quản trị** (`admin_audit_log`, xem tại `/admin/audit-log` hoặc `GET /api/admin/audit-log?page=&page_size=&resource_type=&action=&actor=`, chỉ admin):
+  ghi người thực hiện, hành động, đối tượng, giá trị trước/sau (không bao giờ có mật khẩu/hash) cho tạo/sửa/xóa thiết bị
+  và ngưỡng, tạo/sửa/xóa/đổi vai trò/đặt lại mật khẩu người dùng, đổi mật khẩu, dọn dữ liệu. Ghi bằng `INGEST_API_KEY`
+  không phải thao tác quản trị nên không được ghi. Việc ghi nhật ký là best-effort: lỗi ghi chỉ được log, không làm hỏng thao tác đã xong.
 - Đăng nhập sai quá 5 lần (cùng IP + tài khoản) hoặc 10 lần (mọi IP) trong 15 phút sẽ bị
   khóa tạm thời (HTTP 429). Bộ đếm nằm trong bộ nhớ của từng container.
 

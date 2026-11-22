@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest"
-import { hasValidIngestKey, ruleFor } from "./access-policy"
+import { hasValidIngestKey, isAdminOnlyPage, ruleFor } from "./access-policy"
 
 const KEY = "0123456789abcdef0123"
 const h = (init: Record<string, string>) => ({ get: (k: string) => init[k.toLowerCase()] ?? null })
@@ -64,5 +64,18 @@ describe("hasValidIngestKey", () => {
   it("is disabled when no (or a too short) key is configured", () => {
     expect(hasValidIngestKey(h({ "x-api-key": "short" }), "short")).toBe(false)
     expect(hasValidIngestKey(h({ "x-api-key": "anything" }), undefined)).toBe(false)
+  })
+})
+
+describe("isAdminOnlyPage", () => {
+  it("covers user management and the audit log", () => {
+    expect(isAdminOnlyPage("/admin/users")).toBe(true)
+    expect(isAdminOnlyPage("/admin/audit-log")).toBe(true)
+    expect(isAdminOnlyPage("/admin/audit-log/")).toBe(true)
+  })
+  it("leaves other admin pages to operators", () => {
+    expect(isAdminOnlyPage("/admin")).toBe(false)
+    expect(isAdminOnlyPage("/admin/devices")).toBe(false)
+    expect(isAdminOnlyPage("/admin/users-export")).toBe(false)
   })
 })

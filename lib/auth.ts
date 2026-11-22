@@ -1,6 +1,7 @@
 import bcrypt from "bcryptjs"
 import { getDb, isDbAvailable } from "./db"
 import { signSession, type Role } from "./session"
+import { fetchTokenVersion } from "./session-check"
 
 export { COOKIE_NAME, verifySessionToken, roleAtLeast } from "./session"
 export type { Role, SessionPayload } from "./session"
@@ -84,6 +85,11 @@ export async function authenticate(username: string, password: string): Promise<
   return { ...user, must_change_password: usingDb && password_hash === DEFAULT_PASSWORD_HASH } as AuthUser
 }
 
-export async function createSessionToken(user: AuthUser): Promise<string> {
-  return signSession(user, { mustChangePassword: user.must_change_password })
+/**
+ * @param tokenVersion pass the value returned by bumpTokenVersion() when re-issuing a cookie in the same
+ *   request; otherwise the current users.token_version is looked up (0 in mock mode / unmigrated DB).
+ */
+export async function createSessionToken(user: AuthUser, tokenVersion?: number): Promise<string> {
+  const tv = tokenVersion ?? (isDbAvailable() ? await fetchTokenVersion(user.id) : 0)
+  return signSession(user, { mustChangePassword: user.must_change_password, tokenVersion: tv })
 }
